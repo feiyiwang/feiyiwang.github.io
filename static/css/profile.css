@@ -1,0 +1,29 @@
+.div_image {
+	padding:20%;
+	text-align: center;
+}
+
+.image {
+	width:60%;
+	height:20%;
+}
+.image:hover {
+	transform: scale(1.1);
+}
+
+.div_bg {
+	background-size: contain;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+    position: relative;
+}
+.shanghai_bg {
+    background-image: url("image/shanghai_bg.png");
+}
+.boston_bg {
+    background-image: url("image/boston_bg.png");
+}
+.resume_bg {
+    background-image: url("image/resume_bg.png");
+}
