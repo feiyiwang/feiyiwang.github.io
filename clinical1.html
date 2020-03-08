@@ -1,11 +1,13 @@
 <head>
     <meta charset="UTF-8">
-    <title>Fey's Hometown</title>
+    <title>Fey's Project</title>
     <script type="text/javascript" src="static/js/jquery.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/base.css">
 
+    <!--<script src="static/js/project.js"></script>-->
+    <link rel="stylesheet" href="static/css/project.css">
 </head>
 <body>
     <nav class="navbar navbar-default">
@@ -15,7 +17,7 @@
             </div>
             <ul class="nav navbar-nav">
                 <li style="display:inline-block;">
-                    
+
                     <a href="profile.html">
                         <img src="pic/profile.png" alt="Profile" style="width:20px;height:20px;">&nbsp;&nbsp;Profile
                     </a>
@@ -32,7 +34,7 @@
                 </li>
                 <li style="display:inline-block;">
                     <a href="notebook.html">
-                        <img src="pic/note.png" alt="Note" style="width:20px;height:18px;">&nbsp;&nbsp;Notebook
+                        <img src="pic/note.png" alt="Photo" style="width:20px;height:18px;">&nbsp;&nbsp;Notebook
                     </a>
                 </li>
             </ul>
@@ -41,36 +43,56 @@
             </ul>
         </div>
     </nav>
-    <br>
-    <div style="max-width:90%; margin: 0 auto;">
-        <h3 style="text-align: center">Daily Life in Shanghai</h3><br>
 
-        <p style="text-align:justify">
-            I was born and grew up in Shanghai, the largest city and financial center in China. It is said
-            people in big city only care about making money and chasing fame. I cannot deny some come for a better life
-            and some come for better opportunities. But when you walk into these alleys (LongTang) in the morning, eat
-            in a local noodle house at noon, and sit in a community park or square in the evening, you can see true
-            life in Shanghai. As a native of Shanghai, I feel a strong connection with this city when I hear my grandpa
-            sharing his trivia for life with his neighbors, when I gobble up crab pasta made by an experienced cook
-            (ShiFu), when I see retired people singing and dancing in a park or square after dinner... You cannot tell
-            any difference of a big city from others if you just visit the most popular attractions and restaurants in
-            that city.
-            We have our own dialect, unique culture and tasty cuisines. Step into a Shanghainese's real life, you will
-            know more about this big city with its hundreds and thousands of lovely residents.
-        </p>
-        <p style="text-align:justify">To be continued...</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <!-- required for floating -->
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs tabs-left" style="min-height:100%;">
+                    <li class="active"><a href="#home" data-toggle="tab">Home</a>
 
-        <br>
+                    </li>
+                    <li><a href="#profile" data-toggle="tab">Profile</a>
+
+                    </li>
+                    <li><a href="#messages" data-toggle="tab">Messages</a>
+
+                    </li>
+                    <li><a href="#settings" data-toggle="tab">Settings</a>
+
+                    </li>
+                    <li class="navbar-fixed-bottom"><a href="projects.html">BACK</a></li>
+                </ul>
+
+            </div>
+            <div class="col-md-9">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">Home Tab.</div>
+                    <div class="tab-pane" id="profile">Profile Tab.</div>
+                    <div class="tab-pane" id="messages">Messages Tab.</div>
+                    <div class="tab-pane" id="settings">Settings Tab.</div>
+                </div>
+            </div>
+
+        </div>
     </div>
+
+
+    <!--<script>-->
+        <!--$('.nav-tabs > li > a').hover(function () {-->
+            <!--$(this).tab('show');-->
+        <!--});-->
+    <!--</script>-->
     <div id="footer">
         <div style="min-height: 10px"></div>
         <div class="col-md-8" style="padding: 4px">
             <h6 class="sans grey" style="margin-left: 10%">FEIYI WANG&nbsp;&nbsp;|&nbsp;&nbsp;+1 (508)873-7966&nbsp;&nbsp;&nbsp;&nbsp;
-            REPHYCCA@GMAIL.COM&nbsp;&nbsp;|&nbsp;&nbsp;PRIVACY POLICY&nbsp;&nbsp;&nbsp;&nbsp;TERMS + CONDITIONS</h6>
+                REPHYCCA@GMAIL.COM&nbsp;&nbsp;|&nbsp;&nbsp;PRIVACY POLICY&nbsp;&nbsp;&nbsp;&nbsp;TERMS + CONDITIONS</h6>
         </div>
         <div class="col-md-4" style="padding: 4px">
             <h6 class="sans grey" style="margin-right: 10%;text-align: right;">© 2020 FEIYI WANG All Rights Reserved.</h6>
         </div>
     </div>
-    
 </body>
