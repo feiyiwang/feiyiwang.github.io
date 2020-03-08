@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/css/bootstrap-table.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/bootstrap-table.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/js/query.min.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile.html" afterPath="$PROJECT_DIR$/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile_boston.html" afterPath="$PROJECT_DIR$/profile_boston.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile_shanghai.html" afterPath="$PROJECT_DIR$/profile_shanghai.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects.html" afterPath="$PROJECT_DIR$/projects.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/base.css" afterPath="$PROJECT_DIR$/static/css/base.css" />
-    </list>
+    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="" />
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,8 +51,8 @@
       <file leaf-file-name="profile_shanghai.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile_shanghai.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+            <state relative-caret-position="200">
+              <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
               <folding>
                 <element signature="n#style#0;n#p#1;n#div#0;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -881,15 +871,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583638540645</updated>
-      <workItem from="1583638543933" duration="8499000" />
+      <workItem from="1583638543933" duration="8754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8499000" />
+    <option name="totallyTimeSpent" value="8754000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1034,8 +1024,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile_shanghai.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="45" column="52" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+        <state relative-caret-position="200">
+          <caret line="48" column="69" selection-start-line="48" selection-start-column="69" selection-end-line="48" selection-end-column="69" />
           <folding>
             <element signature="n#style#0;n#p#1;n#div#0;n#body#0;n#!!top" expanded="true" />
           </folding>
