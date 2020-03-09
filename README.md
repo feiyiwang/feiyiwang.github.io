@@ -1,3 +1,3 @@
 # feiyiwang.github.io
 
-### Learn more about my work, my life and my interests! :)
+### Learn more fun facts about my work, my life and my interests! :)
