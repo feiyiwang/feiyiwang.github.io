@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('font/Montserrat/Montserrat-ExtraLight.ttf');
+    src: url('../font/Montserrat/Montserrat-ExtraLight.ttf');
     /*font-weight: 700;*/
     font-style: normal;
 }
 
 .home {
-    background: white url("image/home_bg.jpg") no-repeat center center fixed;
+    background: white url("../image/home_bg.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 

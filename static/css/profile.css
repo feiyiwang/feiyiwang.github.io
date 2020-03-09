@@ -5,7 +5,7 @@
 
 .image {
 	width:60%;
-	height:20%;
+	height:40%;
 }
 .image:hover {
 	transform: scale(1.1);
@@ -19,11 +19,11 @@
     position: relative;
 }
 .shanghai_bg {
-    background-image: url("image/shanghai_bg.png");
+    background-image: url("../image/shanghai_bg.png");
 }
 .boston_bg {
-    background-image: url("image/boston_bg.png");
+    background-image: url("../image/boston_bg.png");
 }
 .resume_bg {
-    background-image: url("image/resume_bg.png");
+    background-image: url("../image/resume_bg.png");
 }
