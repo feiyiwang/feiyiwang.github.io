@@ -7,56 +7,63 @@
     <link rel="stylesheet" href="../static/css/base.css">
 
     <link rel="stylesheet" href="../static/css/project.css">
+    <script>
+        $(function(){
+            $("#header").load("../template/header-in-folder.html");
+            $("#footer").load("../template/footer.html");
+        });
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="../index.html">Fey's Little Home&nbsp;&nbsp;斐艺的小屋</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li style="display:inline-block;">
-                    <a href="../profile.html">
-                        <img src="../pic/profile.png" alt="Profile" style="width:20px;height:20px;">&nbsp;&nbsp;Profile
-                    </a>
-                </li>
-                <li style="display:inline-block;">
-                    <a href="../projects.html">
-                        <img src="../pic/project.png" alt="Projects" style="width:20px;height:20px;">&nbsp;&nbsp;Projects
-                    </a>
-                </li>
-                <li style="display:inline-block;">
-                    <a href="../photography.html">
-                        <img src="../pic/photo.png" alt="Photo" style="width:20px;height:18px;">&nbsp;&nbsp;Photography
-                    </a>
-                </li>
-                <li style="display:inline-block;">
-                    <a href="../notebook.html">
-                        <img src="../pic/note.png" alt="Photo" style="width:20px;height:18px;">&nbsp;&nbsp;Notebook
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><img src="../pic/logo.png" alt="Logo" style="width:190px;height:50px;padding-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
-            </ul>
-        </div>
-    </nav>
-
+    <div id="header"></div>
     <div class="container-fluid">
         <div class="row">
             <h3 style="text-align: center">Fight Cancer With NLP</h3><br>
             <div class="col-md-3">
-                <!-- required for floating -->
-                <!-- Nav tabs -->
-                <ul class="nav nav-tabs tabs-left" style="min-height:70%;">
+                <ul class="nav nav-tabs tabs-left ltr" style="height:65%;">
                     <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
                     <li><a href="#workflow" data-toggle="tab">2. Workflow</a></li>
-                    <li><a href="#header" data-toggle="tab">3. Header Identification</a></li>
-                    <li><a href="#section" data-toggle="tab">4. Section Identification</a></li>
-                    <li><a href="#event" data-toggle="tab">5. Event Extraction</a></li>
-                    <li><a href="#dv" data-toggle="tab">6. Data Visualization</a></li>
+                    <li><a href="#headers" data-toggle="tab">3. Header Identification</a></li>
+                    <li class="multi-li">
+                        <a class="navbar-toggler" data-toggle="collapse" data-target="#sections" aria-expanded="true" aria-controls="sections">
+                            4. Section Identification<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="sections" aria-labelledby="headingOne" data-parent="#accordion">
+                            <li><a class="dropdown-item" href="#sections1" data-toggle="tab">1</a></li>
+                            <li><a class="dropdown-item" href="#sections2" data-toggle="tab">2</a></li>
+                            <li><a class="dropdown-item" href="#sections3" data-toggle="tab">3</a></li>
+                        </ul>
+                    </li>
+                    <li class="multi-li">
+                        <a class="navbar-toggler" data-toggle="collapse" href="#event">
+                            5. Event Extraction<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="event">
+                            <li><a class="dropdown-item" href="#event1" data-toggle="tab">1</a></li>
+                            <li><a class="dropdown-item" href="#event2" data-toggle="tab">2</a></li>
+                            <li><a class="dropdown-item" href="#event3" data-toggle="tab">3</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a class="navbar-toggler" data-toggle="collapse" href="#dv">
+                            6. Data Visualization<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="dv">
+                            <li><a class="dropdown-item" href="#dv1" data-toggle="tab">Homepage</a></li>
+                            <li><a class="dropdown-item" href="#dv2" data-toggle="tab">Patient Pathway</a></li>
+                            <li><a class="dropdown-item" href="#dv3" data-toggle="tab">Population Statistics</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#wrapup" data-toggle="tab">7. Project Wrap-up</a></li>
-                    <li class="navbar-fixed-bottom"><a href="projects.html">GO BACK</a></li>
+
+                </ul>
+
+                <!-- required for floating -->
+                <!-- Nav tabs -->
+
+                <ul class="nav nav-tabs tabs-left ltr" style="height:5%;">
+                    <li class="navbar-fixed-bottom"><a href="../projects.html">GO BACK</a></li>
                 </ul>
 
             </div>
@@ -100,17 +107,38 @@
                         </div>
                         <div class="col-md-1"></div>
                     </div>
-                    <div class="tab-pane" id="header">
+                    <div class="tab-pane" id="headers">
 
                     </div>
-                    <div class="tab-pane" id="section">
-
+                    <div class="tab-pane" id="sections1">
+                        1
                     </div>
-                    <div class="tab-pane" id="event">
-
+                    <div class="tab-pane" id="sections2">
+                        2
                     </div>
-                    <div class="tab-pane" id="dv">
-
+                    <div class="tab-pane" id="sections3">
+                        3
+                    </div>
+                    <div class="tab-pane" id="event1">
+                        01
+                    </div>
+                    <div class="tab-pane" id="event2">
+                        02
+                    </div>
+                    <div class="tab-pane" id="event3">
+                        03
+                    </div>
+                    <div class="tab-pane center" id="dv1">
+                        <br><p class="center" style="font-size: 24px">Dashboard</p><br>
+                        <img src="clinical1/6-1.png" alt="Dashboard Screenshot" style="width: 90%;">
+                    </div>
+                    <div class="tab-pane center" id="dv2">
+                        <br><p class="center" style="font-size: 24px">Dashboard</p><br>
+                        <img src="clinical1/6-2.png" alt="Dashboard Screenshot" style="width: 60%;">
+                    </div>
+                    <div class="tab-pane center" id="dv3">
+                        <br><p class="center" style="font-size: 24px">Dashboard</p><br>
+                        <img src="clinical1/6-3.png" alt="Dashboard Screenshot" style="width: 90%;">
                     </div>
                     <div class="tab-pane" id="wrapup">
 
@@ -123,19 +151,10 @@
     </div>
 
 
-    <!--<script>-->
-        <!--$('.nav-tabs > li > a').hover(function () {-->
-            <!--$(this).tab('show');-->
-        <!--});-->
-    <!--</script>-->
-    <div id="footer">
-        <div style="min-height: 10px"></div>
-        <div class="col-md-8" style="padding: 4px">
-            <h6 class="sans grey" style="margin-left: 10%">FEIYI WANG&nbsp;&nbsp;|&nbsp;&nbsp;+1 (508)873-7966&nbsp;&nbsp;&nbsp;&nbsp;
-                REPHYCCA@GMAIL.COM&nbsp;&nbsp;|&nbsp;&nbsp;PRIVACY POLICY&nbsp;&nbsp;&nbsp;&nbsp;TERMS + CONDITIONS</h6>
-        </div>
-        <div class="col-md-4" style="padding: 4px">
-            <h6 class="sans grey" style="margin-right: 10%;text-align: right;">© 2020 FEIYI WANG All Rights Reserved.</h6>
-        </div>
-    </div>
+    <script>
+        $('.nav-tabs > .multi-li > a').click(function () {
+            $(this).tab('show');
+        });
+    </script>
+    <div id="footer"></div>
 </body>

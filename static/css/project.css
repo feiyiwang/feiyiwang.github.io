@@ -76,3 +76,21 @@
     -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
+
+.caret-down {
+    float: right;
+    padding-right: 8px;
+}
+.dropdown-item {
+    padding-bottom: 5%;
+}
+.scroll {
+    overflow: scroll;
+
+}
+.rtl {
+    direction: rtl;
+}
+.ltr {
+    direction: ltr;
+}

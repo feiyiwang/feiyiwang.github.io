@@ -59,7 +59,7 @@ body {
     /*!*padding:10px;*!*/
     /*padding-bottom:60px;   !* Height of the footer *!*/
 /*}*/
-#footer {
+.footer-frame {
     position:fixed;
     background-attachment: scroll;
     bottom:0;
