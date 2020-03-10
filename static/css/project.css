@@ -87,12 +87,12 @@
 .scroll {
     overflow-y: scroll;
 }
-/*.rtl {*/
-    /*direction: rtl;*/
-/*}*/
-/*.ltr {*/
-    /*direction: ltr;*/
-/*}*/
+.rtl {
+    direction: rtl;
+}
+.ltr {
+    direction: ltr;
+}
 .tab-bg {
     background: white;
     width:100%;
