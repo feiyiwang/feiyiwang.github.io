@@ -85,12 +85,17 @@
     padding-bottom: 5%;
 }
 .scroll {
-    overflow: scroll;
-
+    overflow-y: scroll;
 }
-.rtl {
-    direction: rtl;
-}
-.ltr {
-    direction: ltr;
+/*.rtl {*/
+    /*direction: rtl;*/
+/*}*/
+/*.ltr {*/
+    /*direction: ltr;*/
+/*}*/
+.tab-bg {
+    background: white;
+    width:100%;
+    height:100%;
+    position: relative;
 }

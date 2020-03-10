@@ -23,15 +23,26 @@
                 <ul class="nav nav-tabs tabs-left ltr" style="height:65%;">
                     <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
                     <li><a href="#workflow" data-toggle="tab">2. Workflow</a></li>
-                    <li><a href="#headers" data-toggle="tab">3. Header Identification</a></li>
                     <li class="multi-li">
-                        <a class="navbar-toggler" data-toggle="collapse" data-target="#sections" aria-expanded="true" aria-controls="sections">
+                        <a class="navbar-toggler" data-toggle="collapse" href="#headers">
+                            3. Header Identification<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="headers">
+                            <li><a class="dropdown-item" href="#headers1" data-toggle="tab">Note Classification</a></li>
+                            <li><a class="dropdown-item" href="#headers2" data-toggle="tab">Note Clustering</a></li>
+                            <!--<li><a class="dropdown-item" href="#headers3" data-toggle="tab">3</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="multi-li">
+                        <a class="navbar-toggler" data-toggle="collapse" href="#sections">
                             4. Section Identification<span class="caret-down">▾</span>
                         </a>
-                        <ul class="collapse tabs-left" id="sections" aria-labelledby="headingOne" data-parent="#accordion">
-                            <li><a class="dropdown-item" href="#sections1" data-toggle="tab">1</a></li>
-                            <li><a class="dropdown-item" href="#sections2" data-toggle="tab">2</a></li>
-                            <li><a class="dropdown-item" href="#sections3" data-toggle="tab">3</a></li>
+                        <ul class="collapse tabs-left" id="sections">
+                            <li><a class="dropdown-item" href="#sections1" data-toggle="tab">Rule-Based NLP Method</a></li>
+                            <li><a class="dropdown-item" href="#sections2" data-toggle="tab">Machine Learning Method</a></li>
+                            <li><a class="dropdown-item" href="#sections3" data-toggle="tab">Pos Tag for Sections</a></li>
+                            <li><a class="dropdown-item" href="#sections4" data-toggle="tab">Feature Engineering</a></li>
+                            <li><a class="dropdown-item" href="#sections5" data-toggle="tab">Model Selection and Estimation</a></li>
                         </ul>
                     </li>
                     <li class="multi-li">
@@ -44,8 +55,7 @@
                             <li><a class="dropdown-item" href="#event3" data-toggle="tab">3</a></li>
                         </ul>
                     </li>
-
-                    <li>
+                    <li class="multi-li">
                         <a class="navbar-toggler" data-toggle="collapse" href="#dv">
                             6. Data Visualization<span class="caret-down">▾</span>
                         </a>
@@ -62,7 +72,7 @@
                 <!-- required for floating -->
                 <!-- Nav tabs -->
 
-                <ul class="nav nav-tabs tabs-left ltr" style="height:5%;">
+                <ul class="nav nav-tabs tabs-left ltr" style="padding-top:5%;">
                     <li class="navbar-fixed-bottom"><a href="../projects.html">GO BACK</a></li>
                 </ul>
 
@@ -70,7 +80,7 @@
             <div class="col-md-9">
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div class="tab-pane active" id="objectives">
+                    <div class="tab-pane tab-bg active" id="objectives">
                         <br><p class="center" style="font-size: 24px">Objectives</p><br>
                         <div class="col-md-6">
                             <p><b>Build computational framework that leverages NLP</b></p>
@@ -84,7 +94,7 @@
                             <img src="clinical1/1.png" alt="Unstructured Data" style="width: 80%;padding-left: 5%">
                         </div>
                     </div>
-                    <div class="tab-pane" id="workflow">
+                    <div class="tab-pane tab-bg" id="workflow">
                         <br><p class="center" style="font-size: 24px">Workflow</p><br>
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
@@ -97,8 +107,8 @@
                                 <p><b>Project Wrap-up: </b></p>
                             </div>
                             <div class="col-md-7">
-                                <p>Rule-based method vs clustering method</p>
-                                <p>Pos-tag & classification</p>
+                                <p>Structure-based method vs clustering method</p>
+                                <p>Rule-based method & classification</p>
                                 <p>Obtain clinical events from sections</p>
                                 <p>Flask web framework</p>
                                 <p>Build an easy-to-use python library</p>
@@ -107,40 +117,137 @@
                         </div>
                         <div class="col-md-1"></div>
                     </div>
-                    <div class="tab-pane" id="headers">
-
+                    <div class="tab-pane tab-bg" id="headers1">
+                        <br><p class="center" style="font-size: 24px">Note Classification</p><br>
+                        <div class="col-md-6">
+                            <p><b>Notes from same institute and department have similar </b></p>
+                            <p>&nbsp;&nbsp;(1) structure, (2) sections, (3) format</p>
+                            <br>
+                            <p><b>Structure-based Classification</b></p>
+                            <p>&nbsp;&nbsp;Objective</p>
+                            <p>&nbsp;&nbsp;- Group notes having similar structure</p>
+                            <p>&nbsp;&nbsp;- Classified 52% of notes into 19 classes</p>
+                            <p>&nbsp;&nbsp;Methodology</p>
+                            <p>&nbsp;&nbsp;- Strategically extract tokens from top section of notes </p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;(e.g. SURGEON)</p>
+                            <p>&nbsp;&nbsp;- Have chance to implicitly reveal department</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="clinical1/3-1.png" alt="Unstructured Note" style="width: 80%;padding-left: 5%">
+                        </div>
                     </div>
-                    <div class="tab-pane" id="sections1">
-                        1
+                    <div class="tab-pane tab-bg" id="headers2">
+                        <br><p class="center" style="font-size: 24px">Note Clustering</p><br>
+                        <div class="col-md-6">
+                            <p><b>Utilize the similarity in notes to build up a DBSCAN model</b></p>
+                            <br>
+                            <p><b>Measuring coherence in notes of each cluster</b></p>
+                            <p>- Plotting number of sections in a given class</p>
+                            <p>- Average Overlap Count with sections in class regex</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="clinical1/3-2.png" alt="Plot" style="width: 80%;padding-left: 5%">
+                        </div>
                     </div>
-                    <div class="tab-pane" id="sections2">
-                        2
+                    <!--<div class="tab-pane tab-bg" id="headers3">-->
+                        <!--3-->
+                    <!--</div>-->
+                    <div class="tab-pane tab-bg" id="sections1">
+                        <br><p class="center" style="font-size: 24px">Rule-Based NLP Method</p><br>
+                        <div class="col-md-6">
+                            <p><b>Methodology</b></p>
+                            <p>- Manually explore notes of a class and find possible sections</p>
+                            <p>- Build sections dictionary, regular expressions</p>
+                            <p>- Parse notes to extract section names</p>
+                            <p>- Append section contents following each section name</p><br>
+                            <p><b>Advantages</b></p>
+                            <p>- Extract predictable sections with full accuracy from well-structured notes</p>
+                            <p>- Successfully processed ~35% notes</p>
+                            <p><b>Disadvantages</b></p>
+                            <p>- Requires huge Initial Human Effort</p>
+                            <p>- Fails to capture unpredictable sections</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="clinical1/4-1.png" alt="Unstructured Note" style="width: 80%;padding-left: 5%">
+                        </div>
                     </div>
-                    <div class="tab-pane" id="sections3">
-                        3
+                    <div class="tab-pane tab-bg" id="sections2">
+                        <br><p class="center" style="font-size: 24px">Machine Learning Method</p><br>
+                        <div class="col-md-7 scroll" style="height: 60%">
+                            <p><b>Methodology</b></p><br>
+                            <p>(1) Define output values</p>
+                            <p>&nbsp;&nbsp;- Ruled-based identified section headers: True</p>
+                            <p>&nbsp;&nbsp;- Other section candidates: False</p>
+                            <br>
+                            <p>(2) Extract section candidates</p>
+                            <p>&nbsp;&nbsp;- N-Grams: Too many candidates</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;1,2,3-Gram tokens for a note of 1000 tokens, would yield 3000 n-grams</p>
+                            <p>&nbsp;&nbsp;- N-Grams beginning at each sentence: Still too many candidates</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;1,2,3-Gram tokens for a note of 1000 tokens and 300 sentences would yield 300 n-grams</p>
+                            <p>&nbsp;&nbsp;- POS Tag Chunking: Computationally slow</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;Extracts chunks of known sections and yields 30% of tokens of above method</p>
+                            <br>
+                            <p>(3) Conduct feature selection</p>
+                            <p>&nbsp;&nbsp;- Syntactic analysis</p>
+                            <p>&nbsp;&nbsp;- Semantic analysis</p>
+                            <br>
+                            <p>(4) Modeling</p>
+                            <p>&nbsp;&nbsp;- Section Identification -> Binary Classification</p>
+                            <p>&nbsp;&nbsp;- Model selection and evaluation</p>
+                        </div>
+                        <div class="col-md-5">
+                            <img src="clinical1/4-2.png" alt="Unstructured Note" style="width: 90%;">
+                        </div>
                     </div>
-                    <div class="tab-pane" id="event1">
+                    <div class="tab-pane tab-bg" id="sections3">
+                        <br><p class="center" style="font-size: 24px">Pos Tag for Sections</p><br>
+                        <div class="col-md-7">
+                            <img src="clinical1/4-3-1.png" alt="Plot" style="width: 90%;">
+                        </div>
+                        <div class="col-md-5">
+                            <img src="clinical1/4-3-2.png" alt="Table" style="width: 90%;">
+                        </div>
+                    </div>
+                    <div class="tab-pane tab-bg" id="sections4">
+                        <br><p class="center" style="font-size: 24px">Feature Engineering</p><br>
+                        <div class="col-md-12 scroll" style="height: 60%">
+                            <img src="clinical1/4-4-1.png" alt="Note" style="width: 100%;padding: 5%">
+                            <img src="clinical1/4-4-2.png" alt="Features1" style="width: 100%;padding: 5%">
+                            <img src="clinical1/4-4-3.png" alt="Features2" style="width: 100%;padding: 5%">
+                            <img src="clinical1/4-4-4.png" alt="Features3" style="width: 100%;padding: 5%">
+                        </div>
+                    </div>
+                    <div class="tab-pane tab-bg" id="sections5">
+                        <br><p class="center" style="font-size: 24px">Model Selection and Estimation</p><br>
+                        <div class="col-md-6">
+                            <img src="clinical1/4-3-1.png" alt="Plot" style="width: 90%;">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="clinical1/4-3-2.png" alt="Table" style="width: 90%;">
+                        </div>
+                    </div>
+                    <div class="tab-pane tab-bg" id="event1">
                         01
                     </div>
-                    <div class="tab-pane" id="event2">
+                    <div class="tab-pane tab-bg" id="event2">
                         02
                     </div>
-                    <div class="tab-pane" id="event3">
+                    <div class="tab-pane tab-bg" id="event3">
                         03
                     </div>
-                    <div class="tab-pane center" id="dv1">
+                    <div class="tab-pane center tab-bg" id="dv1">
                         <br><p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-1.png" alt="Dashboard Screenshot" style="width: 90%;">
                     </div>
-                    <div class="tab-pane center" id="dv2">
+                    <div class="tab-pane center tab-bg" id="dv2">
                         <br><p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-2.png" alt="Dashboard Screenshot" style="width: 60%;">
                     </div>
-                    <div class="tab-pane center" id="dv3">
+                    <div class="tab-pane center tab-bg" id="dv3">
                         <br><p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-3.png" alt="Dashboard Screenshot" style="width: 90%;">
                     </div>
-                    <div class="tab-pane" id="wrapup">
+                    <div class="tab-pane tab-bg" id="wrapup">
 
                     </div>
 
@@ -152,9 +259,17 @@
 
 
     <script>
+        $('.nav-tabs > li > a').click(function () {
+            $('.nav-tabs > .multi-li > ul').collapse('hide');
+        });
         $('.nav-tabs > .multi-li > a').click(function () {
             $(this).tab('show');
         });
+//        $(document).ready(function(){
+//            $(".toggle-btn").click(function(){
+//                $("#myCollapsible").collapse('toggle');
+//            });
+//        });
     </script>
     <div id="footer"></div>
 </body>
