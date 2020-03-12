@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/clinical1.html" afterPath="$PROJECT_DIR$/projects/clinical1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/clinical2.html" afterPath="$PROJECT_DIR$/projects/clinical2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/project.css" afterPath="$PROJECT_DIR$/static/css/project.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook.html" afterPath="$PROJECT_DIR$/notebook.html" />
     </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -60,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clinical2.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clinical2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/clinical2.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="406">
@@ -104,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notebook.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="notebook.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notebook.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="174" column="9" selection-start-line="158" selection-start-column="0" selection-end-line="174" selection-end-column="9" />
+            <state relative-caret-position="545">
+              <caret line="174" column="16" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -159,12 +157,12 @@
         <option value="$PROJECT_DIR$/static/css/profile.css" />
         <option value="$PROJECT_DIR$/profile/profile_shanghai.html" />
         <option value="$PROJECT_DIR$/profile/profile_boston.html" />
-        <option value="$PROJECT_DIR$/notebook.html" />
         <option value="$PROJECT_DIR$/static/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/static/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/projects/clinical1.html" />
         <option value="$PROJECT_DIR$/static/css/project.css" />
         <option value="$PROJECT_DIR$/projects/clinical2.html" />
+        <option value="$PROJECT_DIR$/notebook.html" />
       </list>
     </option>
   </component>
@@ -990,12 +988,12 @@
       <option name="presentableId" value="Default" />
       <updated>1583638540645</updated>
       <workItem from="1583638543933" duration="11723000" />
-      <workItem from="1583682057041" duration="48523000" />
+      <workItem from="1583682057041" duration="48619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60246000" />
+    <option name="totallyTimeSpent" value="60342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="0" />
@@ -1243,16 +1241,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="174" column="9" selection-start-line="158" selection-start-column="0" selection-end-line="174" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1366,6 +1354,16 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#9;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#9;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#10;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="174" column="16" selection-start-line="174" selection-start-column="16" selection-end-line="174" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
