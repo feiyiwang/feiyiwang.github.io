@@ -45,16 +45,7 @@
                             <li><a class="dropdown-item" href="#sections5" data-toggle="tab">Model Selection and Estimation</a></li>
                         </ul>
                     </li>
-                    <li class="multi-li">
-                        <a class="navbar-toggler" data-toggle="collapse" href="#event">
-                            5. Event Extraction<span class="caret-down">▾</span>
-                        </a>
-                        <ul class="collapse tabs-left" id="event">
-                            <li><a class="dropdown-item" href="#event1" data-toggle="tab">1</a></li>
-                            <li><a class="dropdown-item" href="#event2" data-toggle="tab">2</a></li>
-                            <li><a class="dropdown-item" href="#event3" data-toggle="tab">3</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#event" data-toggle="tab" >5. Event Extraction</a></li>
                     <li class="multi-li">
                         <a class="navbar-toggler" data-toggle="collapse" href="#dv">
                             6. Data Visualization<span class="caret-down">▾</span>
@@ -79,7 +70,7 @@
                     <div class="tab-pane tab-bg active" id="objectives">
                         <br><p class="center" style="font-size: 24px">Objectives</p><br>
                         <div class="col-md-6">
-                            <p><b>Build computational framework that leverages NLP</b></p>
+                            <p><b>To build computational framework that leverages NLP</b></p>
                             <p>- Structure unstructured notes</p>
                             <p>- Foundation to build Analytics Platform</p>
                             <p><b>Per Patient</b></p>
@@ -218,22 +209,25 @@
                         <div class="col-md-12">
                             <p><b>Models:</b> Decision Tree, Random Forest, Gradient Boosting and Logistic Regression</p>
                             <p><b>Imbalanced Class Problem</b></p>
-                            <p>- Around 4 million observations
-                            <p>- About 4.3% observations are sections
+                            <p>- Around 4 million observations</p>
+                            <p>- About 4.3% observations are sections</p>
                             <p>- Down-sampling non-sections</p>
                             <br>
                             <p>Results for models using 70-30 train-test split (Training set accounts for 70% of the whole dataset).</p>
                             <img src="clinical1/4-5-1.png" alt="Table" style="width: 90%;">
                         </div>
                     </div>
-                    <div class="tab-pane tab-bg" id="event1">
-                        01
-                    </div>
-                    <div class="tab-pane tab-bg" id="event2">
-                        02
-                    </div>
-                    <div class="tab-pane tab-bg" id="event3">
-                        03
+                    <div class="tab-pane tab-bg" id="event">
+                        <br><p class="center" style="font-size: 24px">Clinical Event Extraction</p><br>
+                        <p><b>Convert medical records to a JSON file</b></p>
+                        <p>- Each patient has multiple medical records</p>
+                        <p>- Each record has record type, header, date, and multiple sections</p>
+                        <p>- Record type: Progress Notes, Discharge Summaries, H&P</p>
+                        <p>- Most frequent section names: INDICATION, SUBJECTIVE, OBJECTIVE, PROCEDURE, Assessment/Plan, Care Management</p>
+                        <br>
+                        <p><b>Extract keywords from section contents</b></p>
+                        <p>- e.g. extract Staging from Assessment; extract drug names from MEDICATIONS</p>
+                        <p>- Append the events to the JSON file under each note accordingly</p>
                     </div>
                     <div class="tab-pane center tab-bg" id="dv1">
                         <br><p class="center" style="font-size: 24px">Dashboard</p><br>
@@ -248,9 +242,17 @@
                         <img src="clinical1/6-3.png" alt="Dashboard Screenshot" style="width: 90%;">
                     </div>
                     <div class="tab-pane tab-bg" id="wrapup">
-
+                        <br><p class="center" style="font-size: 24px">Python Library</p><br>
+                        <div class="col-md-4">
+                            <p><b>- Wrap up analysis modules</b></p><br>
+                            <p><b>- Document the project using Sphinx</b></p><br>
+                            <p><b>- Deploy the dashboard on server</b></p>
+                        </div>
+                        <div class="col-md-8">
+                            <img src="clinical1/7.png" alt="Dashboard Screenshot" style="width: 100%;">
+                            <p class="center">Use Case Diagram</p>
+                        </div>
                     </div>
-
                 </div>
             </div>
 
