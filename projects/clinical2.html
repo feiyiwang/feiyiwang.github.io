@@ -19,46 +19,47 @@
 <div class="container-fluid">
     <div class="row">
         <h3 style="text-align: center">Clinical Pathway Extraction</h3><br>
-        <div class="col-md-3 scroll rtl">
-            <ul class="nav nav-tabs tabs-left ltr" style="height:70%;">
-                <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
-                <li><a href="#workflow" data-toggle="tab">2. Challenges</a></li>
-                <li class="multi-li">
-                    <a class="navbar-toggler" data-toggle="collapse" href="#3">
-                        3. Methodology<span class="caret-down">▾</span>
-                    </a>
-                    <ul class="collapse tabs-left" id="3">
-                        <li><a class="dropdown-item" href="#3-1" data-toggle="tab">Pos Tagging Method</a></li>
-                        <li><a class="dropdown-item" href="#3-2" data-toggle="tab">Pos Tagging Results</a></li>
-                        <li><a class="dropdown-item" href="#3-3" data-toggle="tab">System Design</a></li>
-                    </ul>
-                </li>
-                <li class="multi-li">
-                    <a class="navbar-toggler" data-toggle="collapse" href="#4">
-                        4. Data Visualization<span class="caret-down">▾</span>
-                    </a>
-                    <ul class="collapse tabs-left" id="4">
-                        <li><a class="dropdown-item" href="#4-1" data-toggle="tab">Patient Note Timeline</a></li>
-                        <li><a class="dropdown-item" href="#4-2" data-toggle="tab">Keyword Extraction</a></li>
-                        <li><a class="dropdown-item" href="#4-3" data-toggle="tab">Patient Pathway</a></li>
-                        <li><a class="dropdown-item" href="#4-4" data-toggle="tab">Medications on Admission/Discharge</a></li>
-                    </ul>
-                </li>
-                <li class="multi-li">
-                    <a class="navbar-toggler" data-toggle="collapse" href="#5">
-                        5. Deep Learning and Embedding<span class="caret-down">▾</span>
-                    </a>
-                    <ul class="collapse tabs-left" id="5">
-                        <li><a class="dropdown-item" href="#5-1" data-toggle="tab">Word Similarity</a></li>
-                        <li><a class="dropdown-item" href="#5-2" data-toggle="tab">Sentence Similarity</a></li>
-                    </ul>
-                </li>
+        <div class="col-md-3">
+            <div class="scroll rtl">
+                <ul class="nav nav-tabs tabs-left ltr" style="height:70%;">
+                    <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
+                    <li><a href="#workflow" data-toggle="tab">2. Challenges</a></li>
+                    <li>
+                        <a class="navbar-toggler" data-toggle="collapse" href="#3">
+                            3. Methodology<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="3">
+                            <li><a class="dropdown-item" href="#3-1" data-toggle="tab">Pos Tagging Method</a></li>
+                            <li><a class="dropdown-item" href="#3-2" data-toggle="tab">Pos Tagging Results</a></li>
+                            <li><a class="dropdown-item" href="#3-3" data-toggle="tab">System Design</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbar-toggler" data-toggle="collapse" href="#4">
+                            4. Data Visualization<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="4">
+                            <li><a class="dropdown-item" href="#4-1" data-toggle="tab">Patient Note Timeline</a></li>
+                            <li><a class="dropdown-item" href="#4-2" data-toggle="tab">Keyword Extraction</a></li>
+                            <li><a class="dropdown-item" href="#4-3" data-toggle="tab">Patient Pathway</a></li>
+                            <li><a class="dropdown-item" href="#4-4" data-toggle="tab">Medications on Admission/Discharge</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbar-toggler" data-toggle="collapse" href="#5">
+                            5. Deep Learning and Embedding<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="5">
+                            <li><a class="dropdown-item" href="#5-1" data-toggle="tab">Word Similarity</a></li>
+                            <li><a class="dropdown-item" href="#5-2" data-toggle="tab">Sentence Similarity</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="nav nav-tabs tabs-left ltr" style="height:5%;">
                 <li class="navbar-fixed-bottom"><a href="../projects.html">GO BACK</a></li>
             </ul>
-
-
-
-
         </div>
         <div class="col-md-9">
             <!-- Tab panes -->
@@ -167,14 +168,6 @@
 </div>
 
 
-<script>
-    $('.nav-tabs > li > a').click(function () {
-        $('.nav-tabs > .multi-li > ul').collapse('hide');
-    });
-    $('.nav-tabs > .multi-li > a').click(function () {
-        $(this).tab('show');
-    });
-
-</script>
+<script type="text/javascript" src="../static/js/project.js"></script>
 <div id="footer"></div>
 </body>
