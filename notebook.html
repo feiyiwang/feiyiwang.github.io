@@ -11,6 +11,7 @@
         $(function(){
             $("#header").load("template/header.html");
             $("#footer").load("template/footer.html");
+            $("#git").load("notebook/git.html");
         });
     </script>
 </head>
@@ -28,7 +29,15 @@
                 <li><a href="#stat" data-toggle="tab">Statistics</a></li>
                 <li><a href="#ml" data-toggle="tab">Machine Learning</a></li>
                 <li><a href="#code" data-toggle="tab">Coding</a></li>
-                <li><a href="#other" data-toggle="tab">Other Notes</a></li>
+                <li class="multi-li">
+                    <a class="navbar-toggler" data-toggle="collapse" href="#other">
+                        Other Notes<span class="caret-down">▾</span>
+                    </a>
+                    <ul class="collapse tabs-left" id="other">
+                        <li><a class="dropdown-item" href="#git" data-toggle="tab">Git</a></li>
+                        <!--<li><a class="dropdown-item" href="#5-2" data-toggle="tab">Sentence Similarity</a></li>-->
+                    </ul>
+                </li>
             </ul>
 
         </div>
@@ -40,7 +49,7 @@
                 <div class="tab-pane" id="stat">Statistics.</div>
                 <div class="tab-pane" id="ml">Machine Learning</div>
                 <div class="tab-pane" id="code">Coding</div>
-                <div class="tab-pane" id="other">Other Notes</div>
+                <div class="tab-pane" id="git"></div>
             </div>
         </div>
 
