@@ -123,6 +123,9 @@ img.avatar {
         width: 100%;
     }
 }
-.new {
-    display: block;
+#create_div {
+    display: none;
+}
+#forget_div {
+    display: none;
 }

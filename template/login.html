@@ -1,15 +1,14 @@
 <link rel="stylesheet" href="static/css/login.css">
-<button class="login-nav" onclick="document.getElementById('id01').style.display='block'">Login</button>
+<button class="login-nav">Login</button>
 
 <div id="id01" class="modal">
 
-    <form class="modal-content animate" action="index.html" method="post">
+    <form id="login_form" class="modal-content" action="index.html" method="post">
         <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <span class="close" title="Close Modal">&times;</span>
             <img src="icon/pinocchio.png" alt="Avatar" class="avatar">
         </div>
-
-        <div class="login center">
+        <div class="center" id="login_div">
             <!--<label for="uname"><b>Username</b></label>&nbsp;&nbsp;&nbsp;&nbsp;-->
             <input type="text" placeholder="Enter Username" id="usr" required>
             <br>
@@ -21,7 +20,7 @@
                 <input type="checkbox" name="remember"> Remember me
             </label>
         </div>
-        <div class="new center">
+        <div class="center" id="create_div">
             <input type="text" placeholder="Enter Username" id="usr_n" required>
             <br>
             <input type="text" placeholder="Enter Email Address" id="email_n" required>
@@ -29,7 +28,13 @@
             <input type="password" placeholder="Enter Password" id="psw_n" required>
             <button class="login-btn" type="submit">Submit</button>
         </div>
-
+        <div class="center" id="forget_div">
+            <input type="text" placeholder="Enter Username" id="usr_f" required>
+            <br>
+            <input type="text" placeholder="Enter Email Address" id="email_f" required>
+            <br>
+            <button class="login-btn" type="submit">Submit</button>
+        </div>
         <div class="modal-bottom">
             <span class="left">New comer? <a class="create">Create an account</a>.</span>
             <span class="right">Forgot <a class="forgot">password</a>?</span>
@@ -37,28 +42,32 @@
 
             </script>
         </div>
+
     </form>
+
 </div>
 
 <script>
-    // Get the modal
-    var modal = document.getElementById('id01');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
+    $(document).on('click','.close',function(){
+        $('.modal-bottom').show();
+        $('#login_div').show();
+        $('#create_div').hide();
+        $('#forget_div').hide();
+        $('.modal-content').css('height','440px');
+        $('#id01').hide();
+    });
+    $('.login-nav').click(function () {
+        $('#id01').show();
+    });
     $('.create').click(function () {
+        $('#login_div').hide();
         $('.modal-bottom').hide();
-        $('.login').hide();
-        $('.new').show();
-        $('.modal-content').css('height','550px');
+        $('#create_div').show();
     });
     $('.forgot').click(function () {
+        $('#login_div').hide();
         $('.modal-bottom').hide();
-        $('.login').hide();
-        $('.modal-content').css('height','550px');
+        $('#forget_div').show();
+        $('.modal-content').css('height','380px');
     });
 </script>
