@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="static/css/login.css">
+<button class="login-nav" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<div id="id01" class="modal">
+
+    <form class="modal-content animate" action="index.html" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <img src="icon/pinocchio.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="login center">
+            <!--<label for="uname"><b>Username</b></label>&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <input type="text" placeholder="Enter Username" id="usr" required>
+            <br>
+            <!--<label for="psw"><b>Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;-->
+            <input type="password" placeholder="Enter Password" id="psw" required>
+
+            <button class="login-btn" type="submit">Login</button>
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label>
+        </div>
+        <div class="new center">
+            <input type="text" placeholder="Enter Username" id="usr_n" required>
+            <br>
+            <input type="text" placeholder="Enter Email Address" id="email_n" required>
+            <br>
+            <input type="password" placeholder="Enter Password" id="psw_n" required>
+            <button class="login-btn" type="submit">Submit</button>
+        </div>
+
+        <div class="modal-bottom">
+            <span class="left">New comer? <a class="create">Create an account</a>.</span>
+            <span class="right">Forgot <a class="forgot">password</a>?</span>
+            <script>
+
+            </script>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+    $('.create').click(function () {
+        $('.modal-bottom').hide();
+        $('.login').hide();
+        $('.new').show();
+        $('.modal-content').css('height','550px');
+    });
+    $('.forgot').click(function () {
+        $('.modal-bottom').hide();
+        $('.login').hide();
+        $('.modal-content').css('height','550px');
+    });
+</script>
