@@ -21,14 +21,17 @@ input[type=text], input[type=password] {
 /* Set a style for all buttons */
 .login-nav {
     background-color: transparent;
-    /*color: white;*/
+    color: #bcbcbc;
     padding: 5% 20px; /*height width*/
     margin: 15% 0;
     border: none;
     cursor: pointer;
     width: 100%;
 }
-
+.login-nav:hover {
+    color: #2f5a98;
+    font-weight: bold;
+}
 button:hover {
     opacity: 0.8;
 }
