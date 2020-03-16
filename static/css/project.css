@@ -18,7 +18,23 @@
     margin-right: 0;
     display:block;
 }
-
+.concept>h3 {
+    color: #2f5a98;
+}
+.concept>p {
+    margin: 0;
+}
+.concept>.concept1 {
+    margin-top: 6px;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+.concept:target>h3 {
+    color:#00A250;
+}
+.concept:target>p {
+    color: #2f5a98;
+}
 .caret-down, .caret-down-1 {
     float: right;
 }

@@ -10,6 +10,9 @@
         $(function(){
             $("#header").load("template/header.html");
             $("#footer").load("template/footer.html");
+            $("#home").load("notebook/home.html");
+            $("#lc").load("notebook/lc.html");
+            $("#pos").load("notebook/pos.html");
             $("#git").load("notebook/git.html");
             $("#vim").load("notebook/vim.html");
         });
@@ -33,10 +36,10 @@
                             Supervised Learning<span class="caret-down-1">▾</span>
                         </a></li>
                         <ul>
-                            <li class="dropdown-item"><a  href="#lc" data-toggle="tab">
+                            <li class="dropdown-item"><a href="#lc" data-toggle="tab">
                                 Linear Classification
                             </a></li>
-                            <li class="dropdown-item"><a  href="#nc" data-toggle="tab">
+                            <li class="dropdown-item"><a href="#nc" data-toggle="tab">
                                 Nonlinear Classification
                             </a></li>
                             <li class="dropdown-item"><a href="#lr" data-toggle="tab">
@@ -58,8 +61,24 @@
                         Data Topics<span class="caret-down">▾</span>
                     </a>
                     <ul class="collapse tabs-left" id="dt">
-                        <!--<li><a class="dropdown-item" href="#git" data-toggle="tab">Git</a></li>-->
-                        <li class="dropdown-item"><a href="#nlp" data-toggle="tab">NLP</a></li>
+                        <li class="dropdown-item"><a href="#nlp" data-toggle="tab">
+                            Natural Language Processing<span class="caret-down-1">▾</span>
+                        </a></li>
+                        <ul>
+                            <li class="dropdown-item"><a  href="#bow" data-toggle="tab">
+                                Bag of Words
+                            </a></li>
+                            <li class="dropdown-item"><a href="#pos" data-toggle="tab">
+                                Part of Speech Tags
+                            </a></li>
+                            <!--<li class="dropdown-item"><a href="#lr" data-toggle="tab">-->
+                                <!--Linear Regression-->
+                            <!--</a></li>-->
+                            <!--<li class="dropdown-item"><a href="#nr" data-toggle="tab">-->
+                                <!--Nonlinear Regression-->
+                            <!--</a></li>-->
+                        </ul>
+                        <li><a class="dropdown-item" href="#mm" data-toggle="tab">Multimodal Learning</a></li>
                     </ul>
                 </li>
                 <li>
@@ -75,7 +94,7 @@
         </div>
         <div class="col-md-9">
             <div class="tab-content">
-                <div class="tab-pane active" id="home">Home Tab.</div>
+                <div class="tab-pane active" id="home"></div>
                 <div class="tab-pane" id="prob">Probability</div>
                 <div class="tab-pane" id="stat">Statistics.</div>
 
@@ -90,6 +109,10 @@
                 <div class="tab-pane" id="code">Coding</div>
 
                 <div class="tab-pane" id="nlp"></div>
+                <div class="tab-pane" id="bow"></div>
+                <div class="tab-pane" id="pos"></div>
+
+                <div class="tab-pane" id="mm"></div>
 
                 <div class="tab-pane" id="git"></div>
                 <div class="tab-pane" id="vim"></div>

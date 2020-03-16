@@ -9,3 +9,7 @@ $('.nav-tabs > li > a').click(function () {
     $(this).parent().addClass('active');
     $('.nav-tabs > li > ul').collapse('hide');
 });
+
+// $('.concept').click(function () {
+//     $(this).target('blue');
+// });
