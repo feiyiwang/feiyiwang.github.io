@@ -1,0 +1,54 @@
+<head>
+    <meta charset="UTF-8">
+    <title>Fey's Hometown</title>
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <script>
+        $(function(){
+            $("#header").load("../template/header-in-folder.html");
+            $("#footer").load("../template/footer.html");
+        });
+    </script>
+</head>
+<body>
+<div id="header"></div>
+<br><h3 class="center tab-title">My Background & Experience</h3><br>
+<div style="max-width:90%; margin: 0 auto;">
+    <div class="col-md-4">
+        <ul class="nav nav-tabs" style="width:100%;">
+            <li class="active"><a href="#study" data-toggle="tab">Study</a></li>
+            <li><a href="#work" data-toggle="tab">Work</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="study">
+                <img src="../static/image/resume.png" alt="Resume" class="image">
+                <p>This is a test pic showing this part is functional ...</p>
+            </div>
+            <div class="tab-pane" id="work">
+                <p>This is a test pic showing this part is functional ...</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <ul class="nav nav-tabs" style="width:100%;">
+            <li class="active"><a href="#cv" data-toggle="tab">Curriculum Vitae</a></li>
+            <li><a href="#ps" data-toggle="tab">Personal Statement</a></li>
+            <li><a href="#af1" data-toggle="tab">TBC...</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="cv"><embed style="width:100%;height: 60%;" src="FeiyiWang_CV.pdf" class="pdf"></embed></div>
+            <div class="tab-pane" id="ps">
+                <p>My passion for data science stems from my study in Data Science at Worcester Polytechnic Institute (WPI). There I completed required courses such as Statistical Methods for Data Science, Database Applications Development, Big Data Analytics, as well as several advanced practical projects, in which I applied the machine learning methods I learned from class and data visualization tools I learned myself to the real world data. In one of the projects, the organization I worked for wanted to have a dashboard to understand the insights of their conference data. I used Shiny, an R package, and D3.js to build an interactive dashboard for them to view descriptive statistics as well as two predictive models to forecast future conference attendees, a topic model to extract abstract keywords from attendee comments and a clustering model to calculate correlations between each paired keywords.</p>
+
+            </div>
+            <div class="tab-pane" id="af1">...</div>
+        </div>
+    </div>
+
+
+    <br>
+</div>
+<div id="footer"></div>
+</body>
