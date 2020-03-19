@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/profile/profile_resume.html" afterPath="$PROJECT_DIR$/profile/profile_resume.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/base.css" afterPath="$PROJECT_DIR$/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/project.css" afterPath="$PROJECT_DIR$/static/css/project.css" />
     </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,11 +93,12 @@
       <file leaf-file-name="profile_resume.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/profile/profile_resume.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+            <state relative-caret-position="210">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#h3#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
@@ -1030,12 +1029,12 @@
       <option name="presentableId" value="Default" />
       <updated>1583638540645</updated>
       <workItem from="1583638543933" duration="11723000" />
-      <workItem from="1583682057041" duration="85487000" />
+      <workItem from="1583682057041" duration="85527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97210000" />
+    <option name="totallyTimeSpent" value="97250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1280" height="777" extended-state="6" />
@@ -1486,11 +1485,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/profile/profile_resume.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        <state relative-caret-position="210">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#h3#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#1;n#body#0;n#!!top" expanded="true" />
