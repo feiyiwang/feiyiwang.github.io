@@ -24,7 +24,7 @@
         </ul>
         <div class="tab-content scroll" style="height:65%;">
             <div class="tab-pane active" id="study">
-                <br>
+                <br><br>
                 <img style="width:100%;" src="resume/poster1.jpg" alt="poster1" class="image">
                 <p>2017.04 - Fight Cancer with NLP</p>
                 <br>
@@ -53,7 +53,21 @@
                 <p>Thank you!! :)</p>
             </div>
             <div class="tab-pane" id="work">
-                <p>This is a test pic showing this part is functional ...</p>
+                <br><br>
+                <img style="width:100%;" src="resume/work1.jpg" alt="work1" class="image">
+                <p>Working at desk</p>
+                <br>
+                <img style="width:100%;" src="resume/work2.jpg" alt="work2" class="image">
+                <p>With my teammates</p>
+                <br>
+                <img style="width:100%;" src="resume/work3.jpg" alt="work3" class="image">
+                <p>My department</p>
+                <br>
+                <img style="width:100%;" src="resume/work4.jpg" alt="work4" class="image">
+                <p>The business unit</p>
+                <br>
+                <img style="width:100%;" src="resume/work5.jpg" alt="work5" class="image">
+                <p>Have fun on Halloween</p>
             </div>
         </div>
     </div>
@@ -65,8 +79,67 @@
         </ul>
         <div class="tab-content">
             <div class="tab-pane active" id="cv"><embed style="width:100%;height: 65%;" src="FeiyiWang_CV.pdf" class="pdf"></embed></div>
-            <div class="tab-pane" id="ps">
-                <p>My passion for data science stems from my study in Data Science at Worcester Polytechnic Institute (WPI). There I completed required courses such as Statistical Methods for Data Science, Database Applications Development, Big Data Analytics, as well as several advanced practical projects, in which I applied the machine learning methods I learned from class and data visualization tools I learned myself to the real world data. In one of the projects, the organization I worked for wanted to have a dashboard to understand the insights of their conference data. I used Shiny, an R package, and D3.js to build an interactive dashboard for them to view descriptive statistics as well as two predictive models to forecast future conference attendees, a topic model to extract abstract keywords from attendee comments and a clustering model to calculate correlations between each paired keywords.</p>
+            <div class="tab-pane scroll" id="ps" style="padding: 30px;height: 65%;">
+                <p class="justify">My passion for data science stems from my study in Data Science at Worcester Polytechnic Institute (WPI).
+                    There I completed required courses such as Statistical Methods for Data Science, Database Applications Development,
+                    Big Data Analytics, as well as several advanced practical projects, in which I applied the machine learning methods
+                    I learned from class and data visualization tools I learned myself to the real world data. In one of the projects,
+                    the organization I worked for wanted to have a dashboard to understand the insights of their conference data. I used
+                    Shiny, an R package, and D3.js to build an interactive dashboard for them to view descriptive statistics as well as
+                    two predictive models to forecast future conference attendees, a topic model to extract abstract keywords from attendee
+                    comments and a clustering model to calculate correlations between each paired keywords.<br><br>
+                    Because of my good performance in the course Statistical Methods for Data Science, I was selected to be the teaching
+                    assistant of this course. Like any other teaching assistants, I prepared answer keys, graded assignments and conducted
+                    discussions. I thought I would finish my work just like others. However, it changed when I occasionally learned that a
+                    student in my class has already earned a doctor's degree in biology. He told me what he had learned from textbooks ten
+                    years ago has been hugely different from what he did. More and more advanced machine learning models have been applied
+                    to recent biological disciplines, such as macromolecular structure and genomics. As a result, he aspired to challenge
+                    himself from another beginning. It was an impressive dialogue, as I realized that I am learning from my students from
+                    their motivation for and feedback on taking this course. Particularly, I was inspired by his words to explore the
+                    application of data science in healthcare.<br><br>
+                    Therefore, I chose to work on a machine learning research project at Dana-Farber Cancer Institute (DFCI) as my Graduate
+                    Qualifying Project. There I had access to 60k electronic medical records (EMR) from the Partners Database System. I
+                    established a DBSCAN model to sectionize unstructured EMR, a POS-TAG method to select candidates and a classification
+                    model to predict section names so as to extract clinical events such as staging, code status, metastasis. Using a neural
+                    network algorithm, I achieved the best performance with 0.96 F1 score and 0.98 ROC AUC score. Once I have all the
+                    important clinical extractions that physicians and researchers care about, I plotted them on timeline, developed a Clinical
+                    Analytics Platform to display the patient longitudinal flow and wrapped the whole project code into an easy-to-use library
+                    and documented it using Sphinx.<br><br>
+                    The success of this project enabled me to stay at DFCI as a part-time research scientist after my graduation. Originally
+                    we planned to do end-of-life decision analysis using a list of deceased patients, EMR and CT scan data. Subsequently, I
+                    completed all the classic deep learning courses given by Andrew Ng on Cousera, explored some relevant research studies
+                    such as Deep Learning for Detection of Diabetic Eye Disease posted by Google and created my first image classification
+                    model for category prediction. Meanwhile, in order to understand the text structure, I read hundreds of medical records
+                    of these patients suffered from deadly malignancy. With my deepest sympathies, I realized that the work I am doing is not
+                    only learning and practicing experience, but also my modest contribution to real people trying to live on this planet.
+                    Although this plan was discontinued because of the limited sample size and the inconsistent image standard, it piqued my
+                    interests in biomedical imaging analysis and my conviction of being a data scientist in the healthcare field.<br><br>
+                    I later worked on another project targeting pathway extraction of prostate cancer patients with my team. In this project,
+                    our physicians wanted to validate the effectiveness of their treatments. I extracted systematic treatment pathways from
+                    EMR using regular expressions and nltk package and visualized the pathways on timeline using vis.js. I also tried to
+                    explore the correlations between patient notes, treatment sentences and medications using word2vec and SNOMED CT. However,
+                    three problems prevented me from obtaining a good outcome: (1) lack of labeled data, (2) large proportion of missing data,
+                    and (3) inconsistent structure and expression. The more effort I put in this project, the more limitations I could see in
+                    our data as well as in my skills, which made me realize that I need to learn more, practice more and have an opportunity
+                    with better data resources. The desire became even stronger when I learned that my dear grandma died of thyroid cancer.<br><br>
+                    In my last semester, I also started to work at Takeda Pharmaceuticals. Having been working as a commercial oncology data
+                    analyst in the past three year, I cooperate with different functional teams so that we, as a complete big unit, can push
+                    things moving forward altogether. Specifically, I work with ETL team to make sure the data is well prepared for analysis,
+                    with stakeholders to make sure our business needs are fully understood and interpreted, and with brand insight to make sure
+                    our KPI’s are well-defined. I generate analytical reports such as line of therapy, dose pattern, medical adherence on basis
+                    of claims, and lab data and explore an easy-to-read way of visualization for the leadership to understand our market, our
+                    patients and our performance. This professional job strengthened my communication skills, teamwork spirit and deep understanding
+                    of the real world datasets widely used in the healthcare field. In the meantime, difficulties in causal inference analysis using
+                    current datasets also drive me to think of the potential research I could conduct if I also have access to EMR and medical
+                    images. Particularly, with richer datasets, I can remarkably enhance the accuracy of the field alert prediction.<br><br>
+                    In my Ph.D., I aim to design novel multimodal deep learning algorithms for treatment pathway extraction and causal inference
+                    analysis with the utilization of EMR, claims and medical imaging data.<br><br>
+                    Klose once said, “I've always known what I was capable of, which is why I didn't lose my self-belief.” Starting from scratch
+                    in 2014, earning a master's degree in Data Science and getting a job in the healthcare field in 2017, I also believe that I
+                    have the ability to learn things fast and do things well if I have a chance and a belief. As a true devotee of healthcare data
+                    analytics, I believe the meaning of my life to learn cutting-edge knowledge and techniques in a field I have enthusiasm and save
+                    lives by utilization of the knowledge and techniques.
+                </p>
 
             </div>
             <div class="tab-pane" id="af1">...</div>

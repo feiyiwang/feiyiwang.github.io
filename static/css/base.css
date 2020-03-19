@@ -205,3 +205,6 @@ body {
 .ltr {
     direction: ltr;
 }
+.justify {
+    text-align: justify;
+}
