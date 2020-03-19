@@ -195,3 +195,13 @@ body {
 .center {
     text-align: center;
 }
+
+.scroll {
+    overflow-y: scroll;
+}
+.rtl {
+    direction: rtl;
+}
+.ltr {
+    direction: ltr;
+}
