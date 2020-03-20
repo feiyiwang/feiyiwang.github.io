@@ -26,6 +26,19 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            <script>
+                function googleTranslateElementInit() {
+                    // InlineLayout.HORIZONTAL or .SIMPLE or .vertical
+                    new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                }
+                $(function(){
+                    $("#login").load("template/login.html");
+                });
+            </script>
+            <li><div id="login"></div></li>
+            <li><div style="padding-top: 9%;" id="google_translate_element"></div></li>
+            <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
             <li><img src="../icon/logo.png" alt="Logo" style="width:190px;height:50px;padding-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
         </ul>
     </div>
