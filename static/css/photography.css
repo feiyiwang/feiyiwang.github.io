@@ -1,0 +1,280 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Roboto");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    /*display: flex;*/
+    background: white url("../image/photo_bg.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.vintalight {
+    display: flex;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    /*width: 95%;*/
+    padding: 3%;
+}
+
+.figure_pic {
+    position: relative;
+    width: 95%;
+    max-width: 9.25em; /* 10.5 */
+    height: 9.85em; /* 12.25 */
+    background-color: #fff;
+    font-size: 24px;
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.5s, margin 0.5s;
+}
+
+.figure_pic:nth-child(1) {
+    transform: translate(40px, 30px) rotate(-30deg);
+    z-index: 4;
+}
+.figure_pic:nth-child(1):hover {
+    transform: scale(1.15) translate(40px, 30px) rotate(0deg);   /* the end of the 1th pic */
+}
+
+.figure_pic:nth-child(2) {
+    transform: translate(30px, 20px) rotate(7deg);
+    z-index: 5;
+}
+.figure_pic:nth-child(2):hover {
+  transform: scale(1.15) translate(30px, 20px) rotate(0deg);   /* the end of the 2th pic */
+}
+
+.figure_pic:nth-child(3) {
+  transform: translate(-20px, 20px) rotate(20deg);
+  z-index: 4;
+}
+.figure_pic:nth-child(3):hover {
+  transform: scale(1.15) translate(-20px, 20px) rotate(0deg);   /* the end of the 3th pic */
+}
+
+.figure_pic:nth-child(4) {
+  transform: translate(40px, -10px) rotate(10deg);
+  z-index: 3;
+}
+.figure_pic:nth-child(4):hover {
+  transform: scale(1.15) translate(40px, -10px) rotate(0deg);   /* the end of the 4th pic */
+}
+
+.figure_pic:nth-child(5) {
+  transform: translate(20px, -10px) rotate(-20deg);
+  z-index: 2;
+}
+.figure_pic:nth-child(5):hover {
+  transform: scale(1.15) translate(20px, -10px) rotate(0deg);   /* the end of the 5th pic */
+}
+
+.figure_pic:nth-child(6) {
+  transform: translate(30px, 20px) rotate(-10deg);
+  z-index: 1;
+}
+.figure_pic:nth-child(6):hover {
+  transform: scale(1.15) translate(30px, -40px) rotate(0deg);   /* the end of the 6th pic */
+}
+
+.figure_pic:nth-child(7) {
+    transform: translate(10px, -10px) rotate(10deg);
+    z-index: 2;
+}
+.figure_pic:nth-child(7):hover {
+    transform: scale(1.15) translate(10px, -10px) rotate(0deg);   /* the end of the 7th pic */
+}
+
+.figure_pic:nth-child(8) {
+    transform: translate(30px, 20px) rotate(-20deg);
+    z-index: 1;
+}
+.figure_pic:nth-child(8):hover {
+    transform: scale(1.15) translate(30px, 20px) rotate(0deg);   /* the end of the 8th pic */
+}
+
+.figure_pic:nth-child(9) {
+    transform: translate(-30px, 20px) rotate(-15deg);
+    z-index: 2;
+}
+.figure_pic:nth-child(9):hover {
+    transform: scale(1.15) translate(-30px, 20px) rotate(0deg);   /* the end of the 9th pic */
+}
+
+.figure_pic:nth-child(10) {
+    transform: translate(30px, 10px) rotate(9deg);
+    z-index: 5;
+}
+.figure_pic:nth-child(10):hover {
+    transform: scale(1.15) translate(30px, 10px) rotate(0deg);   /* the end of the 10th pic */
+}
+
+.figure_pic:hover {
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.figure_pic:hover .div_pic::before {
+    transform: scale(1);
+}
+
+.figure_pic.active, .figure_pic.active:hover {
+    transform: rotate(0deg) scale(1.25);
+}
+
+.figure_pic.active {
+  position: relative;
+}
+
+.figure_pic.active .div_pic {
+  cursor: default;
+}
+
+.figure_pic.active .div_pic::before {
+  display: none;
+}
+
+.div_pic {
+  position: relative;
+  width: 8.5em; /* 9.25 */
+  height: 7.5em; /* 10.5 */
+  margin: 0.5em auto 0; /* 10.5 */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.div_pic::before {
+  content: "View Photo";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  transform: scale(0);
+  transition: all 0.25s;
+}
+
+.img_pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption_pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1.8em; /* 2.375 */
+}
+
+.text_pic {
+    color: #222;
+    font-size: 1em;
+    font-family: "Nanum Pen Script", cursive;
+}
+
+.vintalight-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    z-index: 10000;
+    transition: opacity 0.5s;
+}
+
+.vintalight-overlay.active {
+    opacity: 1;
+}
+
+.vintalight__button {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(245, 61, 61, 0.85);
+    border: 3px solid #fff;
+    border-radius: 50%;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    cursor: pointer;
+}
+
+.figure_pic_ {
+    box-shadow: 0 2px 6px 1px rgba(0, 0, 0, 0.9);
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.5s, margin 0.5s;
+    background-color: #fefefe;
+    margin: 3% auto 3% auto; /* 5% from the top, 15% from the bottom and centered */
+    height: 90%;
+    display:inline-block;
+}
+
+.img_pic_ {
+    /*width: 100%;*/
+    height: 100%;
+    object-fit: cover;
+}
+
+.close_ {
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    right: 20px;
+    top: 5px;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close_:hover, .close_:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/*!* arrows *!*/
+/*.gallery-arrow {*/
+    /*position: fixed;*/
+    /*top: 47%;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*z-index: 9999;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.gallery-arrow > svg {*/
+    /*fill: #fff;*/
+    /*-webkit-transition: all .2s ease;*/
+    /*transition: all .2s ease;*/
+    /*-webkit-transform: scale(1);*/
+    /*transform: scale(1);*/
+/*}*/
+/*.gallery-arrow:active svg {*/
+    /*-webkit-transition-duration: .0s;*/
+    /*transition-duration: .0s;*/
+    /*-webkit-transform: scale(.9);*/
+    /*transform: scale(.9);*/
+/*}*/
+/*.next-btn {*/
+    /*right: 25px;*/
+/*}*/
+/*.prev-btn {*/
+    /*left: 25px;*/
+/*}*/

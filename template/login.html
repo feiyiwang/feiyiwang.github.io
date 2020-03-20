@@ -1,12 +1,23 @@
 <link rel="stylesheet" href="static/css/login.css">
 <button class="login-nav">Login</button>
-
+<script>
+    $.ajax({
+        url:"icon/pinocchio.png",
+        type:'HEAD',
+        error: function(){
+            $('#img_login').attr("src", "../icon/pinocchio.png");
+        },
+        success: function(){
+            $('#img_login').attr("src", "icon/pinocchio.png");
+        }
+    });
+</script>
 <div id="modal1" class="modal">
 
     <form id="login_form" class="modal-content" action="index.html" method="post">
         <div class="imgcontainer">
             <span class="close" title="Close Modal">&times;</span>
-            <img src="icon/pinocchio.png" alt="Avatar" class="avatar">
+            <img id="img_login" alt="Avatar" class="avatar">
         </div>
         <div class="center" id="login_div">
             <!--<label for="uname"><b>Username</b></label>&nbsp;&nbsp;&nbsp;&nbsp;-->
@@ -48,6 +59,7 @@
 </div>
 
 <script>
+
     $(document).on('click','.close',function(){
         $('.modal-bottom').show();
         $('#login_div').show();
