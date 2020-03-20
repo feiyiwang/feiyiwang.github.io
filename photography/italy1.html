@@ -7,6 +7,10 @@
     <title>Fey's Photos</title>
     <link rel="stylesheet" href="../static/css/vintalight.css">
     <link rel="stylesheet" href="../static/css/login.css">
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/base.css">
     <script>
         $(function(){
             $("#header").load("../template/header-in-folder.html");
@@ -15,6 +19,7 @@
     </script>
 </head>
 <body>
+<!--<div style=""><a>Go back</a></div>-->
     <div id="header"></div>
     <div class="vintalight" id="vintalight">
 
@@ -61,12 +66,7 @@
             </figcaption>
         </figure>
     </div>
-
-    <!--<script>-->
-        <!--$('.login-nav').click(function () {-->
-            <!--$('#modal2').show();-->
-        <!--})-->
-    <!--</script>-->
+    <div id="modal2" class="modal"><figure class="vitalight__container"></figure></div>
     <script src="../static/js/vintalight.js"></script>
     <div id="footer"></div>
 </body>
