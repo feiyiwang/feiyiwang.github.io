@@ -8,6 +8,11 @@ $(document).on('click','.close_',function(){
 $('.div_pic').click(function () {
     $('#modal2').show();
 });
+
+function goBack() {
+    window.history.back();
+}
+
 var activeVintalight = function activeVintalight(container) {
     container.addEventListener("click", function (e) {
         var element = e.target;

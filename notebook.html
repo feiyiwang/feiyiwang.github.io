@@ -19,6 +19,7 @@
             $("#pos").load("notebook/pos.html");
             $("#git").load("notebook/git.html");
             $("#vim").load("notebook/vim.html");
+            $("#html").load("notebook/html.html");
         });
     </script>
 </head>
@@ -63,7 +64,28 @@
                         <li class="dropdown-item"><a href="#ml_notes" data-toggle="tab">Machine Learning Notes</a></li>
                     </ul>
                 </li>
-                <li><a href="#code" data-toggle="tab">Coding</a></li>
+                <li>
+                    <a class="navbar-toggler" data-toggle="collapse" href="#pl">
+                        Programming Languages<span class="caret-down">▾</span>
+                    </a>
+                    <ul class="collapse tabs-left" id="pl">
+                        <li class="dropdown-item"><a href="#front" data-toggle="tab">
+                            Front-end<span class="caret-down-1">▾</span>
+                        </a></li>
+                        <ul>
+                            <li class="dropdown-item"><a  href="#html" data-toggle="tab">
+                                Hypertext Markup Language
+                            </a></li>
+                            <li class="dropdown-item"><a href="#js" data-toggle="tab">
+                                JavaScript
+                            </a></li>
+                            <li class="dropdown-item"><a href="#css" data-toggle="tab">
+                                Cascading Style Sheets
+                            </a></li>
+                        </ul>
+                        <li><a class="dropdown-item" href="#mm" data-toggle="tab">Multimodal Learning</a></li>
+                    </ul>
+                </li>
                 <li>
                     <a class="navbar-toggler" data-toggle="collapse" href="#dt">
                         Data Topics<span class="caret-down">▾</span>
@@ -116,7 +138,10 @@
                 <div class="tab-pane" id="unsupervised"></div>
                 <div class="tab-pane" id="ml_notes"></div>
 
-                <div class="tab-pane" id="code">Coding</div>
+                <div class="tab-pane" id="front"></div>
+                <div class="tab-pane" id="html"></div>
+                <div class="tab-pane" id="js"></div>
+                <div class="tab-pane" id="css"></div>
 
                 <div class="tab-pane" id="nlp"></div>
                 <div class="tab-pane" id="bow"></div>
