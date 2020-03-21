@@ -78,7 +78,7 @@ body {
   z-index: 1;
 }
 .figure_pic:nth-child(6):hover {
-  transform: scale(1.15) translate(30px, -40px) rotate(0deg);   /* the end of the 6th pic */
+  transform: scale(1.15) translate(30px, 20px) rotate(0deg);   /* the end of the 6th pic */
 }
 
 .figure_pic:nth-child(7) {
