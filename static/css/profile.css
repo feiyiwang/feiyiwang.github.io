@@ -1,10 +1,10 @@
 .div_image {
-	padding:20%;
+	padding:24%;
 	text-align: center;
 }
 
 .image {
-	width:60%;
+	width:58%;
 }
 .image:hover {
 	transform: scale(1.1);
@@ -14,7 +14,7 @@
 	background-size: contain;
     background-repeat: no-repeat;
     width:100%;
-    height:100%;
+    /*height:100%;*/
     position: relative;
 }
 .shanghai_bg {

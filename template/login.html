@@ -34,10 +34,12 @@
         <div class="center" id="create_div">
             <input type="text" placeholder="Enter Username" id="usr_n" required>
             <br>
+            <input type="text" placeholder="Enter Full Name" id="name_n" required>
+            <br>
             <input type="text" placeholder="Enter Email Address" id="email_n" required>
             <br>
             <input type="password" placeholder="Enter Password" id="psw_n" required>
-            <button class="login-btn" type="submit">Submit</button>
+            <button class="login-btn" type="submit">Create</button>
         </div>
         <div class="center" id="forget_div">
             <input type="text" placeholder="Enter Username" id="usr_f" required>
@@ -65,7 +67,7 @@
         $('#login_div').show();
         $('#create_div').hide();
         $('#forget_div').hide();
-        $('.modal-content').css('height','440px');
+        $('.modal-content').css('height','430px');
         $('#modal1').hide();
     });
     $('.login-nav').click(function () {
@@ -75,11 +77,12 @@
         $('#login_div').hide();
         $('.modal-bottom').hide();
         $('#create_div').show();
+        $('.modal-content').css('height','480px');
     });
     $('.forgot').click(function () {
         $('#login_div').hide();
         $('.modal-bottom').hide();
         $('#forget_div').show();
-        $('.modal-content').css('height','380px');
+        $('.modal-content').css('height','370px');
     });
 </script>
