@@ -9,29 +9,34 @@
             $('#img_login').attr("src", "../icon/pinocchio.png");
             $('#img_create').attr("src", "../icon/donaldDuck.png");
             $('#img_forget').attr("src", "../icon/minnie.png");
+//            $('#login_form').attr("action", "../personal/action.php");
+//            $('#login_form').attr("action", "../personal/action.html");
         },
         success: function(){
             $('#img_login').attr("src", "icon/pinocchio.png");
             $('#img_create').attr("src", "icon/donaldDuck.png");
             $('#img_forget').attr("src", "icon/minnie.png");
+//            $('#login_form').attr("action", "personal/action.php");
+//            $('#login_form').attr("action", "personal/action.html");
         }
     });
 </script>
 <div id="modal1" class="modal">
-    <form id="login_form" class="modal-content" action="index.html" method="post">
+    <div id="login_form" class="modal-content">
         <div class="imgcontainer">
             <span class="close" title="Close Window">&times;</span>
             <img id="img_login" alt="Avatar" class="avatar">
             <p id="msg_login" class="msg"></p>
         </div>
         <div class="center" id="login_div">
+            <!--<input type="text" placeholder="Enter Name" id="name" required>-->
             <!--<label for="uname"><b>Username</b></label>&nbsp;&nbsp;&nbsp;&nbsp;-->
-            <input type="text" placeholder="Enter Email" id="usr" required>
+            <input type="text" placeholder="Enter Email" id="email" required>
             <br>
             <!--<label for="psw"><b>Password</b></label>&nbsp;&nbsp;&nbsp;&nbsp;-->
             <input type="password" placeholder="Enter Password" id="psw" required>
 
-            <button class="login-btn" type="submit">Login</button>
+            <button id="submit_login" class="login-btn" type="submit">Login</button>
             <label>
                 <input type="checkbox" name="remember"> Remember me
             </label>
@@ -39,11 +44,8 @@
         <div class="modal-bottom">
             <span class="left">New comer? <a class="create">Create an account</a>.</span>
             <span class="right">Forgot <a class="forgot">password</a>?</span>
-            <script>
-
-            </script>
         </div>
-    </form>
+    </div>
     <form id="create_form" class="modal-content" action="index.html" method="post">
         <div class="imgcontainer">
             <span class="close" title="Close Window">&times;</span>
@@ -57,7 +59,7 @@
             <br>
             <input type="password" placeholder="Enter Password" id="psw_n" required>
             <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-            <button class="login-btn" type="submit">Create</button>
+            <button id="submit_create" class="login-btn" type="submit">Create</button>
         </div>
     </form>
     <form id="forget_form" class="modal-content" action="index.html" method="post">
@@ -71,9 +73,10 @@
             <br>
             <input type="text" placeholder="Enter Email Address" id="usr_f" required>
             <br>
-            <button class="login-btn" type="submit">Submit</button>
+            <button id="submit_forget" class="login-btn" type="submit">Submit</button>
         </div>
     </form>
+    rephycca@gmail.com
 </div>
 
 <script>
@@ -82,7 +85,6 @@
         $('#create_form').hide();
         $('#forget_form').hide();
         $('.modal-content').css('height','430px');
-        formData
         $('#modal1').hide();
     });
     $('#btn_login').click(function () {
@@ -103,113 +105,20 @@
         $('#forget_form').show();
         $('.modal-content').css('height','370px');
     });
-    $(function() {
-        // Get the form.
-        var form = $('#login_form');
-        // Get the messages div.
-        var formMessages = $('#msg_login');
-        // Set up an event listener for the contact form.
-        $(form).submit(function(event) {
-            // Stop the browser from submitting the form.
-            event.preventDefault();
-            // Serialize the form data.
-            var formData = $(form).serialize();
-            // Submit the form using AJAX.
-            $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
-            }).done(function(response) {
-                alert(JSON.parse(formData));
-                // Clear the form.
-                $('#usr').val('');
-                $('#psw').val('');
-                $('#close').click();
-                $("#btn_login").hide();
-                $("#btn_logout").show();
-                $(".personal").show();
-            }).fail(function(data) {
-                // Set the message text.
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
-                } else {
-                    $(formMessages).text('Oops! Please check the info you put.');
-                }
-            });
-        });
-    });
-    $(function() {
-        // Get the form.
-        var form = $('#create_form');
-        // Get the messages div.
-        var formMessages = $('#msg_create');
-        // Set up an event listener for the contact form.
-        $(form).submit(function(event) {
-            // Stop the browser from submitting the form.
-            event.preventDefault();
-            // Serialize the form data.
-            var formData = $(form).serialize();
-            // Submit the form using AJAX.
-            $.ajax({
-                type: 'POST',
-                url: $(form).attr('action'),
-                data: formData
-            }).done(function(response) {
-                alert(formData);
-//                $.getJSON("personal/credentials.json", function(result){
-//
-//                }
-//                c_string = file_get_contents();//get contents of your json file and store it in a string
-//                c_array = json_decode(c_string, true);//decode it
-//                array_push( c_array, formData);//push contents to ur decoded array i.e $arr
-//                c_string = json_encode(c_array);
-//                //now send evrything to ur data.json file using folowing code
-//                if (json_decode(c_string) != null) {
-//                    file = fopen('personal/credentials.json','w');
-//                    fwrite(file, c_string);
-//                    fclose(file);
-//                } else {
-//                    //  invalid JSON, handle the error
-//                }
 
-                // Clear the form.
-                $('#name_n').val('');
-                $('#usr_n').val('');
-                $('#psw_n').val('');
-                $("#close").click();
-//                $('#modal1').hide();
-                $("#btn_login").hide();
-                $("#btn_logout").show();
-                $(".pernal").show();
-            }).fail(function(data) {
-                // Set the message text.
-                if (data.responseText !== '') {
-                    $(formMessages).text(data.responseText);
+    $("#submit_login").click(function(e) {
+        var email = $('#email').val(), psw = $('#psw').val();
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+//            alert('correct')
+            $.getJSON('template/login.json', function(data) {
+                if (Object.keys(data).includes(email)) {
+                    alert('correct');
                 } else {
-                    $(formMessages).text('Oops! Please check the info you put.');
+                    $("#msg_login").text("Oops! This email doesn't exist.")
                 }
             });
-        });
+        } else {
+            $("#msg_login").text("Oops! Invalid email format.")
+        }
     });
-//    $("#login_form").submit(function (e) {
-//        var postData = $(this).serializeArray();
-//        var formURL = $(this).attr("action");
-//        $.ajax({
-//            url: formURL,
-//            type: "POST",
-//            data: postData,
-//            success: function (response) {
-//                if (response) {
-//                    //do stuff if login is correct
-//                } else {
-//                    $("#loginError").show();
-//                }
-//
-//            },
-//            error: function (jqXHR, textStatus, errorThrown) {
-//                //$("#loginError").show();
-//            }
-//        });
-//        e.preventDefault();
-//    });
 </script>
