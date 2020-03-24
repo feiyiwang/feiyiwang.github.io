@@ -6,32 +6,112 @@
     <script type="text/javascript" src="static/js/jquery.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="static/css/profile.css">
+    <link rel="stylesheet" href="static/css/login.css">
     <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/math.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <script>
+        var queryString = decodeURIComponent(window.location.search); //parsing
+        var queries = queryString.substring(1).split("&");
         $(function(){
-            $("#header").load("template/header.html");
             $("#footer").load("template/footer.html");
+            $("#name").text("Hi "+queries[0].split("=")[1]+",");
         });
     </script>
 </head>
 <body>
-<div id="header"></div>
-<div style="max-width:90%; margin: 0 auto;"><br>
-    math: xxx
+<div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">Fey's Little Home&nbsp;&nbsp;斐艺的小屋</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li style="display:inline-block;">
+
+                    <a href="profile.html">
+                        <img src="icon/profile.png" alt="Profile" style="width:20px;height:20px;">&nbsp;&nbsp;Profile
+                    </a>
+                </li>
+                <li style="display:inline-block;">
+                    <a href="projects.html">
+                        <img src="icon/project.png" alt="Projects" style="width:20px;height:20px;">&nbsp;&nbsp;Projects
+                    </a>
+                </li>
+                <li style="display:inline-block;">
+                    <a href="notebook.html">
+                        <img src="icon/note.png" alt="Note" style="width:20px;height:18px;">&nbsp;&nbsp;Notebook
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+                <script>
+                    function googleTranslateElementInit() {
+                        // InlineLayout.HORIZONTAL or .SIMPLE or .vertical
+                        new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+                    }
+                </script>
+                <li><div>
+                    <button id="btn_logout" class="login-nav">Logout</button>
+                </div></li>
+                <li><div style="padding-top: 9%;" id="google_translate_element"></div></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><img src="icon/logo.png" alt="Logo" style="width:190px;height:50px;padding-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div style="max-width:90%; margin: 0 auto; padding-top: 5px;">
+    <h3 id="name"></h3><br>
+    <ul class="nav nav-tabs" style="width:100%;">
+        <li class="active"><a href="#editNote" data-toggle="tab">Part-of-Speech Tags</a></li>
+        <li><a href="#other" data-toggle="tab">Regular Expressions</a></li>
+    </ul>
+    <div class="tab-content" style="width:100%;">
+        <div class="tab-pane active scroll" id="editNote" style="height: 80%">
+            <div style="width: 100%; height: 40%">
+                <button class="math">&Sigma;</button>
+            </div>
+            <math id="result" style="padding: 5px;display: inline-block;">
+                <mfrac>
+                    <mrow>
+                        <mi>d</mi>
+                        <!--<mi>f</mi>-->
+                    </mrow>
+                    <mrow>
+                        <mi>d</mi>
+                        <mi>x</mi>
+                    </mrow>
+                </mfrac>
+                <mo>=</mo>
+                <mfrac>
+                    <mrow>
+                        <mi>d</mi>
+                        <mi>f</mi>
+                    </mrow>
+                    <mrow>
+                        <mi>d</mi>
+                        <mi>u</mi>
+                    </mrow>
+                </mfrac>
+            </math>
+
+        </div>
+        <div class="tab-pane scroll" id="other" style="height: 80%"></div>
+    </div>
 </div>
 <div id="footer"></div>
 <script>
-    var queryString = decodeURIComponent(window.location.search); //parsing
-    queryString = queryString.substring(1);
-    var queries = queryString.split("&");
-    for (var i = 0; i < queries.length; i++)
-    {
-        document.write(queries[i] + "&");
-    }
-    $(".login-nav").attr("id","btn_logout").val("Logout");
     $('#btn_logout').click(function () {
         window.location.href = "index.html"
     });
+    $(".math").click(function () {
+        var content = '<div class="cube"><p class="cube_font">'+$(this).text()+'</p></div>';
+        $("#result").append(content);
+    })
 </script>
 </body>
