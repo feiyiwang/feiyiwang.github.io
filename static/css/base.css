@@ -214,3 +214,6 @@ body {
 .justify {
     text-align: justify;
 }
+.personal {
+    display: none;
+}

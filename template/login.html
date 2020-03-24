@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="static/css/login.css">
 <button id="btn_login" class="login-nav">Login</button>
-<button id="btn_logout" style="display: none" class="login-nav">Logout</button>
+<!--<button id="btn_logout" style="display: none" class="login-nav">Logout</button>-->
 <script>
+    var to_url = "";
     $.ajax({
         url:"icon/pinocchio.png",
         type:'HEAD',
@@ -9,15 +10,17 @@
             $('#img_login').attr("src", "../icon/pinocchio.png");
             $('#img_create').attr("src", "../icon/donaldDuck.png");
             $('#img_forget').attr("src", "../icon/minnie.png");
+            to_url += "../home.html";
 //            $('#login_form').attr("action", "../personal/action.php");
-//            $('#login_form').attr("action", "../personal/action.html");
+//            $('#login_form').attr("action", "../home.html");
         },
         success: function(){
             $('#img_login').attr("src", "icon/pinocchio.png");
             $('#img_create').attr("src", "icon/donaldDuck.png");
             $('#img_forget').attr("src", "icon/minnie.png");
+            to_url += "home.html";
 //            $('#login_form').attr("action", "personal/action.php");
-//            $('#login_form').attr("action", "personal/action.html");
+//            $('#login_form').attr("action", "home.html");
         }
     });
 </script>
@@ -80,6 +83,7 @@
 </div>
 
 <script>
+    var arr_links = [];
     $(document).on('click','.close',function(){
         $('#login_form').show();
         $('#create_form').hide();
@@ -90,11 +94,11 @@
     $('#btn_login').click(function () {
         $('#modal1').show();
     });
-    $('#btn_logout').click(function () {
-        $('.personal').hide();
-        $("#btn_login").show();
-        $("#btn_logout").hide();
-    });
+//    $('#btn_logout').click(function () {
+//        $('.personal').hide();
+//        $("#btn_login").show();
+//        $("#btn_logout").hide();
+//    });
     $('.create').click(function () {
         $('#login_form').hide();
         $('#create_form').show();
@@ -112,13 +116,54 @@
 //            alert('correct')
             $.getJSON('template/login.json', function(data) {
                 if (Object.keys(data).includes(email)) {
-                    alert('correct');
+                    if (data[email]["psw"] == psw) {
+                        $('#msg_login').val('');
+                        $(".close").click();
+                        window.location.href = to_url + "?first=" + data[email]["first"]
+                                + "&last=" + data[email]["last"];
+//                        window.location.href = $('#login_form').attr("action") + "?first=" + data[email]["first"]
+//                                + "&last=" + data[email]["last"];
+//                        setTimeout(function () {
+//                            window.location.href += "?first=" + data[email]["first"] + "&last=" + data[email]["last"];
+//                        }, 2000);
+//                        var l = document.links;
+//                        for(var i=0; i<l.length; i++) {
+//                            arr_links.push(l[i].href+"?first=" + data[email]["first"] + "&last=" + data[email]["last"]);
+//                        }
+
+//                        $.ajax({
+//                            type: "POST",
+//                            url: $('#login_form').attr("action"),
+//                            contentType: "application/json; charset=utf-8",
+//                            data: '{"username":"' + email + '","password":"' + psw + '"}',
+//                            dataType: "json",
+//                            success: function (result, status, xhr) {
+//                                if (result.d == "Success") {
+//                                    $('#msg_login').val('');
+//                                    $(".close").click();
+//                                    $('.personal').show();
+//                                    $("#btn_login").hide();
+//                                    $("#btn_logout").show();
+//                                    setTimeout(function () {
+//                                        window.location = url;
+//                                    }, 2000);
+//                                } else  $("#msg_login").text("Login failed, Please try again.");
+//                            }
+////                            }, error: function (xhr, status, error) {
+////                                $("#dbData").html("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+////                            }
+//                        });
+
+                    } else {
+                        alert(JSON.stringify(data[email]));
+                        $("#msg_login").text("Oops! Wrong password. Have another try!");
+                    }
                 } else {
-                    $("#msg_login").text("Oops! This email doesn't exist.")
+                    $("#msg_login").text("Oops! This email doesn't exist.");
                 }
             });
         } else {
-            $("#msg_login").text("Oops! Invalid email format.")
+            $("#msg_login").text("Oops! Invalid email format.");
         }
     });
 </script>
