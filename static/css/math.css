@@ -31,3 +31,11 @@
 .div_math {
     width: 100%;
 }
+.text-pic-name {
+    font-size: 12px;
+    border: transparent;
+    border-bottom: 2px solid #336ca9;
+    height: 20px;
+    margin-bottom: -5px;
+    padding: 2px 5px 0 5px;
+}

@@ -85,14 +85,16 @@
                         <button class="math" value="\imath"><img src="static/image/math/i.gif"></button>
                         <button class="math" value="\jmath"><img src="static/image/math/j.gif"></button>
                         <button class="math" value="\bigtriangleup"><img src="static/image/math/tri.gif"></button>
-                        <button class="math" value="\partial"><img src="static/image/math/partial.gif"></button>
                         <button class="math" value="\because"><img src="static/image/math/because.gif"></button>
                         <button class="math" value="\therefore"><img src="static/image/math/therefore.gif"></button>
+                    </div>
+                    <div class="div_math">
                         <button class="math" value="\mathbb{R}"><img src="static/image/math/R.gif"></button>
                         <button class="math" value="\mathbb{Z}"><img src="static/image/math/Z.gif"></button>
                         <button class="math" value="\mathbb{N}"><img src="static/image/math/N.gif"></button>
                         <button class="math" value="\forall"><img src="static/image/math/A.gif"></button>
                         <button class="math" value="\exists"><img src="static/image/math/E.gif"></button>
+                        <button class="math" value="\partial"><img src="static/image/math/partial.gif"></button>
                     </div>
                     <div class="div_math">
                         <button class="math" value="\frac{a}{b}"><img src="static/image/math/a:b.gif"></button>
@@ -174,17 +176,21 @@
                 </div>
             </div>
             <div style="width: 100%; padding: 0 15px">
-                <b>Formulation Editor (<a id="clear">clear</a>):</b><br>
+                <b>Formulation Editor: <a id="clear"> clear the content</a></b><br>
                 <input type="text" id="editor" value="" style="width: 100%;margin: 15px 0;border-radius:5px;border: 2px solid #f0ad4e; text-align: center; ">
                 <!--<p>Dividing $x^2+1$ by $y^2$ gives <span lang="latex">\frac{a}{b}</span></p>-->
             </div>
             <div style="width: 100%; padding: 0 15px">
-                <b>Formulation Display (<a id="show">click</a>):</b><br>
+                <b>Formulation Display: <a id="save"> save as </a></b>
+                <span style="display: inline; color: #336ca9;" >
+                    <textarea type="text" id="picName" class="text-pic-name"></textarea>.svg
+                </span><br>
+                <!--<input name="test" id="test" disabled="disabled">-->
                 <div class="display">
                     <p id="display"><span lang="latex"></span></p>
                 </div>
+                <!--<input type="text" value="" style="font-size: 3px; width: 40px; margin: 0;">-->
             </div>
-            <!--<p>The british pound is worth 1.5 US\$ or $1.1 \euro$</p>-->
         </div>
         <div class="tab-pane scroll" id="other" style="height: 40%;">
 
@@ -221,10 +227,24 @@
     $('#clear').click(function () {
         $("#editor").val('');
     });
-    $('#show').click(function () {
-        var math = $("#editor").val(),
+
+    $('#save').click(function () {
+        var name = $('#picName').val();
+        if (name == '') {
+            alert('Hey, you need to enter a name first! :)');
+        } else {
+            var link = document.createElement('a');
+            link.href = $("img","span","#display").attr("src");
+            link.download = name + ".svg";
+            document.body.appendChild(link);
+            link.click();
+        }
+    });
+    $('#editor').keyup(function () {         //change or keyup
+        var math = $(this).val(),
 //                img = '<img src="http://latex.codecogs.com/gif.latex?'+math+'" alt="'+math+'" border="0" class="latex">';
-            img = '<img src="http://latex.codecogs.com/svg.latex?\\LARGE\&space;'+math+'" alt="'+math+'" border="0" class="latex">';
+                img = '<img src="http://latex.codecogs.com/svg.latex?\\LARGE\&space;'+math+'" alt="'+math+'" border="0" class="latex">';
+//        alert(math);
         $("span","#display").empty().append(img);
     });
 </script>
