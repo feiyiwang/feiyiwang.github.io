@@ -4,6 +4,7 @@
 }
 
 .math {
+    margin-top: 5px;
     height: 45px;
     width: 45px;
     border-radius: 10px;
@@ -20,4 +21,13 @@
     height: 100px;
     padding-top: 20px;
     border-radius: 5px;
+}
+
+.big {
+    height: 95px;
+    width: 95px;
+}
+
+.div_math {
+    width: 100%;
 }
