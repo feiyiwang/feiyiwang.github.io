@@ -76,8 +76,8 @@ img.avatar {
     background-color: #fefefe;
     margin: 10% auto 10% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 35%; /* Could be more or less, depending on screen size */
-    height: 440px;
+    width: 350px; /* Could be more or less, depending on screen size */
+    height: 390px;
 }
 .modal-bottom {
     padding: 8px 0;/*height width*/

@@ -25,7 +25,7 @@
     });
 </script>
 <div id="modal1" class="modal">
-    <div id="login_form" class="modal-content">
+    <form id="login_form" class="modal-content">
         <div class="imgcontainer">
             <span class="close" title="Close Window">&times;</span>
             <img id="img_login" alt="Avatar" class="avatar">
@@ -45,10 +45,10 @@
             </label>
         </div>
         <div class="modal-bottom">
-            <span class="left">New comer? <a class="create">Create an account</a>.</span>
+            <span class="left">New? <a class="create">Create an account</a>.</span>
             <span class="right">Forgot <a class="forgot">password</a>?</span>
         </div>
-    </div>
+    </form>
     <form id="create_form" class="modal-content" action="index.html" method="post">
         <div class="imgcontainer">
             <span class="close" title="Close Window">&times;</span>
@@ -61,8 +61,10 @@
             <input type="text" placeholder="Enter Email" id="usr_n" required>
             <br>
             <input type="password" placeholder="Enter Password" id="psw_n" required>
-            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
             <button id="submit_create" class="login-btn" type="submit">Create</button>
+        </div>
+        <div class="modal-bottom" style="margin-top: -10px;">
+            <span class="left">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</span>
         </div>
     </form>
     <form id="forget_form" class="modal-content" action="index.html" method="post">
@@ -88,7 +90,7 @@
         $('#login_form').show();
         $('#create_form').hide();
         $('#forget_form').hide();
-        $('.modal-content').css('height','430px');
+        $('.modal-content').css('height','390px');
         $('#modal1').hide();
     });
     $('#btn_login').click(function () {
@@ -102,14 +104,16 @@
     $('.create').click(function () {
         $('#login_form').hide();
         $('#create_form').show();
-        $('.modal-content').css('height','480px');
+        $('.modal-content').css('height','420px');
     });
     $('.forgot').click(function () {
         $('#login_form').hide();
         $('#forget_form').show();
-        $('.modal-content').css('height','370px');
+        $('.modal-content').css('height','330px');
     });
-
+    $("#submit_create").click(function(e) {
+        alert('Hey my dear friend, you cannot create an account in my little home currently since this function is still under implement... but do send me note if you have any great ideas! My email is rephycca@gmail.com Thanks in advance!! :)');
+    });
     $("#submit_login").click(function(e) {
         var email = $('#email').val(), psw = $('#psw').val();
         if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {

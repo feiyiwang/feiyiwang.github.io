@@ -67,14 +67,11 @@
     <h3 id="name" style="margin: 0"></h3><br>
     <ul class="nav nav-tabs" style="width:100%;">
         <li class="active"><a href="#editEquation" data-toggle="tab">Equation Editor</a></li>
-        <li><a href="#editNote" data-toggle="tab">TBC...</a></li>
+        <li><a href="#editNote" data-toggle="tab">Note Editor</a></li>
     </ul>
     <div class="tab-content" style="width:100%;">
         <div class="tab-pane active scroll" id="editEquation" style="height: 72%">
             <div style="width: 100%; padding: 15px 0; display: inline-block;">
-                <!--<div class="col-sm-10"></div>-->
-                <!--<div class="col-sm-2"></div>-->
-
                 <div class="div_math">
                     <button class="math" value="\times"><img src="static/image/math/x.svg"></button>
                     <button class="math" value="\cdot"><img src="static/image/math/dot.svg"></button>
@@ -202,12 +199,12 @@
 
             </div>
             <div style="width: 100%; padding: 0 15px">
-                <b>Formulation Editor: <a id="clear"> clear the content in editor</a></b><br>
+                <b>Equation Editor: <a id="clear"> clear the content in editor</a></b><br>
                 <input type="text" id="editor" value="" style="width: 100%;margin: 15px 0;border-radius:5px;border: 2px solid #f0ad4e; text-align: center; ">
                 <!--<p>Dividing $x^2+1$ by $y^2$ gives <span lang="latex">\frac{a}{b}</span></p>-->
             </div>
             <div style="width: 100%; padding: 0 15px">
-                <b>Formulation Display: <a id="save"> save as </a></b>
+                <b>Equation Display: <a id="save"> save as </a></b>
                 <span style="display: inline; color: #336ca9;" >
                     " <textarea type="text" id="picName" class="text-pic-name"></textarea> . png"
                 </span><br>
