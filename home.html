@@ -64,126 +64,151 @@
     </nav>
 </div>
 <div style="width:90%; margin: 0 auto; padding-top: 5px;">
-    <h3 id="name"></h3><br>
+    <h3 id="name" style="margin: 0"></h3><br>
     <ul class="nav nav-tabs" style="width:100%;">
-        <li class="active"><a href="#editNote" data-toggle="tab">Part-of-Speech Tags</a></li>
-        <li><a href="#other" data-toggle="tab">Regular Expressions</a></li>
+        <li class="active"><a href="#editEquation" data-toggle="tab">Equation Editor</a></li>
+        <li><a href="#editNote" data-toggle="tab">TBC...</a></li>
     </ul>
     <div class="tab-content" style="width:100%;">
-        <div class="tab-pane active scroll" id="editNote" style="height: 80%">
+        <div class="tab-pane active scroll" id="editEquation" style="height: 72%">
             <div style="width: 100%; padding: 15px 0; display: inline-block;">
-                <div class="col-sm-10">
-                    <div class="div_math">
-                        <button class="math" value="\times"><img src="static/image/math/x.gif"></button>
-                        <button class="math" value="\cdot"><img src="static/image/math/dot.gif"></button>
-                        <button class="math" value="\div"><img src="static/image/math/div.gif"></button>
-                        <button class="math" value="\neq"><img src="static/image/math/!=.gif"></button>
-                        <button class="math" value="\subset"><img src="static/image/math/u.gif"></button>
-                        <button class="math" value="\subseteq"><img src="static/image/math/ui.gif"></button>
-                        <button class="math" value="\leqslant"><img src="static/image/math/<=.gif"></button>
-                        <button class="math" value="\geqslant"><img src="static/image/math/>=.gif"></button>
-                        <button class="math" value="\imath"><img src="static/image/math/i.gif"></button>
-                        <button class="math" value="\jmath"><img src="static/image/math/j.gif"></button>
-                        <button class="math" value="\bigtriangleup"><img src="static/image/math/tri.gif"></button>
-                        <button class="math" value="\because"><img src="static/image/math/because.gif"></button>
-                        <button class="math" value="\therefore"><img src="static/image/math/therefore.gif"></button>
-                    </div>
-                    <div class="div_math">
-                        <button class="math" value="\mathbb{R}"><img src="static/image/math/R.gif"></button>
-                        <button class="math" value="\mathbb{Z}"><img src="static/image/math/Z.gif"></button>
-                        <button class="math" value="\mathbb{N}"><img src="static/image/math/N.gif"></button>
-                        <button class="math" value="\forall"><img src="static/image/math/A.gif"></button>
-                        <button class="math" value="\exists"><img src="static/image/math/E.gif"></button>
-                        <button class="math" value="\partial"><img src="static/image/math/partial.gif"></button>
-                    </div>
-                    <div class="div_math">
-                        <button class="math" value="\frac{a}{b}"><img src="static/image/math/a:b.gif"></button>
-                        <button class="math" value="a^{b}"><img src="static/image/math/a%5Eb.gif"></button>
-                        <button class="math" value="a_{b}"><img src="static/image/math/a_b.gif"></button>
-                        <button class="math" value="\widetilde{a}"><img src="static/image/math/tilde.gif"></button>
-                        <button class="math" value="\widehat{a}"><img src="static/image/math/hat.gif"></button>
-                        <button class="math" value="\sqrt{a}"><img src="static/image/math/a^(1:2).gif"></button>
-                        <button class="math" value="\sqrt[b]{a}"><img src="static/image/math/a^(1:b).gif"></button>
-                        <button class="math" value="\left ( a \right )"><img src="static/image/math/(a).gif"></button>
-                        <button class="math" value="\left { a \right }"><img src="static/image/math/{a}.gif"></button>
-                        <button class="math" value="\left \| a \right \|"><img src="static/image/math/%7C%7Ca%7C%7C.gif"></button>
-                    </div>
-                    <div class="div_math">
-                        <button class="math" value="\alpha"><img src="static/image/math/alpha.gif"></button>
-                        <button class="math" value="\beta"><img src="static/image/math/beta.gif"></button>
-                        <button class="math" value="\gamma"><img src="static/image/math/gamma.gif"></button>
-                        <button class="math" value="\delta"><img src="static/image/math/delta.gif"></button>
-                        <button class="math" value="\varepsilon"><img src="static/image/math/varepsilon.gif"></button>
-                        <!--<button class="math" value="\zeta"><img src="static/image/math/zeta.gif"></button>-->
-                        <button class="math" value="\eta"><img src="static/image/math/eta.gif"></button>
-                        <button class="math" value="\theta"><img src="static/image/math/theta.gif"></button>
-                        <!--<button class="math" value="\iota"><img src="static/image/math/iota.gif"></button>-->
-                        <!--<button class="math" value="\kappa"><img src="static/image/math/kappa.gif"></button>-->
-                        <button class="math" value="\lambda"><img src="static/image/math/lambda.gif"></button>
-                        <button class="math" value="\mu"><img src="static/image/math/mu.gif"></button>
-                        <!--<button class="math" value="\nu"><img src="static/image/math/nu.gif"></button>-->
-                        <!--<button class="math" value="\xi"><img src="static/image/math/xi.gif"></button>-->
-                        <!--<button class="math" value="\omicron"><img src="static/image/math/omicron.gif"></button>-->
-                        <button class="math" value="\pi"><img src="static/image/math/pi.gif"></button>
-                        <!--<button class="math" value="\rho"><img src="static/image/math/rho.gif"></button>-->
-                        <!--<button class="math" value="\sigmaf"><img src="static/image/math/sigmaf.gif"></button>-->
-                        <button class="math" value="\sigma"><img src="static/image/math/sigma.gif"></button>
-                        <button class="math" value="\tau"><img src="static/image/math/tau.gif"></button>
-                        <!--<button class="math" value="\upsilon"><img src="static/image/math/upsilon.gif"></button>-->
-                        <button class="math" value="\varphi"><img src="static/image/math/varphi.gif"></button>
-                        <button class="math" value="\chi"><img src="static/image/math/chi.gif"></button>
-                        <button class="math" value="\psi"><img src="static/image/math/psi.gif"></button>
-                        <button class="math" value="\omega"><img src="static/image/math/omega.gif"></button>
-                        <!--<button class="math" value="\thetasym"><img src="static/image/math/thetasym.gif"></button>-->
-                        <!--<button class="math" value="\upsih"><img src="static/image/math/upsih.gif"></button>-->
-                        <!--<button class="math" value="\piv"><img src="static/image/math/piv.gif"></button>-->
+                <!--<div class="col-sm-10"></div>-->
+                <!--<div class="col-sm-2"></div>-->
+
+                <div class="div_math">
+                    <button class="math" value="\times"><img src="static/image/math/x.gif"></button>
+                    <button class="math" value="\cdot"><img src="static/image/math/dot.gif"></button>
+                    <button class="math" value="\div"><img src="static/image/math/div.gif"></button>
+                    <button class="math" value="\neq"><img src="static/image/math/!=.gif"></button>
+                    <button class="math" value="\subset"><img src="static/image/math/u.gif"></button>
+                    <button class="math" value="\subseteq"><img src="static/image/math/ui.gif"></button>
+                    <button class="math" value="\in"><img src="static/image/math/w.gif"></button>
+                    <button class="math" value="\notin"><img src="static/image/math/!w.gif"></button>
+                    <button class="math" value="\perp"><img src="static/image/math/perpendicular.gif"></button>
+                    <button class="math" value="\propto"><img src="static/image/math/proportional_to.gif"></button>
+
+                    <button class="math" value="\leqslant"><img src="static/image/math/<=.gif"></button>
+                    <button class="math" value="\geqslant"><img src="static/image/math/>=.gif"></button>
+                    <button class="math" value="\imath"><img src="static/image/math/i.gif"></button>
+                    <button class="math" value="\jmath"><img src="static/image/math/j.gif"></button>
+                    <button class="math" value="\because"><img src="static/image/math/because.gif"></button>
+                    <button class="math" value="\therefore"><img src="static/image/math/therefore.gif"></button>
+                    <button class="math" value="\varnothing"><img src="static/image/math/null.gif"></button>
+                    <button class="math" value="\infty"><img src="static/image/math/infinity.gif"></button>
+                    <button class="math" value="\forall"><img src="static/image/math/A.gif"></button>
+                    <button class="math" value="\exists"><img src="static/image/math/E.gif"></button>
+                    <button class="math" value="\partial"><img src="static/image/math/partial.gif"></button>
+                    <button class="math" value="30^{\circ}"><img src="static/image/math/degree.gif"></button>
+                </div>
+                <div class="div_math">
+                    <button class="math" value="\frac{a}{b}"><img src="static/image/math/a:b.gif"></button>
+                    <button class="math" value="a^{b}"><img src="static/image/math/a%5Eb.gif"></button>
+                    <button class="math" value="a_{b}"><img src="static/image/math/a_b.gif"></button>
+                    <button class="math" value="\sqrt{a}"><img src="static/image/math/a^(1:2).gif"></button>
+                    <button class="math" value="\sqrt[b]{a}"><img src="static/image/math/a^(1:b).gif"></button>
+                    <button class="math" value="\left \| a \right \|"><img src="static/image/math/%7C%7Ca%7C%7C.gif"></button>
+                    <button class="math" value="\bar{a}"><img src="static/image/math/bar_a.gif"></button>
+                    <button class="math" value="\overline{ab}"><img src="static/image/math/bar_ab.gif"></button>
+                    <button class="math" value="\hat{a}"><img src="static/image/math/hat_a.gif"></button>
+                    <button class="math" value="\widehat{ab}"><img src="static/image/math/hat_ab.gif"></button>
+                    <button class="math" value="\tilde{a}"><img src="static/image/math/tilde_a.gif"></button>
+                    <button class="math" value="\widetilde{ab}"><img src="static/image/math/tilde_ab.gif"></button>
+                    <button class="math" value="\vec{a}"><img src="static/image/math/vec_a.gif"></button>
+                    <button class="math" value="\overrightarrow{ab}"><img src="static/image/math/vec_ab.gif"></button>
+
+                    <button class="math" value="\left ( a \right )"><img src="static/image/math/(a).svg"></button>
+                    <button class="math" value="\left [ a \right ]"><img src="static/image/math/[a].svg"></button>
+                    <button class="math" value="\left \langle a \right \rangle"><img src="static/image/math/<a>.svg"></button>
 
 
-                        <!--<button class="math" value="\alpha"><img src="static/image/math/alpha.gif"></button>-->
-                        <!--<button class="math" value="\beta"><img src="static/image/math/beta.gif"></button>-->
-                        <!--<button class="math" value="\gamma"><img src="static/image/math/gamma.gif"></button>-->
-                        <!--<button class="math" value="\delta"><img src="static/image/math/delta.gif"></button>-->
-                        <!--<button class="math" value="\epsilon"><img src="static/image/math/epsilon.gif"></button>-->
-                        <!--<button class="math" value="\zeta"><img src="static/image/math/zeta.gif"></button>-->
-                        <!--<button class="math" value="\eta"><img src="static/image/math/eta.gif"></button>-->
-                        <!--<button class="math" value="\theta"><img src="static/image/math/theta.gif"></button>-->
-                        <!--<button class="math" value="\iota"><img src="static/image/math/iota.gif"></button>-->
-                        <!--<button class="math" value="\kappa"><img src="static/image/math/kappa.gif"></button>-->
-                        <!--<button class="math" value="\lambda"><img src="static/image/math/lambda.gif"></button>-->
-                        <!--<button class="math" value="\mu"><img src="static/image/math/mu.gif"></button>-->
-                        <!--<button class="math" value="\nu"><img src="static/image/math/nu.gif"></button>-->
-                        <!--<button class="math" value="\xi"><img src="static/image/math/xi.gif"></button>-->
-                        <!--<button class="math" value="\omicron"><img src="static/image/math/omicron.gif"></button>-->
-                        <!--<button class="math" value="\pi"><img src="static/image/math/pi.gif"></button>-->
-                        <!--<button class="math" value="\rho"><img src="static/image/math/rho.gif"></button>-->
-                        <!--<button class="math" value="\sigmaf"><img src="static/image/math/sigmaf.gif"></button>-->
-                        <!--<button class="math" value="\sigma"><img src="static/image/math/sigma.gif"></button>-->
-                        <!--<button class="math" value="\tau"><img src="static/image/math/tau.gif"></button>-->
-                        <!--<button class="math" value="\upsilon"><img src="static/image/math/upsilon.gif"></button>-->
-                        <!--<button class="math" value="\phi"><img src="static/image/math/phi.gif"></button>-->
-                        <!--<button class="math" value="\chi"><img src="static/image/math/chi.gif"></button>-->
-                        <!--<button class="math" value="\psi"><img src="static/image/math/psi.gif"></button>-->
-                        <!--<button class="math" value="\omega"><img src="static/image/math/omega.gif"></button>-->
-                        <!--<button class="math" value="\thetasym"><img src="static/image/math/thetasym.gif"></button>-->
-                        <!--<button class="math" value="\upsih"><img src="static/image/math/upsih.gif"></button>-->
-                        <!--<button class="math" value="\piv"><img src="static/image/math/piv.gif"></button>-->
-                    </div>
+                    <button class="math" value="C_{a}^{b}"><img src="static/image/math/c_a%5Eb.gif"></button>
+                    <button class="math" value="_{a}^{b}\textrm{C}"><img src="static/image/math/a%5Eb_c.gif"></button>
+
+
+                    <button class="math" value="\mathbb{R}"><img src="static/image/math/R.gif"></button>
+                    <button class="math" value="\mathbb{Z}"><img src="static/image/math/Z.gif"></button>
+                    <button class="math" value="\mathbb{N}"><img src="static/image/math/N.gif"></button>
                 </div>
-                <div class="col-sm-2">
-                    <div class="div_math">
-                        <button class="big math" value="\begin{bmatrix}a & b & c\\ d & e & f\end{bmatrix}"><img src="static/image/math/mat.gif"></button>
-                    </div>
+                <div class="div_math">
+
+                    <button class="math" value="\alpha"><img src="static/image/math/alpha.svg"></button>
+                    <button class="math" value="\beta"><img src="static/image/math/beta.svg"></button>
+                    <button class="math" value="\gamma"><img src="static/image/math/gamma.svg"></button>
+                    <button class="math" value="\delta"><img src="static/image/math/delta.svg"></button>
+                    <button class="math" value="\varepsilon"><img src="static/image/math/varepsilon.svg"></button>
+                    <!--<button class="math" value="\zeta"><img src="static/image/math/zeta.gif"></button>-->
+                    <button class="math" value="\eta"><img src="static/image/math/eta.svg"></button>
+                    <button class="math" value="\theta"><img src="static/image/math/theta.svg"></button>
+                    <!--<button class="math" value="\iota"><img src="static/image/math/iota.gif"></button>-->
+                    <!--<button class="math" value="\kappa"><img src="static/image/math/kappa.gif"></button>-->
+                    <button class="math" value="\lambda"><img src="static/image/math/lambda.svg"></button>
+                    <button class="math" value="\mu"><img src="static/image/math/mu.svg"></button>
+                    <!--<button class="math" value="\nu"><img src="static/image/math/nu.gif"></button>-->
+                    <!--<button class="math" value="\xi"><img src="static/image/math/xi.gif"></button>-->
+                    <!--<button class="math" value="\omicron"><img src="static/image/math/omicron.gif"></button>-->
+                    <button class="math" value="\pi"><img src="static/image/math/pi.svg"></button>
+                    <!--<button class="math" value="\rho"><img src="static/image/math/rho.gif"></button>-->
+                    <!--<button class="math" value="\sigmaf"><img src="static/image/math/sigmaf.gif"></button>-->
+                    <button class="math" value="\sigma"><img src="static/image/math/sigma.svg"></button>
+                    <button class="math" value="\tau"><img src="static/image/math/tau.svg"></button>
+                    <!--<button class="math" value="\upsilon"><img src="static/image/math/upsilon.gif"></button>-->
+                    <button class="math" value="\varphi"><img src="static/image/math/varphi.svg"></button>
+                    <button class="math" value="\chi"><img src="static/image/math/chi.svg"></button>
+                    <button class="math" value="\psi"><img src="static/image/math/psi.svg"></button>
+                    <button class="math" value="\omega"><img src="static/image/math/omega.svg"></button>
+                    <!--<button class="math" value="\thetasym"><img src="static/image/math/thetasym.gif"></button>-->
+                    <!--<button class="math" value="\upsih"><img src="static/image/math/upsih.gif"></button>-->
+                    <!--<button class="math" value="\piv"><img src="static/image/math/piv.gif"></button>-->
+
+
+                    <!--<button class="math" value="\Dlpha"><img src="static/image/math/alpha_.gif"></button>-->
+                    <!--<button class="math" value="\Beta"><img src="static/image/math/beta_.gif"></button>-->
+                    <button class="math" value="\Gamma"><img src="static/image/math/gamma_.gif"></button>
+                    <button class="math" value="\Delta"><img src="static/image/math/delta_.gif"></button>
+                    <!--<button class="math" value="\Epsilon"><img src="static/image/math/epsilon_.gif"></button>-->
+                    <!--<button class="math" value="\Zeta"><img src="static/image/math/zeta_.gif"></button>-->
+                    <!--<button class="math" value="\Eta"><img src="static/image/math/eta_.gif"></button>-->
+                    <button class="math" value="\Theta"><img src="static/image/math/theta_.gif"></button>
+                    <!--<button class="math" value="\Iota"><img src="static/image/math/iota_.gif"></button>-->
+                    <!--<button class="math" value="\Kappa"><img src="static/image/math/kappa_.gif"></button>-->
+                    <!--<button class="math" value="\Lambda"><img src="static/image/math/lambda_.gif"></button>-->
+                    <!--<button class="math" value="\Mu"><img src="static/image/math/mu_.gif"></button>-->
+                    <!--<button class="math" value="\Nu"><img src="static/image/math/nu_.gif"></button>-->
+                    <button class="math" value="\Xi"><img src="static/image/math/xi_.gif"></button>
+                    <!--<button class="math" value="\Omicron"><img src="static/image/math/omicron_.gif"></button>-->
+                    <!--<button class="math" value="\Pi"><img src="static/image/math/pi_.gif"></button>-->
+                    <!--<button class="math" value="\Rho"><img src="static/image/math/rho_.gif"></button>-->
+                    <!--<button class="math" value="\Sigmaf"><img src="static/image/math/sigmaf_.gif"></button>-->
+                    <!--<button class="math" value="\Sigma"><img src="static/image/math/sigma_.gif"></button>-->
+                    <!--<button class="math" value="\Tau"><img src="static/image/math/tau_.gif"></button>-->
+                    <!--<button class="math" value="\Upsilon"><img src="static/image/math/upsilon_.gif"></button>-->
+                    <button class="math" value="\Phi"><img src="static/image/math/phi_.gif"></button>
+                    <!--<button class="math" value="\Chi"><img src="static/image/math/chi_.gif"></button>-->
+                    <!--<button class="math" value="\Psi"><img src="static/image/math/psi_.gif"></button>-->
+                    <button class="math" value="\Omega"><img src="static/image/math/omega_.gif"></button>
+                    <!--<button class="math" value="\Thetasym"><img src="static/image/math/thetasym_.gif"></button>-->
+                    <!--<button class="math" value="\Upsih"><img src="static/image/math/upsih_.gif"></button>-->
+                    <!--<button class="math" value="\Piv"><img src="static/image/math/piv_.gif"></button>-->
                 </div>
+                <div class="div_math">
+                    <button class="size-2-2 math" value="\begin{bmatrix}a & b & c\\ d & e & f\end{bmatrix}"><img style="margin-left: -1px" src="static/image/math/mat1.svg"></button>
+                    <button class="size-2-2 math" value="\begin{pmatrix}a & b & c\\ d & e & f\end{pmatrix}"><img style="margin-left: -5px" src="static/image/math/mat2.svg"></button>
+                    <button class="size-2-1 math" value="\int_{a}^{b}"><img src="static/image/math/int_ab.svg"></button>
+                    <button class="size-2-1 math" value="\sum_{a}^{b}"><img src="static/image/math/sum_ab.svg"></button>
+                    <button class="size-2-1 math" value="\prod_{a}^{b}"><img src="static/image/math/prod_ab.svg"></button>
+                    <button class="size-2-1 math" value="\binom{n}{p}"><img style="margin-left: -5px" src="static/image/math/binomial.svg"></button>
+                </div>
+
             </div>
             <div style="width: 100%; padding: 0 15px">
-                <b>Formulation Editor: <a id="clear"> clear the content</a></b><br>
+                <b>Formulation Editor: <a id="clear"> clear the content in editor</a></b><br>
                 <input type="text" id="editor" value="" style="width: 100%;margin: 15px 0;border-radius:5px;border: 2px solid #f0ad4e; text-align: center; ">
                 <!--<p>Dividing $x^2+1$ by $y^2$ gives <span lang="latex">\frac{a}{b}</span></p>-->
             </div>
             <div style="width: 100%; padding: 0 15px">
                 <b>Formulation Display: <a id="save"> save as </a></b>
                 <span style="display: inline; color: #336ca9;" >
-                    <textarea type="text" id="picName" class="text-pic-name"></textarea>.png
+                    " <textarea type="text" id="picName" class="text-pic-name"></textarea> . png"
                 </span><br>
                 <!--<input name="test" id="test" disabled="disabled">-->
                 <div class="display">
@@ -192,7 +217,7 @@
                 <!--<input type="text" value="" style="font-size: 3px; width: 40px; margin: 0;">-->
             </div>
         </div>
-        <div class="tab-pane scroll" id="other" style="height: 40%;">
+        <div class="tab-pane scroll" id="editNote" style="height: 40%;">
 
         </div>
     </div>
@@ -234,7 +259,7 @@
             alert('Hey, you need to enter a name first! :)');
         } else {
             var link = document.createElement('a');
-            link.href = $("img","span","#display").attr("src");
+            link.href = 'http://latex.codecogs.com/png.latex?\\LARGE\&space;'+$('#editor').val(); // $("img","span","#display").attr("src");
             link.download = name + ".png";
             document.body.appendChild(link);
             link.click();
@@ -243,7 +268,7 @@
     $('#editor').keyup(function () {         //change or keyup
         var math = $(this).val(),
 //                img = '<img src="http://latex.codecogs.com/gif.latex?'+math+'" alt="'+math+'" border="0" class="latex">';
-                img = '<img src="http://latex.codecogs.com/png.latex?\\LARGE\&space;'+math+'" alt="'+math+'" border="0" class="latex">';
+                img = '<img src="http://latex.codecogs.com/svg.latex?\\LARGE\&space;'+math+'" alt="'+math+'" border="0" class="latex">';
 //        alert(math);
         $("span","#display").empty().append(img);
     });

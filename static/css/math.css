@@ -5,10 +5,19 @@
 
 .math {
     margin-top: 5px;
-    height: 45px;
-    width: 45px;
+    height: 42px;   /* originally was 45px */
+    width: 42px;    /* originally was 45px */
     border-radius: 10px;
     background-color: transparent;
+}
+.size-2-2 {
+    height: 89px;   /* originally was 45*2+5 px */
+    width: 89px;    /* originally was 45*2+5 px */
+}
+
+.size-2-1 {
+    height: 89px;   /* originally was 45*2+5 px */
+    width: 42px;    /* originally was 45px */
 }
 .math:hover , .math:focus{
     border: 2px solid #5cb85c;
@@ -23,12 +32,10 @@
     border-radius: 5px;
 }
 
-.big {
-    height: 95px;
-    width: 95px;
-}
+
 
 .div_math {
+    margin: 0 15px;
     width: 100%;
 }
 .text-pic-name {
