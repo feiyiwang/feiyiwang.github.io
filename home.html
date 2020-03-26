@@ -183,7 +183,7 @@
             <div style="width: 100%; padding: 0 15px">
                 <b>Formulation Display: <a id="save"> save as </a></b>
                 <span style="display: inline; color: #336ca9;" >
-                    <textarea type="text" id="picName" class="text-pic-name"></textarea>.svg
+                    <textarea type="text" id="picName" class="text-pic-name"></textarea>.png
                 </span><br>
                 <!--<input name="test" id="test" disabled="disabled">-->
                 <div class="display">
@@ -235,7 +235,7 @@
         } else {
             var link = document.createElement('a');
             link.href = $("img","span","#display").attr("src");
-            link.download = name + ".svg";
+            link.download = name + ".png";
             document.body.appendChild(link);
             link.click();
         }
@@ -243,7 +243,7 @@
     $('#editor').keyup(function () {         //change or keyup
         var math = $(this).val(),
 //                img = '<img src="http://latex.codecogs.com/gif.latex?'+math+'" alt="'+math+'" border="0" class="latex">';
-                img = '<img src="http://latex.codecogs.com/svg.latex?\\LARGE\&space;'+math+'" alt="'+math+'" border="0" class="latex">';
+                img = '<img src="http://latex.codecogs.com/png.latex?\\LARGE\&space;'+math+'" alt="'+math+'" border="0" class="latex">';
 //        alert(math);
         $("span","#display").empty().append(img);
     });
