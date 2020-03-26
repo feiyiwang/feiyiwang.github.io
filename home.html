@@ -76,13 +76,13 @@
             </div>
             <div style="width: 100%; padding: 0 15px">
                 <b>Formulation Editor:</b><br>
-                <input type="text" id="editor" value="" style="width: 100%;margin: 15px 0;">
+                <input type="text" id="editor" value="" style="width: 100%;margin: 15px 0;text-align: center">
                 <!--<p>Dividing $x^2+1$ by $y^2$ gives <span lang="latex">\frac{a}{b}</span></p>-->
             </div>
             <div style="width: 100%; padding: 0 15px">
-                <b>Formulation Display:</b><br>
+                <a id="show"><b>Formulation Display:</b><br></a>
                 <div style="width: 100%;margin: 15px 0;border: 1px solid #c4c4c4; height: 80px; text-align: center; padding-top: 20px">
-                    <p id="display">is this <span lang="latex">\frac{a}{b}</span> is like</p>
+                    <p id="display"><span lang="latex"></span></p>
                 </div>
                 <p id="test"></p>
 
@@ -102,9 +102,11 @@
     $(".math").click(function () {
         var math = $(this).attr("value"), editor = $("#editor");
         editor.val(editor.val() + math);
-        var display = $("#display").text(), content = display+'<span lang="latex">'+math+'</span>';
-//        alert(typeof $("#display").text());
-        $("#display").append(content);
+    });
+    $('#show').click(function () {
+        var math = $("#editor").val(),
+                img = '<img src="http://latex.codecogs.com/gif.latex?'+math+'" alt="'+math+'" border="0" class="latex">';
+        $("span","#display").empty().append(img);
     })
 </script>
 </body>
