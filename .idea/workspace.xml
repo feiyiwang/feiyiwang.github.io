@@ -2,18 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/(a).gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/alpha.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/beta.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/hat.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/mat.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/tilde.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/tri.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/{a}.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/img/test.png" afterPath="$PROJECT_DIR$/notebook/jupyter/img/test.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/!=.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/!ui.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/!w.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/&lt;=.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/&gt;=.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/A.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/E.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/N.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/R.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/Z.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/_&lt;.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/_=.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/_&gt;.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/_I.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/_P.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/_epsilon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/_phi.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/a:b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/a^(1:2).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/a^(1:b).gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/a^b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/a^b_c.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/a_b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/bar_a.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/bar_ab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/c_a^b.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/chi.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/degree.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/delta.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/delta_.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/div.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/dot.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/eta.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/gamma.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/gamma_.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/hat_a.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/hat_ab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/i.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/infinity.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/int_ab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/j.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/lambda.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/mu.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/null.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/omega.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/omega_.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/partial.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/perpendicular.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/phi_.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/pi.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/prod_ab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/proportional_to.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/psi.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/sigma.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/sum_ab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/tau.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/theta.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/theta_.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/tilde_a.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/tilde_ab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/u.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/ui.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/varepsilon.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/varphi.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/vec_a.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/vec_ab.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/w.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/x.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/xi_.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/image/math/||a||.gif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/Untitled.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/Untitled.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/math.css" afterPath="$PROJECT_DIR$/static/css/math.css" />
     </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +118,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="160" column="107" selection-start-line="160" selection-start-column="107" selection-end-line="160" selection-end-column="107" />
+            <state relative-caret-position="231">
+              <caret line="209" column="70" selection-start-line="209" selection-start-column="70" selection-end-line="209" selection-end-column="70" />
               <folding>
                 <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#1;n#ul#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -72,10 +131,12 @@
                 <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#img#0;n#button#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#button#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#button#5;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#button#3;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#button#6;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
@@ -189,7 +250,6 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-317" />
     <option name="y" value="23" />
     <option name="width" value="1189" />
     <option name="height" value="777" />
@@ -914,15 +974,15 @@
       <updated>1583638540645</updated>
       <workItem from="1583638543933" duration="11723000" />
       <workItem from="1583682057041" duration="108004000" />
-      <workItem from="1584723856139" duration="102728000" />
+      <workItem from="1584723856139" duration="107237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="222455000" />
+    <option name="totallyTimeSpent" value="226964000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-317" y="23" width="1189" height="777" extended-state="0" />
+    <frame x="0" y="23" width="1189" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1382,8 +1442,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="160" column="107" selection-start-line="160" selection-start-column="107" selection-end-line="160" selection-end-column="107" />
+        <state relative-caret-position="231">
+          <caret line="209" column="70" selection-start-line="209" selection-start-column="70" selection-end-line="209" selection-end-column="70" />
           <folding>
             <element signature="n#style#0;n#li#0;n#ul#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#1;n#ul#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -1395,10 +1455,12 @@
             <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#img#0;n#button#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#button#1;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#button#5;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#button#3;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#button#6;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
