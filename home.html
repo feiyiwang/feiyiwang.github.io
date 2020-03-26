@@ -25,7 +25,7 @@
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">Fey's Little Home&nbsp;&nbsp;斐艺的小屋</a>
+                <a class="navbar-brand" href="index.html">Fey斐's Little Home&nbsp;&nbsp;</a>
             </div>
             <ul class="nav navbar-nav">
                 <li style="display:inline-block;">
@@ -53,12 +53,12 @@
                         new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
                     }
                 </script>
-                <li><div>
+                <li style="display: inline-block;"><div>
                     <button id="btn_logout" class="login-nav">Logout</button>
                 </div></li>
-                <li><div style="padding-top: 9%;" id="google_translate_element"></div></li>
-                <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><img src="icon/logo.png" alt="Logo" style="width:190px;height:50px;padding-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li style="display: inline-block;"><div style="padding-top: 14px;" id="google_translate_element"></div></li>
+                <li style="display: inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li style="display: inline-block;"><img src="icon/logo.png" alt="Logo" style="width:190px;height:50px;padding-top:3px;">&nbsp;&nbsp;&nbsp;&nbsp;</li>
             </ul>
         </div>
     </nav>
@@ -72,20 +72,32 @@
     <div class="tab-content" style="width:100%;">
         <div class="tab-pane active scroll" id="editNote" style="height: 80%">
             <div style="width: 100%; height: 30%; padding: 15px">
-                <button class="math" value="\frac{a}{b}"><img src="static/image/a:b.gif"></button>
+                <button class="math" value="\frac{a}{b}"><img src="static/image/math/a:b.gif"></button>
+                <button class="math" value="a^{b}"><img src="static/image/math/a%5Eb.gif"></button>
+                <button class="math" value="a_{b}"><img src="static/image/math/a_b.gif"></button>
+                <button class="math" value="\sqrt{a}"><img src="static/image/math/a^(1:2).gif"></button>
+                <button class="math" value="\sqrt[b]{a}"><img src="static/image/math/a^(1:b).gif"></button>
+                <!--<button class="math" value="\frac{a}{b}"><img src="static/image/a:b.gif"></button>-->
+                <!--<button class="math" value="\frac{a}{b}"><img src="static/image/a:b.gif"></button>-->
+                <!--<button class="math" value="\frac{a}{b}"><img src="static/image/a:b.gif"></button>-->
+                <!--<button class="math" value="\frac{a}{b}"><img src="static/image/a:b.gif"></button>-->
+                <!--<button class="math" value="\frac{a}{b}"><img src="static/image/a:b.gif"></button>-->
+                <button class="math" value="\left ( a \right )"><img src="static/image/math/(a).gif"></button>
+                <button class="math" value="\left { a \right }"><img src="static/image/math/{a}.gif"></button>
+                <button class="math" value="\left \| a \right \|"><img src="static/image/math/%7C%7Ca%7C%7C.gif"></button>
+                <!--<button class="math" value="\frac{a}{b}"><img src="static/image/a:b.gif"></button>-->
+                <!--<button class="math" value="\frac{a}{b}"><img src="static/image/a:b.gif"></button>-->
             </div>
             <div style="width: 100%; padding: 0 15px">
-                <b>Formulation Editor:</b><br>
-                <input type="text" id="editor" value="" style="width: 100%;margin: 15px 0;text-align: center">
+                <b>Formulation Editor (<a id="clear">clear</a>):</b><br>
+                <input type="text" id="editor" value="" style="width: 100%;margin: 15px 0;border-radius:5px;border: 2px solid #f0ad4e; text-align: center; ">
                 <!--<p>Dividing $x^2+1$ by $y^2$ gives <span lang="latex">\frac{a}{b}</span></p>-->
             </div>
             <div style="width: 100%; padding: 0 15px">
-                <a id="show"><b>Formulation Display:</b><br></a>
-                <div style="width: 100%;margin: 15px 0;border: 1px solid #c4c4c4; height: 80px; text-align: center; padding-top: 20px">
+                <b>Formulation Display (<a id="show">click</a>):</b><br>
+                <div class="display">
                     <p id="display"><span lang="latex"></span></p>
                 </div>
-                <p id="test"></p>
-
             </div>
             <!--<p>The british pound is worth 1.5 US\$ or $1.1 \euro$</p>-->
         </div>
@@ -96,17 +108,39 @@
 </div>
 <div id="footer"></div>
 <script>
+    $(function ($, undefined) {
+        $.fn.getCursorPosition = function () {
+            var el = $(this).get(0);
+            var pos = 0;
+            if ('selectionStart' in el) {
+                pos = el.selectionStart;
+            } else if ('selection' in document) {
+                el.focus();
+                var Sel = document.selection.createRange();
+                var SelLength = document.selection.createRange().text.length;
+                Sel.moveStart('character', -el.value.length);
+                pos = Sel.text.length - SelLength;
+            }
+            return pos;
+        }
+    });
+
     $('#btn_logout').click(function () {
         window.location.href = "index.html"
     });
     $(".math").click(function () {
         var math = $(this).attr("value"), editor = $("#editor");
-        editor.val(editor.val() + math);
+        var position = editor.getCursorPosition();
+        editor.val(editor.val().substr(0, position) + math + editor.val().substr(position));
+    });
+    $('#clear').click(function () {
+        $("#editor").val('');
     });
     $('#show').click(function () {
         var math = $("#editor").val(),
-                img = '<img src="http://latex.codecogs.com/gif.latex?'+math+'" alt="'+math+'" border="0" class="latex">';
+//                img = '<img src="http://latex.codecogs.com/gif.latex?'+math+'" alt="'+math+'" border="0" class="latex">';
+            img = '<img src="http://latex.codecogs.com/svg.latex?\\LARGE\&space;'+math+'" alt="'+math+'" border="0" class="latex">';
         $("span","#display").empty().append(img);
-    })
+    });
 </script>
 </body>

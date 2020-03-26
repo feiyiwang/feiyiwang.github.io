@@ -22,11 +22,11 @@ input[type=text], input[type=password] {
 .login-nav {
     background-color: transparent;
     color: #bcbcbc;
-    padding: 5% 20px; /*height width*/
-    margin: 15% 0;
+    padding: 1px 20px; /*height width*/
+    margin: 15px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 80px;
 }
 .login-nav:hover {
     color: #2f5a98;

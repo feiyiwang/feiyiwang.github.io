@@ -198,9 +198,9 @@ body {
 /*.red {*/
     /*color: red;*/
 /*}*/
-/*.green {*/
-    /*color: green;*/
-/*}*/
+.navy {
+    color: #336ca9;
+}
 
 .scroll {
     overflow-y: scroll;

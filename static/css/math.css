@@ -1,9 +1,23 @@
-.cube {
-    /*font-size: 5vw;*/
-    height: 35px;
-    width: 35px;
-    font-stretch: expanded;
+.math, .display {
+    text-align: center;
+    border: 2px solid #f0ad4e;
 }
-.full_font {
 
+.math {
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.math:hover , .math:focus{
+    border: 2px solid #5cb85c;
+    background-color: rgba(240, 173, 78, 0.3);
+}
+
+.display {
+    width: 100%;
+    margin: 15px 0;
+    height: 100px;
+    padding-top: 20px;
+    border-radius: 5px;
 }
