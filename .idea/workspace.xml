@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/notebook/jupyter/img/test-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/notebook/jupyter/img/test.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/Untitled.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/Untitled.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notebook/nc_nr.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/Non-linear Modeling-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebook/jupyter/Non-linear Modeling.ipynb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +38,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="nc_nr.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notebook/nc_nr.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
+            <state relative-caret-position="468">
               <caret line="126" column="68" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
               <folding>
                 <element signature="n#nav#0;n#div#0;n#body#0;n#!!top" expanded="false" />
@@ -72,7 +82,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
@@ -110,8 +120,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -126,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/footer.html" />
         <option value="$PROJECT_DIR$/header.html" />
         <option value="$PROJECT_DIR$/static/js/bootstrap.min.js" />
         <option value="$PROJECT_DIR$/static/css/bootstrap.min.css" />
@@ -177,6 +186,7 @@
         <option value="$PROJECT_DIR$/template/login.html" />
         <option value="$PROJECT_DIR$/static/css/math.css" />
         <option value="$PROJECT_DIR$/home.html" />
+        <option value="$PROJECT_DIR$/notebook/nc_nr.html" />
       </list>
     </option>
   </component>
@@ -668,6 +678,13 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -1009,12 +1026,12 @@
       <workItem from="1583638543933" duration="11723000" />
       <workItem from="1583682057041" duration="108004000" />
       <workItem from="1584723856139" duration="109759000" />
-      <workItem from="1585254986959" duration="2220000" />
+      <workItem from="1585254986959" duration="2791000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231706000" />
+    <option name="totallyTimeSpent" value="232277000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="23" width="1189" height="777" extended-state="0" />
@@ -1090,7 +1107,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/profile_boston.html" />
     <entry file="file://$PROJECT_DIR$/profile_shanghai.html" />
     <entry file="file://$PROJECT_DIR$/clinical2.html" />
     <entry file="file://$PROJECT_DIR$/clinical1.html" />
@@ -1353,14 +1369,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/lc.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -1394,17 +1402,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/notebook/lc.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook/nc_nr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
+        <state relative-caret-position="468">
           <caret line="126" column="68" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
           <folding>
             <element signature="n#nav#0;n#div#0;n#body#0;n#!!top" expanded="false" />
@@ -1431,6 +1447,14 @@
             <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
