@@ -11,12 +11,15 @@
     background-color: transparent;
 }
 .size-2-2 {
-    height: 89px;   /* originally was 45*2+5 px */
-    width: 89px;    /* originally was 45*2+5 px */
+    height: 88px;   /* originally was 45*2+5 px */
+    width: 88px;    /* originally was 45*2+5 px */
 }
-
-.size-2-1 {
+.size-2-3 {
     height: 89px;   /* originally was 45*2+5 px */
+    width: 134px;    /* originally was 45*2+5 px */
+}
+.size-2-1 {
+    height: 88px;   /* originally was 45*2+5 px */
     width: 42px;    /* originally was 45px */
 }
 .math:hover , .math:focus{
