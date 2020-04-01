@@ -30,6 +30,17 @@
         <div class="col-md-3">
             <ul class="nav nav-tabs tabs-left" style="height:80%;">
                 <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li>
+                    <a class="navbar-toggler" data-toggle="collapse" href="#health">
+                        Healthcare<span class="caret-down">▾</span>
+                    </a>
+                    <ul class="collapse tabs-left" id="health">
+                        <li class="dropdown-item"><a href="#leukemia" data-toggle="tab">Leukemia</a></li>
+                        <li class="dropdown-item"><a href="#mm" data-toggle="tab">Multiple Myeloma</a></li>
+                        <li class="dropdown-item"><a href="#nsclc" data-toggle="tab">Non-Small Cell Lung Cancer</a></li>
+                        <li class="dropdown-item"><a href="#prostate" data-toggle="tab">Prostate Cancer</a></li>
+                    </ul>
+                </li>
                 <li><a href="#prob" data-toggle="tab">Probability</a></li>
                 <li><a href="#stat" data-toggle="tab">Statistics</a></li>
                 <li>
@@ -108,7 +119,7 @@
                                 <!--Nonlinear Regression-->
                             <!--</a></li>-->
                         </ul>
-                        <li><a class="dropdown-item" href="#mm" data-toggle="tab">Multimodal Learning</a></li>
+                        <li><a class="dropdown-item" href="#mmml" data-toggle="tab">Multimodal Learning</a></li>
                     </ul>
                 </li>
                 <li>
@@ -125,6 +136,12 @@
         <div class="col-md-9">
             <div class="tab-content">
                 <div class="tab-pane active" id="home"></div>
+
+                <div class="tab-pane" id="leukemia"></div>
+                <div class="tab-pane" id="mm"></div>
+                <div class="tab-pane" id="nsclc"></div>
+                <div class="tab-pane" id="prostate"></div>
+
                 <div class="tab-pane" id="prob">Probability</div>
                 <div class="tab-pane" id="stat">Statistics.</div>
 
@@ -147,7 +164,7 @@
                 <div class="tab-pane" id="bow"></div>
                 <div class="tab-pane" id="nlp_cheat"></div>
 
-                <div class="tab-pane" id="mm"></div>
+                <div class="tab-pane" id="mmml"></div>
 
                 <div class="tab-pane" id="git"></div>
                 <div class="tab-pane" id="vim"></div>
