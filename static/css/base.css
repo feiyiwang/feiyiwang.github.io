@@ -204,6 +204,7 @@ body {
 
 .scroll {
     overflow-y: scroll;
+    overflow-x: hidden; /* scroll hidden auto*/
 }
 .rtl {
     direction: rtl;
