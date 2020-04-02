@@ -10,7 +10,7 @@
         }
 
         .nodes circle {
-            stroke: #fff;
+            stroke: white;
             stroke-width: 1px;
         }
 
@@ -40,6 +40,17 @@
         d3.json("notebook/notebook.json", function(error, graph) {
             if (error) throw error;
 
+            var palette = {
+                'level1':['#3182bd','#e6550d','#31a354','#d6616b','#756bb1','#94AB18','#F1B82B'],
+                'level2':['#6baed6','#fd8d3c','#74c476','#DD8C8F','#9e9ac8','#AAC421','#F9BA52'],
+                'level3':['#9ecae1','#fdae6b','#a1d99b','#F3B1AC','#bcbddc','#CAD856','#F9C671'],
+                'level4':['#c6dbef','#fdd0a2','#c7e9c0','#f1c3bd','#dadaeb','#DCE57C','#FAD296']
+            };
+
+            function color(d) {
+                return palette["level"+d.level][d.group-1]
+            }
+
             var link = svg.append("g")
                     .attr("class", "links")
                     .selectAll("line")
@@ -60,7 +71,7 @@
 
             var circles = circle_link.append("circle")
                     .attr("r", getRadius)
-                    .attr("fill", function(d) { return color(d.group); })
+                    .attr("fill", color)
 //                    .on("click", handleClick)
                     .on("mouseover", handleMouseOver)
                     .on("mouseout", handleMouseOut)
@@ -71,7 +82,10 @@
 
 
             var lables = node.append("text")
-                    .style("font-size", "10px")
+                    .style("font-size", function (d) {
+                        r = getRadius(d);
+                        return r/2
+                    })
                     .style("fill", "white")
                     .text(function(d) { return d.id; })
                     .attr("text-anchor", "middle")
@@ -79,9 +93,10 @@
                     .attr('y', 4); // how much from the text top side to the center of the circles vertically
 
             function getRadius(d) {
-                var level1 = ['Health', 'Pr', 'Stat', 'ML', 'Lang', 'DV', 'Topics'];
-                if (level1.includes(d.id)) {
+                if (d.level == 1) {
                     return 30
+                } else if (d.level == 2) {
+                    return 25
                 } else {
                     return 20
                 }
