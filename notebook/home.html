@@ -14,12 +14,6 @@
             stroke-width: 1px;
         }
 
-        text {
-            /*color: #336ca9;*/
-            font-family: sans-serif;
-            font-size: 16px;
-        }
-
     </style>
     <svg width="860" height="600"></svg>
     <script>
@@ -67,7 +61,7 @@
             var circles = circle_link.append("circle")
                     .attr("r", getRadius)
                     .attr("fill", function(d) { return color(d.group); })
-                    .on("click", handleClick)
+//                    .on("click", handleClick)
                     .on("mouseover", handleMouseOver)
                     .on("mouseout", handleMouseOut)
                     .call(d3.drag()
@@ -76,35 +70,37 @@
                             .on("end", dragended));
 
 
-//            var lables = node.append("text")
-//                    .text(function(d) { return d.id; })
-//                    .attr('x', -1) // how much from the text left side to the center of the circles horizontally
-//                    .attr('y', -1); // how much from the text top side to the center of the circles vertically
+            var lables = node.append("text")
+                    .style("font-size", "10px")
+                    .style("fill", "white")
+                    .text(function(d) { return d.id; })
+                    .attr("text-anchor", "middle")
+                    .attr('x', 0) // how much from the text left side to the center of the circles horizontally
+                    .attr('y', 4); // how much from the text top side to the center of the circles vertically
 
             function getRadius(d) {
-                var level1 = ['Health', 'Pr', 'Stat', 'ML', 'Lang', 'DV'];
+                var level1 = ['Health', 'Pr', 'Stat', 'ML', 'Lang', 'DV', 'Topics'];
                 if (level1.includes(d.id)) {
-                    return 25
+                    return 30
                 } else {
-                    return 15
+                    return 20
                 }
             }
 
-            function handleClick(d) {
-                d3.select(this).attr("r", function (d) {
-                    var r = getRadius(d);
-                    return 1.1*r
-                });
-            }
+//            function handleClick(d) {
+//
+//            }
 
 //          // Create Event Handlers for mouse
             function handleMouseOver(d) {  // Add interactivity
 
                 // Use D3 to select element, change color and size
-                d3.select(this).attr("r", function (d) {
-                    var r = getRadius(d);
-                    return 1.1*r
-                });
+                d3.select(this)
+                        .style("stroke", "black")
+                        .attr("r", function (d) {
+                            var r = getRadius(d);
+                            return 1.2*r
+                        });
 //                        .attr()
 
 
@@ -117,9 +113,14 @@
 
                 // Specify where to put label of text
                 d3.select(this.parentNode).append("text")
+                        .style('fill', "#336ca9")
+                        .style("font-size", "20px")
                         .attr("id", "t-" + d.id)  // Create an id for text so we can select it later for removing on mouseout
-                        .attr("x", 30)
-                        .attr("y", 15)
+                        .attr("x", function (d) {
+                            var r = getRadius(d);
+                            return 2*r
+                        })
+                        .attr("y", 5)
                         .text(function() {
                             return d.name;  // Value of the text
                         });
@@ -127,14 +128,14 @@
 
             function handleMouseOut(d) {
                 // Use D3 to select element, change color back to normal
-                d3.select(this).attr("r", getRadius);
+                d3.select(this).attr("r", getRadius).style("stroke", "white");
 
                 // Select text by id and then remove
                 d3.select("#t-" + d.id)
-                        .transition()
-                        .delay(200)
+//                        .transition()
+//                        .delay(200)
                         .remove();  // Remove text location
-            };
+            }
 
 
             simulation
