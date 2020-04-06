@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="static/css/project.css">
     <link rel="stylesheet" href="static/css/math.css">
     <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+    <script src="static/js/template.js"></script>
     <script>
         var queryString = decodeURIComponent(window.location.search); //parsing
         var queries = queryString.substring(1).split("&");
         $(function(){
-            $("#footer").load("template/footer.html");
+            $(".footer-frame").append(foot);
             $("#name").text("Hi "+queries[0].split("=")[1]+",");
         });
         LatexIT.add('p',true);
@@ -258,7 +259,7 @@
         </div>
     </div>
 </div>
-<div id="footer"></div>
+<div class="bg_white footer-frame"></div>
 <script>
     $(function ($, undefined) {
         $.fn.getCursorPosition = function () {

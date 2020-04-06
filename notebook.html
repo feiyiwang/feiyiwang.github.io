@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <title>Fey's Project</title>
     <script type="text/javascript" src="static/js/matomo.js"></script>
     <script type="text/javascript" src="static/js/jquery.min.js"></script>
@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/base.css">
     <link rel="stylesheet" href="static/css/project.css">
+    <script src="static/js/template.js"></script>
     <script>
         $(function(){
             $("#header").load("template/header.html");
-            $("#footer").load("template/footer.html");
+            $(".footer-frame").append(foot);
             $("#home").load("notebook/home.html");
             $("#lc").load("notebook/lc.html");
             $("#nn").load("notebook/nn.html");
@@ -176,5 +177,5 @@
     </div>
 </div>
 <script type="text/javascript" src="static/js/project.js"></script>
-<div id="footer"></div>
+<div class="footer-frame bg_white"></div>
 </body>

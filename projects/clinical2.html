@@ -9,21 +9,23 @@
     <link rel="stylesheet" href="../static/css/base.css">
     <link rel="stylesheet" href="../static/css/login.css">
     <link rel="stylesheet" href="../static/css/project.css">
+    <script src="../static/js/template.js"></script>
     <script>
         $(function(){
-            $("#header").load("../template/header-in-folder.html");
-            $("#footer").load("../template/footer.html");
+            $(".header-frame").append(head_in_folder);
+            $(".footer-frame").append(foot);
         });
     </script>
 </head>
 <body>
-<div id="header"></div>
+<div class="header-frame"></div>
+<br><br><br>
 <div class="container-fluid">
     <div class="row">
         <h3 style="text-align: center">Clinical Pathway Extraction</h3><br>
         <div class="col-md-3">
             <div class="scroll rtl">
-                <ul class="nav nav-tabs tabs-left ltr" style="height:70%;">
+                <ul class="nav nav-tabs tabs-left ltr" style="height:68%;">
                     <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
                     <li><a href="#workflow" data-toggle="tab">2. Challenges</a></li>
                     <li>
@@ -171,5 +173,5 @@
 
 
 <script type="text/javascript" src="../static/js/project.js"></script>
-<div id="footer"></div>
+<div class="footer-frame bg_white"></div>
 </body>

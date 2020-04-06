@@ -64,7 +64,15 @@ body {
     background-attachment: scroll;
     bottom:0;
     width:100%;
-    height:40px;   /* Height of the footer */
+    min-height:20px;   /* Height of the footer */
+    /*background: transparent;*/
+}
+.header-frame {
+    position:fixed;
+    padding-right: 15px;
+    top:0;
+    width:100%;
+    /*min-height:20px;   !* Height of the footer *!*/
     background: transparent;
 }
 /*hr {*/
@@ -218,3 +226,12 @@ body {
 .personal {
     display: none;
 }
+.bg_trans {
+    background: transparent;
+}
+.bg_white {
+    background: white;
+}
+/*.bg_trans {*/
+    /*background: transparent;*/
+/*}*/

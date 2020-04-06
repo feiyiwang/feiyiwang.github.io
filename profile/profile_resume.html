@@ -8,15 +8,17 @@
     <script src="../static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../static/js/template.js"></script>
     <script>
         $(function(){
-            $("#header").load("../template/header-in-folder.html");
-            $("#footer").load("../template/footer.html");
+            $(".header-frame").append(head_in_folder);
+            $(".footer-frame").append(foot);
         });
     </script>
 </head>
 <body>
-<div id="header"></div>
+<div class="header-frame"></div>
+<br><br><br>
 <h3 style="padding-top: 12px;" class="center tab-title">My Background & Experience</h3>
 <br>
 <div style="max-width:90%; margin: 0 auto;">
