@@ -86,3 +86,21 @@
     width:100%;
     height:70%;
 }
+
+.openbtn, .closebtn {
+    color:#2f5a98;
+    opacity: 0.3;
+    background-color: transparent;
+    border: none;
+}
+.openbtn {
+    display: none;
+}
+.closebtn {
+    float: right;
+    padding-right: 20px;
+}
+.openbtn:hover, .openbtn:target, .closebtn:hover, .closebtn:target {
+    opacity: 1;
+}
+

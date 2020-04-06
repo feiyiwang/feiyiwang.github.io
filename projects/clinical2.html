@@ -23,9 +23,10 @@
 <div class="container-fluid">
     <div class="row">
         <h3 style="text-align: center">Clinical Pathway Extraction</h3><br>
-        <div class="col-md-3">
+        <div id="sidebar" class="col-md-3">
             <div class="scroll rtl">
                 <ul class="nav nav-tabs tabs-left ltr" style="height:68%;">
+                    <div style="width: 100%; height: 30px"><button class="closebtn">×</button></div>
                     <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
                     <li><a href="#workflow" data-toggle="tab">2. Challenges</a></li>
                     <li>
@@ -65,11 +66,11 @@
                 <li class="navbar-fixed-bottom"><a href="../projects.html">GO BACK</a></li>
             </ul>
         </div>
-        <div class="col-md-9">
-            <!-- Tab panes -->
+        <div id="content" class="col-md-9">
+            <div style="height: 25px"><button class="openbtn">☰ Open Sidebar</button></div>
             <div class="tab-content" style="height: 75%">
                 <div class="tab-pane tab-bg active" id="objectives">
-                    <br><p class="center tab-title">Objectives</p><br>
+                    <p class="center tab-title">Objectives</p><br>
                     <div class="col-md-5">
                         <p><b>Clinical event extractions over patient’s timeline</b></p>
                         <p>&nbsp;&nbsp;Staging</p>
@@ -89,7 +90,7 @@
                     </div>
                 </div>
                 <div class="tab-pane tab-bg" id="workflow">
-                    <br><p class="center tab-title">Challenges</p><br>
+                    <p class="center tab-title">Challenges</p><br>
                     <div class="col-md-6">
                         <p><b>Direct keyword extraction is difficult</b></p><br>
                         <p>Regular expressions fail to capture keywords along with context</p>
@@ -101,7 +102,7 @@
                     </div>
                 </div>
                 <div class="tab-pane tab-bg" id="3-1" style="padding-left: 5%">
-                    <br><p class="center tab-title">Pos Tagging Method</p><br>
+                    <p class="center tab-title">Pos Tagging Method</p><br>
                     <p><b>Parts Of Speech Tagging</b></p>
                     <p>&nbsp;&nbsp;Extension to tag words such as medications, dates, indexes as tags</p>
                     <p>&nbsp;&nbsp;e.g. replace Lupron’s tag NOUN with MEDICINE, CD with DATE</p>
@@ -119,31 +120,31 @@
                     <p>&nbsp;&nbsp;- ('PSA', <span class="blue">'PSA'</span>), ('is', 'VBZ'), ('10', 'CD')</p>
                 </div>
                 <div class="tab-pane tab-bg" id="3-2">
-                    <br><p class="center tab-title">Pos Tagging Results</p><br>
+                    <p class="center tab-title">Pos Tagging Results</p><br>
                     <img src="clinical2/3-1.png" alt="Examples" style="width: 90%;padding-left: 5%">
                 </div>
                 <div class="tab-pane tab-bg" id="3-3">
-                    <br><p class="center tab-title">System Design</p><br>
+                    <p class="center tab-title">System Design</p><br>
                     <img src="clinical2/3-2.png" alt="System" style="width: 90%;padding-left: 5%">
                 </div>
                 <div class="tab-pane center tab-bg" id="4-1">
-                    <br><p class="center tab-title">Patient Note Timeline</p>
+                    <p class="center tab-title">Patient Note Timeline</p>
                     <img src="clinical2/4-1.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
                 <div class="tab-pane center tab-bg scroll" id="4-2">
-                    <br><p class="center tab-title">Keyword Extraction</p>
+                    <p class="center tab-title">Keyword Extraction</p>
                     <img src="clinical2/4-2.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
                 <div class="tab-pane center tab-bg" id="4-3">
-                    <br><p class="center tab-title">Patient Pathway</p>
+                    <p class="center tab-title">Patient Pathway</p>
                     <img src="clinical2/4-3.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
                 <div class="tab-pane center tab-bg" id="4-4">
-                    <br><p class="center tab-title">Medications on Admission/Discharge</p><br>
+                    <p class="center tab-title">Medications on Admission/Discharge</p><br>
                     <img src="clinical2/4-4.png" alt="Dashboard Screenshot" style="width: 90%;">
                 </div>
                 <div class="tab-pane tab-bg" id="5-1">
-                    <br><p class="center tab-title">Word Similarity</p><br>
+                    <p class="center tab-title">Word Similarity</p><br>
                     <div class="col-md-5">
                         <p><b>Time to Development of Metastatic Disease</b></p><br>
                         <p>- Important for physicians to understand when metastasis happened</p>
@@ -161,7 +162,7 @@
                     </div>
                 </div>
                 <div class="tab-pane tab-bg" id="5-2">
-                    <br><p class="center tab-title">Sentence Similarity</p><br>
+                    <p class="center tab-title">Sentence Similarity</p><br>
                     <p class="center">Sentences similar to ‘revealed metastatic disease’</p><br>
                     <img src="clinical2/5-3.png" alt="Word Similarity" style="width: 90%;padding-left: 5%">
                 </div>

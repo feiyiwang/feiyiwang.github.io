@@ -13,3 +13,14 @@ $('.nav-tabs > li > a').click(function () {
 // $('.concept').click(function () {
 //     $(this).target('blue');
 // });
+
+$('.closebtn').click(function () {
+    $("#sidebar").hide();
+    $("#content").toggleClass("col-md-9 col-md-12");
+    $(".openbtn").show();
+});
+$('.openbtn').click(function () {
+    $("#sidebar").show();
+    $("#content").toggleClass("col-md-12 col-md-9");
+    $(".openbtn").hide();
+});

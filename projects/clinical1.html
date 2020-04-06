@@ -23,9 +23,10 @@
     <div class="container-fluid">
         <div class="row">
             <h3 style="text-align: center">Fight Cancer With NLP</h3><br>
-            <div class="col-md-3">
+            <div id="sidebar" class="col-md-3">
                 <div class="scroll rtl">
                     <ul class="nav nav-tabs tabs-left ltr" style="height:68%;">
+                        <div style="width: 100%; height: 30px"><button class="closebtn">×</button></div>
                         <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
                         <li><a href="#workflow" data-toggle="tab">2. Workflow</a></li>
                         <li>
@@ -70,11 +71,11 @@
                 </ul>
 
             </div>
-            <div class="col-md-9">
-                <!-- Tab panes -->
+            <div id="content" class="col-md-9">
+                <div style="height: 25px"><button class="openbtn">☰ Open Sidebar</button></div>
                 <div class="tab-content" style="height: 75%">
                     <div class="tab-pane tab-bg active" id="objectives">
-                        <br><p class="center" style="font-size: 24px">Objectives</p><br>
+                        <p class="center" style="font-size: 24px">Objectives</p><br>
                         <div class="col-md-6">
                             <p><b>To build computational framework that leverages NLP</b></p>
                             <p>- Structure unstructured notes</p>
@@ -88,7 +89,7 @@
                         </div>
                     </div>
                     <div class="tab-pane tab-bg" id="workflow">
-                        <br><p class="center" style="font-size: 24px">Workflow</p><br>
+                        <p class="center" style="font-size: 24px">Workflow</p><br>
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
                             <div class="col-md-1"></div>
@@ -111,7 +112,7 @@
                         <div class="col-md-1"></div>
                     </div>
                     <div class="tab-pane tab-bg" id="headers1">
-                        <br><p class="center" style="font-size: 24px">Note Classification</p><br>
+                        <p class="center" style="font-size: 24px">Note Classification</p><br>
                         <div class="col-md-6">
                             <p><b>Notes from same institute and department have similar </b></p>
                             <p>&nbsp;&nbsp;(1) structure, (2) sections, (3) format</p>
@@ -130,7 +131,7 @@
                         </div>
                     </div>
                     <div class="tab-pane tab-bg" id="headers2">
-                        <br><p class="center" style="font-size: 24px">Note Clustering</p><br>
+                        <p class="center" style="font-size: 24px">Note Clustering</p><br>
                         <div class="col-md-6">
                             <p><b>Utilize the similarity in notes to build up a DBSCAN model</b></p>
                             <br>
@@ -146,7 +147,7 @@
                         <!--3-->
                     <!--</div>-->
                     <div class="tab-pane tab-bg" id="sections1">
-                        <br><p class="center" style="font-size: 24px">Rule-Based NLP Method</p><br>
+                        <p class="center" style="font-size: 24px">Rule-Based NLP Method</p><br>
                         <div class="col-md-6">
                             <p><b>Methodology</b></p>
                             <p>- Manually explore notes of a class and find possible sections</p>
@@ -165,7 +166,7 @@
                         </div>
                     </div>
                     <div class="tab-pane tab-bg" id="sections2">
-                        <br><p class="center" style="font-size: 24px">Machine Learning Method</p><br>
+                        <p class="center" style="font-size: 24px">Machine Learning Method</p><br>
                         <div class="col-md-7 scroll" style="height: 60%">
                             <p><b>Methodology</b></p><br>
                             <p>(1) Define output values</p>
@@ -193,7 +194,7 @@
                         </div>
                     </div>
                     <div class="tab-pane tab-bg" id="sections3">
-                        <br><p class="center" style="font-size: 24px">Pos Tag for Sections</p><br>
+                        <p class="center" style="font-size: 24px">Pos Tag for Sections</p><br>
                         <div class="col-md-7">
                             <img src="clinical1/4-3-1.png" alt="Plot" style="width: 90%;">
                         </div>
@@ -202,7 +203,7 @@
                         </div>
                     </div>
                     <div class="tab-pane tab-bg" id="sections4">
-                        <br><p class="center" style="font-size: 24px">Feature Engineering</p><br>
+                        <p class="center" style="font-size: 24px">Feature Engineering</p><br>
                         <div class="col-md-12 scroll" style="height: 60%">
                             <img src="clinical1/4-4-1.png" alt="Note" style="width: 100%;padding: 5%">
                             <img src="clinical1/4-4-2.png" alt="Features1" style="width: 100%;padding: 5%">
@@ -211,7 +212,7 @@
                         </div>
                     </div>
                     <div class="tab-pane tab-bg" id="sections5">
-                        <br><p class="center" style="font-size: 24px">Model Selection and Estimation</p><br>
+                        <p class="center" style="font-size: 24px">Model Selection and Estimation</p><br>
                         <div class="col-md-12">
                             <p><b>Models:</b> Decision Tree, Random Forest, Gradient Boosting and Logistic Regression</p>
                             <p><b>Imbalanced Class Problem</b></p>
@@ -224,7 +225,7 @@
                         </div>
                     </div>
                     <div class="tab-pane tab-bg" id="event">
-                        <br><p class="center" style="font-size: 24px">Clinical Event Extraction</p><br>
+                        <p class="center" style="font-size: 24px">Clinical Event Extraction</p><br>
                         <p><b>Convert medical records to a JSON file</b></p>
                         <p>- Each patient has multiple medical records</p>
                         <p>- Each record has record type, header, date, and multiple sections</p>
@@ -236,19 +237,19 @@
                         <p>- Append the events to the JSON file under each note accordingly</p>
                     </div>
                     <div class="tab-pane center tab-bg" id="dv1">
-                        <br><p class="center" style="font-size: 24px">Dashboard</p><br>
+                        <p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-1.png" alt="Dashboard Screenshot" style="width: 90%;">
                     </div>
                     <div class="tab-pane center tab-bg" id="dv2">
-                        <br><p class="center" style="font-size: 24px">Dashboard</p><br>
+                        <p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-2.png" alt="Dashboard Screenshot" style="width: 60%;">
                     </div>
                     <div class="tab-pane center tab-bg" id="dv3">
-                        <br><p class="center" style="font-size: 24px">Dashboard</p><br>
+                        <p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-3.png" alt="Dashboard Screenshot" style="width: 90%;">
                     </div>
                     <div class="tab-pane tab-bg" id="wrapup">
-                        <br><p class="center" style="font-size: 24px">Python Library</p><br>
+                        <p class="center" style="font-size: 24px">Python Library</p><br>
                         <div class="col-md-4">
                             <p><b>- Wrap up analysis modules</b></p><br>
                             <p><b>- Document the project using Sphinx</b></p><br>
