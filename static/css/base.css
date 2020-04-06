@@ -55,25 +55,20 @@ body {
     /*margin-right: 4%;*/
     /*!*height:80px;*!*/
 /*}*/
-/*#body {*/
-    /*!*padding:10px;*!*/
-    /*padding-bottom:60px;   !* Height of the footer *!*/
-/*}*/
+#body {
+    /*padding:10px;*/
+    padding-bottom:40px;   /* Height of the footer */
+}
 .footer-frame {
     position:fixed;
-    background-attachment: scroll;
+    /*background-attachment: scroll;*/
     bottom:0;
     width:100%;
-    min-height:20px;   /* Height of the footer */
+    height: 40px/* Height of the footer */
     /*background: transparent;*/
 }
-.header-frame {
-    position:fixed;
-    padding-right: 15px;
-    top:0;
-    width:100%;
-    /*min-height:20px;   !* Height of the footer *!*/
-    background: transparent;
+.navbar {
+    min-height: 40px;
 }
 .goBack {
     color:grey;

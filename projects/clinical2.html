@@ -12,20 +12,19 @@
     <script src="../static/js/template.js"></script>
     <script>
         $(function(){
-            $(".header-frame").append(head_in_folder);
+            $(".navbar").append(head_in_folder);
             $(".footer-frame").append(foot);
         });
     </script>
 </head>
 <body>
-<div class="header-frame"></div>
-<br><br><br>
+<div class="navbar"></div>
 <div class="container-fluid">
     <div class="row">
-        <h3 style="text-align: center">Clinical Pathway Extraction</h3><br>
+        <h3 style="text-align: center; margin: 0;">Clinical Pathway Extraction</h3><br>
         <div id="sidebar" class="col-md-3">
             <div class="scroll rtl">
-                <ul class="nav nav-tabs tabs-left ltr" style="height:68%;">
+                <ul class="nav nav-tabs tabs-left ltr" style="height:70%;">
                     <div style="width: 100%; height: 30px"><button class="closebtn">×</button></div>
                     <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
                     <li><a href="#workflow" data-toggle="tab">2. Challenges</a></li>
@@ -69,7 +68,7 @@
         <div id="content" class="col-md-9">
             <div style="height: 25px"><button class="openbtn">☰ Open Sidebar</button></div>
             <div class="tab-content" style="height: 75%">
-                <div class="tab-pane tab-bg active" id="objectives">
+                <div class="tab-pane tab-bg active scroll" id="objectives">
                     <p class="center tab-title">Objectives</p><br>
                     <div class="col-md-5">
                         <p><b>Clinical event extractions over patient’s timeline</b></p>
@@ -89,7 +88,7 @@
                         <img src="clinical2/1.png" alt="Flow" style="width: 100%">
                     </div>
                 </div>
-                <div class="tab-pane tab-bg" id="workflow">
+                <div class="tab-pane tab-bg scroll" id="workflow">
                     <p class="center tab-title">Challenges</p><br>
                     <div class="col-md-6">
                         <p><b>Direct keyword extraction is difficult</b></p><br>
@@ -101,7 +100,7 @@
                         <img src="clinical2/2.png" alt="Unstructured Note" style="width: 85%;">
                     </div>
                 </div>
-                <div class="tab-pane tab-bg" id="3-1" style="padding-left: 5%">
+                <div class="tab-pane tab-bg scroll" id="3-1" style="padding-left: 5%">
                     <p class="center tab-title">Pos Tagging Method</p><br>
                     <p><b>Parts Of Speech Tagging</b></p>
                     <p>&nbsp;&nbsp;Extension to tag words such as medications, dates, indexes as tags</p>
@@ -119,15 +118,15 @@
                     <p>&nbsp;&nbsp;- ('continues', 'VBZ'), ('on', 'IN'), ('xofigo', <span class="blue">'MEDICINE'</span>)</p>
                     <p>&nbsp;&nbsp;- ('PSA', <span class="blue">'PSA'</span>), ('is', 'VBZ'), ('10', 'CD')</p>
                 </div>
-                <div class="tab-pane tab-bg" id="3-2">
+                <div class="tab-pane tab-bg scroll" id="3-2">
                     <p class="center tab-title">Pos Tagging Results</p><br>
                     <img src="clinical2/3-1.png" alt="Examples" style="width: 90%;padding-left: 5%">
                 </div>
-                <div class="tab-pane tab-bg" id="3-3">
+                <div class="tab-pane tab-bg scroll" id="3-3">
                     <p class="center tab-title">System Design</p><br>
                     <img src="clinical2/3-2.png" alt="System" style="width: 90%;padding-left: 5%">
                 </div>
-                <div class="tab-pane center tab-bg" id="4-1">
+                <div class="tab-pane center tab-bg scroll" id="4-1">
                     <p class="center tab-title">Patient Note Timeline</p>
                     <img src="clinical2/4-1.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
@@ -135,15 +134,15 @@
                     <p class="center tab-title">Keyword Extraction</p>
                     <img src="clinical2/4-2.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
-                <div class="tab-pane center tab-bg" id="4-3">
+                <div class="tab-pane center tab-bg scroll" id="4-3">
                     <p class="center tab-title">Patient Pathway</p>
                     <img src="clinical2/4-3.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
-                <div class="tab-pane center tab-bg" id="4-4">
+                <div class="tab-pane center tab-bg scroll" id="4-4">
                     <p class="center tab-title">Medications on Admission/Discharge</p><br>
                     <img src="clinical2/4-4.png" alt="Dashboard Screenshot" style="width: 90%;">
                 </div>
-                <div class="tab-pane tab-bg" id="5-1">
+                <div class="tab-pane tab-bg scroll" id="5-1">
                     <p class="center tab-title">Word Similarity</p><br>
                     <div class="col-md-5">
                         <p><b>Time to Development of Metastatic Disease</b></p><br>
@@ -161,7 +160,7 @@
                         <img src="clinical2/5-2.png" alt="Word Similarity" style="width: 85%;">
                     </div>
                 </div>
-                <div class="tab-pane tab-bg" id="5-2">
+                <div class="tab-pane tab-bg scroll" id="5-2">
                     <p class="center tab-title">Sentence Similarity</p><br>
                     <p class="center">Sentences similar to ‘revealed metastatic disease’</p><br>
                     <img src="clinical2/5-3.png" alt="Word Similarity" style="width: 90%;padding-left: 5%">

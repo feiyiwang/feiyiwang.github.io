@@ -12,20 +12,19 @@
     <script src="../static/js/template.js"></script>
     <script>
         $(function(){
-            $(".header-frame").append(head_in_folder);
+            $(".navbar").append(head_in_folder);
             $(".footer-frame").append(foot);
         });
     </script>
 </head>
 <body>
-<div class="header-frame"></div>
-<br><br><br>
+    <div class="navbar"></div>
     <div class="container-fluid">
         <div class="row">
-            <h3 style="text-align: center">Fight Cancer With NLP</h3><br>
+            <h3 style="text-align: center;margin: 0;">Fight Cancer With NLP</h3><br>
             <div id="sidebar" class="col-md-3">
                 <div class="scroll rtl">
-                    <ul class="nav nav-tabs tabs-left ltr" style="height:68%;">
+                    <ul class="nav nav-tabs tabs-left ltr" style="height:70%;">
                         <div style="width: 100%; height: 30px"><button class="closebtn">×</button></div>
                         <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
                         <li><a href="#workflow" data-toggle="tab">2. Workflow</a></li>
@@ -74,7 +73,7 @@
             <div id="content" class="col-md-9">
                 <div style="height: 25px"><button class="openbtn">☰ Open Sidebar</button></div>
                 <div class="tab-content" style="height: 75%">
-                    <div class="tab-pane tab-bg active" id="objectives">
+                    <div class="tab-pane tab-bg active scroll" id="objectives">
                         <p class="center" style="font-size: 24px">Objectives</p><br>
                         <div class="col-md-6">
                             <p><b>To build computational framework that leverages NLP</b></p>
@@ -88,7 +87,7 @@
                             <img src="clinical1/1.png" alt="Unstructured Data" style="width: 80%;padding-left: 5%">
                         </div>
                     </div>
-                    <div class="tab-pane tab-bg" id="workflow">
+                    <div class="tab-pane tab-bg scroll" id="workflow">
                         <p class="center" style="font-size: 24px">Workflow</p><br>
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
@@ -111,7 +110,7 @@
                         </div>
                         <div class="col-md-1"></div>
                     </div>
-                    <div class="tab-pane tab-bg" id="headers1">
+                    <div class="tab-pane tab-bg scroll" id="headers1">
                         <p class="center" style="font-size: 24px">Note Classification</p><br>
                         <div class="col-md-6">
                             <p><b>Notes from same institute and department have similar </b></p>
@@ -130,7 +129,7 @@
                             <img src="clinical1/3-1.png" alt="Unstructured Note" style="width: 80%;padding-left: 5%">
                         </div>
                     </div>
-                    <div class="tab-pane tab-bg" id="headers2">
+                    <div class="tab-pane tab-bg scroll" id="headers2">
                         <p class="center" style="font-size: 24px">Note Clustering</p><br>
                         <div class="col-md-6">
                             <p><b>Utilize the similarity in notes to build up a DBSCAN model</b></p>
@@ -146,7 +145,7 @@
                     <!--<div class="tab-pane tab-bg" id="headers3">-->
                         <!--3-->
                     <!--</div>-->
-                    <div class="tab-pane tab-bg" id="sections1">
+                    <div class="tab-pane tab-bg scroll" id="sections1">
                         <p class="center" style="font-size: 24px">Rule-Based NLP Method</p><br>
                         <div class="col-md-6">
                             <p><b>Methodology</b></p>
@@ -165,7 +164,7 @@
                             <img src="clinical1/4-1.png" alt="Unstructured Note" style="width: 80%;padding-left: 5%">
                         </div>
                     </div>
-                    <div class="tab-pane tab-bg" id="sections2">
+                    <div class="tab-pane tab-bg scroll" id="sections2">
                         <p class="center" style="font-size: 24px">Machine Learning Method</p><br>
                         <div class="col-md-7 scroll" style="height: 60%">
                             <p><b>Methodology</b></p><br>
@@ -193,7 +192,7 @@
                             <img src="clinical1/4-2.png" alt="Unstructured Note" style="width: 90%;">
                         </div>
                     </div>
-                    <div class="tab-pane tab-bg" id="sections3">
+                    <div class="tab-pane tab-bg scroll" id="sections3">
                         <p class="center" style="font-size: 24px">Pos Tag for Sections</p><br>
                         <div class="col-md-7">
                             <img src="clinical1/4-3-1.png" alt="Plot" style="width: 90%;">
@@ -202,7 +201,7 @@
                             <img src="clinical1/4-3-2.png" alt="Table" style="width: 90%;">
                         </div>
                     </div>
-                    <div class="tab-pane tab-bg" id="sections4">
+                    <div class="tab-pane tab-bg scroll" id="sections4">
                         <p class="center" style="font-size: 24px">Feature Engineering</p><br>
                         <div class="col-md-12 scroll" style="height: 60%">
                             <img src="clinical1/4-4-1.png" alt="Note" style="width: 100%;padding: 5%">
@@ -211,7 +210,7 @@
                             <img src="clinical1/4-4-4.png" alt="Features3" style="width: 100%;padding: 5%">
                         </div>
                     </div>
-                    <div class="tab-pane tab-bg" id="sections5">
+                    <div class="tab-pane tab-bg scroll" id="sections5">
                         <p class="center" style="font-size: 24px">Model Selection and Estimation</p><br>
                         <div class="col-md-12">
                             <p><b>Models:</b> Decision Tree, Random Forest, Gradient Boosting and Logistic Regression</p>
@@ -224,7 +223,7 @@
                             <img src="clinical1/4-5-1.png" alt="Table" style="width: 90%;">
                         </div>
                     </div>
-                    <div class="tab-pane tab-bg" id="event">
+                    <div class="tab-pane tab-bg scroll" id="event">
                         <p class="center" style="font-size: 24px">Clinical Event Extraction</p><br>
                         <p><b>Convert medical records to a JSON file</b></p>
                         <p>- Each patient has multiple medical records</p>
@@ -236,19 +235,19 @@
                         <p>- e.g. extract Staging from Assessment; extract drug names from MEDICATIONS</p>
                         <p>- Append the events to the JSON file under each note accordingly</p>
                     </div>
-                    <div class="tab-pane center tab-bg" id="dv1">
+                    <div class="tab-pane center tab-bg scroll" id="dv1">
                         <p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-1.png" alt="Dashboard Screenshot" style="width: 90%;">
                     </div>
-                    <div class="tab-pane center tab-bg" id="dv2">
+                    <div class="tab-pane center tab-bg scroll" id="dv2">
                         <p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-2.png" alt="Dashboard Screenshot" style="width: 60%;">
                     </div>
-                    <div class="tab-pane center tab-bg" id="dv3">
+                    <div class="tab-pane center tab-bg scroll" id="dv3">
                         <p class="center" style="font-size: 24px">Dashboard</p><br>
                         <img src="clinical1/6-3.png" alt="Dashboard Screenshot" style="width: 90%;">
                     </div>
-                    <div class="tab-pane tab-bg" id="wrapup">
+                    <div class="tab-pane tab-bg scroll" id="wrapup">
                         <p class="center" style="font-size: 24px">Python Library</p><br>
                         <div class="col-md-4">
                             <p><b>- Wrap up analysis modules</b></p><br>
