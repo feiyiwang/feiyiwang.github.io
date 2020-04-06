@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="../static/js/matomo.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fey's Photos</title>
@@ -12,15 +12,17 @@
     <script src="../static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="../static/css/base.css">
+    <script src="../static/js/template.js"></script>
     <script>
         $(function(){
-            $("#header").load("../template/header-in-folder.html");
-            $("#footer").load("../template/footer.html");
+            $(".header-frame").append(head_in_folder);
+            $(".footer-frame").append(foot);
         });
     </script>
 </head>
 <body>
-<div id="header"></div>
+<div class="header-frame"></div>
+<br><br><br>
 <button onclick="goBack()" class="goBack" title="Go Back">&lsaquo;</button>
 <div class="vintalight" id="vintalight">
 
@@ -67,6 +69,6 @@
 </div>
 <div id="modal2" class="modal center"></div>
 <script src="../static/js/photography.js"></script>
-<div id="footer"></div>
+<div class="footer-frame bg_trans"></div>
 </body>
 </html>
