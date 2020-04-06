@@ -24,9 +24,9 @@ $('.div_pic').click(function () {
     });
 });
 
-function goBack() {
-    window.history.back();
-}
+// function goBack() {
+//     window.history.back();
+// }
 
 // var activeVintalight = function activeVintalight(container) {
 //     container.addEventListener("click", function (e) {

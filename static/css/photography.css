@@ -284,16 +284,16 @@ body {
     left: 25px;
 }
 
-.goBack {
-    margin-left: 50px;
-    margin-top:-50px;
-    font-size: 100px;
-    color:grey;
-    opacity: 0.3;
-    background-color: transparent;
-    border: none;
-    position: absolute
-}
-.goBack:hover, .goBack:target {
-    opacity: 0.9;
-}
+/*.goBack {*/
+    /*margin-left: 50px;*/
+    /*margin-top:-50px;*/
+    /*font-size: 100px;*/
+    /*color:grey;*/
+    /*opacity: 0.3;*/
+    /*background-color: transparent;*/
+    /*border: none;*/
+    /*position: absolute*/
+/*}*/
+/*.goBack:hover, .goBack:target {*/
+    /*opacity: 0.9;*/
+/*}*/

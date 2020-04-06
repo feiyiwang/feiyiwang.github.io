@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="../static/js/matomo.js"></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fey's Photos</title>
@@ -14,16 +14,18 @@
     <link rel="stylesheet" href="../static/css/base.css">
     <script src="../static/js/template.js"></script>
     <script>
-        $(function(){
+        $(function() {
+//            var white_foot = foot.replace('grey', 'white');
             $(".header-frame").append(head_in_folder);
             $(".footer-frame").append(foot);
-        });
+//            $(".footer-frame").append(white_foot);
+        })
     </script>
 </head>
 <body>
 <div class="header-frame"></div>
 <br><br><br>
-<button onclick="goBack()" class="goBack" title="Go Back">&lsaquo;</button>
+<!--<button onclick="goBack()" class="goBack" title="Go Back">&lsaquo;</button>-->
 <div class="vintalight" id="vintalight">
 
     <figure class="figure_pic">
@@ -70,9 +72,9 @@
 
 <div id="modal2" class="modal center"></div>
 <div class="footer-frame bg_trans"></div>
-<script>
-    $( ".footer-frame > p" ).toggleClass( "grey white" );
-</script>
+<!--<script>-->
+    <!--$( ".footer-frame > p" ).toggleClass( "grey white" );-->
+<!--</script>-->
 </body>
 <script src="../static/js/photography.js"></script>
 </html>

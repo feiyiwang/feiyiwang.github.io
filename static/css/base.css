@@ -75,6 +75,14 @@ body {
     /*min-height:20px;   !* Height of the footer *!*/
     background: transparent;
 }
+.goBack {
+    color:grey;
+    background-color: transparent;
+    border: none;
+}
+.goBack:hover, .goBack:target {
+    color: dimgrey;
+}
 /*hr {*/
     /*color: black;*/
     /*border-width: 1px;*/
