@@ -1,17 +1,31 @@
 /**
  * Created by feiyiwang on 4/6/20.
  */
-function loadNoteballs(data_source) {
-    var svg = d3.select("svg"),
+function loadNoteballs(data_source,svg_id) {
+    var svg = d3.select(svg_id),
         width = +svg.attr("width"),
         height = +svg.attr("height");
 
-    var color = d3.scaleOrdinal(d3.schemeCategory20);
-
+    // var color = d3.scaleOrdinal(d3.schemeCategory20);
+    var palette = [
+        'rgb(50,120,160)','rgb(230,90,30)','rgb(50,150,80)','rgb(210,100,100)',
+        'rgb(100,90,160)','rgb(130,160,20)','rgb(230,180,40)'
+    ];
+    function color(d) {
+        function newColor(color,level) {
+            return color+(255-color)*0.12*level
+        }
+        var group_color = palette[d.group-1], rgb=group_color.slice(4,-1).split(',').map(Number),
+            r=newColor(rgb[0],d.level),g=newColor(rgb[1],d.level),b=newColor(rgb[2],d.level);
+        return 'rgb('+String(r)+','+String(g)+','+String(b)+')'
+    }
+    function length(d) {
+        return 100-Number(d.level)*5
+    }
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink()
             .id(function(d) { return d.id; })
-            .distance(100)
+
 //                        .distance(function (link) {
 //                            return link.graph === 0 ? height/2 : height/4;
 //                        })
@@ -24,16 +38,7 @@ function loadNoteballs(data_source) {
     d3.json(data_source, function(error, graph) {
         if (error) throw error;
 
-        var palette = {
-            'level1':['#3182bd','#e6550d','#31a354','#d6616b','#756bb1','#94AB18','#F1B82B'],
-            'level2':['#6baed6','#fd8d3c','#74c476','#DD8C8F','#9e9ac8','#AAC421','#F9BA52'],
-            'level3':['#9ecae1','#fdae6b','#a1d99b','#F3B1AC','#bcbddc','#CAD856','#F9C671'],
-            'level4':['#c6dbef','#fdd0a2','#c7e9c0','#f1c3bd','#dadaeb','#DCE57C','#FAD296']
-        };
 
-        function color(d) {
-            return palette["level"+d.level][d.group-1]
-        }
 
         var link = svg.append("g")
             .attr("class", "links")
@@ -77,13 +82,7 @@ function loadNoteballs(data_source) {
             .attr('y', 4); // how much from the text top side to the center of the circles vertically
 
         function getRadius(d) {
-            if (d.level == 1) {
-                return 30
-            } else if (d.level == 2) {
-                return 25
-            } else {
-                return 20
-            }
+            return 30-(d.level-1)*3
         }
 
 //            function handleClick(d) {
@@ -142,7 +141,11 @@ function loadNoteballs(data_source) {
             .on("tick", ticked);
 
         simulation.force("link")
-            .links(graph.links);
+            .links(graph.links)
+            .distance(function (d) {
+                // alert(JSON.());
+                return 90-10*d.source.level
+            });
 
         function ticked() {
             link

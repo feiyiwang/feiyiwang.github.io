@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/noteballs.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/notebook/notebook.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook.html" afterPath="$PROJECT_DIR$/notebook.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/home.html" afterPath="$PROJECT_DIR$/notebook/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/json/nn.json" afterPath="$PROJECT_DIR$/notebook/json/nn.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/nn.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/nn.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/nn.html" afterPath="$PROJECT_DIR$/notebook/nn.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/login.css" afterPath="$PROJECT_DIR$/static/css/login.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/noteballs.js" afterPath="$PROJECT_DIR$/static/js/noteballs.js" />
     </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,19 +30,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="notebook.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/notebook.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/login.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,11 +42,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nn.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="notebook.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/notebook.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nn.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notebook/json/nn.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="210">
+              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -80,8 +78,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notebook/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="143">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -89,14 +87,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="noteballs.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="noteballs.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/noteballs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="255">
+              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc;n#loadNoteballs#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="141" column="26" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,7 +139,6 @@
         <option value="$PROJECT_DIR$/personal/home.html" />
         <option value="$PROJECT_DIR$/template/home.html" />
         <option value="$PROJECT_DIR$/static/js/jquery.min.js" />
-        <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/notebook/nc_nr.html" />
         <option value="$PROJECT_DIR$/static/css/math.css" />
         <option value="$PROJECT_DIR$/static/js/home.js" />
@@ -169,11 +176,12 @@
         <option value="$PROJECT_DIR$/photography/zion1.html" />
         <option value="$PROJECT_DIR$/static/js/template.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/static/js/noteballs.js" />
         <option value="$PROJECT_DIR$/notebook.html" />
-        <option value="$PROJECT_DIR$/notebook/home.html" />
         <option value="$PROJECT_DIR$/notebook/nn.html" />
+        <option value="$PROJECT_DIR$/notebook/home.html" />
+        <option value="$PROJECT_DIR$/static/css/login.css" />
         <option value="$PROJECT_DIR$/notebook/json/nn.json" />
+        <option value="$PROJECT_DIR$/static/js/noteballs.js" />
       </list>
     </option>
   </component>
@@ -1052,12 +1060,12 @@
       <workItem from="1585517219344" duration="30391000" />
       <workItem from="1585845062954" duration="1000" />
       <workItem from="1585876609393" duration="1193000" />
-      <workItem from="1586059076963" duration="37640000" />
+      <workItem from="1586059076963" duration="46235000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="302095000" />
+    <option name="totallyTimeSpent" value="310690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="78" y="23" width="1217" height="720" extended-state="0" />
@@ -1172,14 +1180,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/home.js" />
-    <entry file="file://$PROJECT_DIR$/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/footer">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1526,20 +1526,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/noteballs.js">
+    <entry file="file://$PROJECT_DIR$/template/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state relative-caret-position="188">
+          <caret line="111" column="48" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="48" />
           <folding>
-            <element signature="n#!!doc;n#loadNoteballs#0" expanded="false" />
+            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/notebook.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+        <state relative-caret-position="-60">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
@@ -1549,8 +1549,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notebook/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        <state relative-caret-position="143">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -1565,21 +1565,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/login.html">
+    <entry file="file://$PROJECT_DIR$/notebook/json/nn.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="111" column="48" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/json/nn.json">
+    <entry file="file://$PROJECT_DIR$/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="458">
+          <caret line="141" column="26" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/noteballs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#loadNoteballs#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
