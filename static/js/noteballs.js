@@ -7,13 +7,14 @@ function loadNoteballs(data_source,svg_id) {
         height = +svg.attr("height");
 
     // var color = d3.scaleOrdinal(d3.schemeCategory20);
+    //蓝 橙 绿 粉 紫 草 黄
     var palette = [
-        'rgb(50,120,160)','rgb(230,90,30)','rgb(50,150,80)','rgb(210,100,100)',
+        'rgb(50,120,160)','rgb(230,90,30)','rgb(50,150,80)','rgb(190,80,80)',
         'rgb(100,90,160)','rgb(130,160,20)','rgb(230,180,40)'
     ];
     function color(d) {
         function newColor(color,level) {
-            return color+(255-color)*0.12*level
+            return color+(255-color)*0.11*level
         }
         var group_color = palette[d.group-1], rgb=group_color.slice(4,-1).split(',').map(Number),
             r=newColor(rgb[0],d.level),g=newColor(rgb[1],d.level),b=newColor(rgb[2],d.level);
@@ -25,10 +26,6 @@ function loadNoteballs(data_source,svg_id) {
     var simulation = d3.forceSimulation()
         .force("link", d3.forceLink()
             .id(function(d) { return d.id; })
-
-//                        .distance(function (link) {
-//                            return link.graph === 0 ? height/2 : height/4;
-//                        })
         )
         .force("charge", d3.forceManyBody())
         //                .force("x", d3.forceX()) //press all small circles into a small ball
@@ -37,8 +34,6 @@ function loadNoteballs(data_source,svg_id) {
 
     d3.json(data_source, function(error, graph) {
         if (error) throw error;
-
-
 
         var link = svg.append("g")
             .attr("class", "links")
@@ -53,15 +48,14 @@ function loadNoteballs(data_source,svg_id) {
             .data(graph.nodes)
             .enter().append("g");
 
-        var circle_link = node.append("a")
-            .attr("href", function (d) {
-                return "#a-" + d.id;
-            });
-
-        var circles = circle_link.append("circle")
+        // var circle_link = node.append("a")
+        //     .attr("href", function (d) {
+        //         return "#a-" + d.id;
+        //     });
+        // var circles = circle_link.append("circle")
+        var circles = node.append("circle")
             .attr("r", getRadius)
             .attr("fill", color)
-            //                    .on("click", handleClick)
             .on("mouseover", handleMouseOver)
             .on("mouseout", handleMouseOut)
             .call(d3.drag()
@@ -75,21 +69,21 @@ function loadNoteballs(data_source,svg_id) {
                 r = getRadius(d);
                 return r/2
             })
-            .style("fill", "white")
+            .style("fill", function (d) {
+                if (d.level <= 4) {return "white"} else {return palette[d.group-1]}
+            })
             .text(function(d) { return d.id; })
             .attr("text-anchor", "middle")
             .attr('x', 0) // how much from the text left side to the center of the circles horizontally
-            .attr('y', 4); // how much from the text top side to the center of the circles vertically
+            .attr('y', function (d) {
+                if (d.level <= 4) {return 4} else {return 2}
+            }); // how much from the text top side to the center of the circles vertically
 
         function getRadius(d) {
-            return 30-(d.level-1)*3
+            return 30-(d.level-1)*3.5
         }
 
-//            function handleClick(d) {
-//
-//            }
-
-//          // Create Event Handlers for mouse
+         // Create Event Handlers for mouse
         function handleMouseOver(d) {  // Add interactivity
 
             // Use D3 to select element, change color and size
@@ -99,19 +93,10 @@ function loadNoteballs(data_source,svg_id) {
                     var r = getRadius(d);
                     return 1.2*r
                 });
-//                        .attr()
-
-
-//                div	.html(
-//                        '<a id="a-' + d.id + '"' + ' href= "#'+ d.id +'">' + // The first <a> tag
-//                        d.name +
-//                        "</a>")                        // closing </a> tag
-//                //                                "+<br/>"  + d.close)
-
 
             // Specify where to put label of text
             d3.select(this.parentNode).append("text")
-                .style('fill', "#336ca9")
+                .style('fill', function (d) {return palette[d.group-1]})
                 .style("font-size", "20px")
                 .attr("id", "t-" + d.id)  // Create an id for text so we can select it later for removing on mouseout
                 .attr("x", function (d) {
@@ -134,7 +119,6 @@ function loadNoteballs(data_source,svg_id) {
             //                        .delay(200)
                 .remove();  // Remove text location
         }
-
 
         simulation
             .nodes(graph.nodes)
