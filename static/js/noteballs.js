@@ -139,6 +139,8 @@ function loadNoteballs(data_source,svg_id) {
                 .attr("y2", function(d) { return d.target.y; });
 
             node
+                // .attr("cx", function(d) { return d.x; })
+                // .attr("cy", function(d) { return d.y; });
                 .attr("transform", function(d) {
                     return "translate(" + d.x + "," + d.y + ")";
                 })
