@@ -31,9 +31,7 @@
     {"source": "Health", "target": "MM", "value": 5},
     {"source": "Health", "target": "NSCLC", "value": 5},
     {"source": "Health", "target": "CaP", "value": 5},
-    {"source": "CaP", "target": "NLP", "value": 1},
-    {"source": "CaP", "target": "MMML", "value": 1},
-    {"source": "CaP", "target": "DV", "value": 1},
+    {"source": "Health", "target": "DV", "value": 5},
     {"source": "Stat", "target": "Pr", "value": 5},
     {"source": "ML", "target": "SL", "value": 5},
     {"source": "ML", "target": "UnSL", "value": 5},
@@ -52,8 +50,9 @@
     {"source": "Topics", "target": "NLP", "value": 1},
     {"source": "Topics", "target": "MMML", "value": 1},
     {"source": "MMML", "target": "NLP", "value": 1},
-    {"source": "NLP", "target": "NLC", "value": 1},
     {"source": "ML", "target": "UnSL", "value": 1},
-    {"source": "DV", "target": "Front", "value": 1}
+    {"source": "DV", "target": "Front", "value": 1},
+    {"source": "Topics", "target": "Health", "value": 5},
+    {"source": "ML", "target": "Topics", "value": 5}
   ]
 }
