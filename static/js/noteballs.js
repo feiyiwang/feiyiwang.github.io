@@ -50,7 +50,7 @@ function loadNoteballs(data_source,svg_id) {
 
         // var circle_link = node.append("a")
         //     .attr("href", function (d) {
-        //         return "#a-" + d.id;
+        //         return "#"+svg_id.slice(5)+"-" + d.id;
         //     });
         // var circles = circle_link.append("circle")
         var circles = node.append("circle")

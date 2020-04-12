@@ -17,6 +17,7 @@
             $("#header").load("template/header.html");
             $(".footer-frame").append(foot);
             $("#home").load("notebook/home.html");
+            $("#leuk").load("notebook/leukemia.html");
             $("#lc").load("notebook/lc.html");
             $("#nn").load("notebook/nn.html");
             $("#ml_notes").load("notebook/ml_notes.html");
@@ -40,7 +41,7 @@
                         Healthcare<span class="caret-down">▾</span>
                     </a>
                     <ul class="collapse tabs-left" id="health">
-                        <li class="dropdown-item"><a href="#leukemia" data-toggle="tab">Leukemia</a></li>
+                        <li class="dropdown-item"><a href="#leuk" data-toggle="tab">Leukemia</a></li>
                         <li class="dropdown-item"><a href="#mm" data-toggle="tab">Multiple Myeloma</a></li>
                         <li class="dropdown-item"><a href="#nsclc" data-toggle="tab">Non-Small Cell Lung Cancer</a></li>
                         <li class="dropdown-item"><a href="#prostate" data-toggle="tab">Prostate Cancer</a></li>
@@ -144,7 +145,7 @@
             <div class="tab-content">
                 <div class="tab-pane active" id="home"></div>
 
-                <div class="tab-pane" id="leukemia"></div>
+                <div class="tab-pane" id="leuk"></div>
                 <div class="tab-pane" id="mm"></div>
                 <div class="tab-pane" id="nsclc"></div>
                 <div class="tab-pane" id="prostate"></div>
