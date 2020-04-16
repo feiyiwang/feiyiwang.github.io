@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/lc_lr.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/lc_lr.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/nc_nr.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/nc_nr.ipynb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/leukemia.html" afterPath="$PROJECT_DIR$/notebook/leukemia.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/unSL.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/unSL.ipynb" />
     </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -974,12 +971,12 @@
       <workItem from="1585845062954" duration="1000" />
       <workItem from="1585876609393" duration="1193000" />
       <workItem from="1586059076963" duration="50061000" />
-      <workItem from="1586716612508" duration="6980000" />
+      <workItem from="1586716612508" duration="7334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="321496000" />
+    <option name="totallyTimeSpent" value="321850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="23" width="1217" height="720" extended-state="0" />
