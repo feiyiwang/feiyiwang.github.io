@@ -1,11 +1,34 @@
-<p class="center tab-title">Leukemia</p><br>
-<div class="scroll" style="height: 65%">
-    <br>
-    <div class="concept" id="leuk-MED">
-        <h3>Machine Learning</h3>
-        CML/ALL Market Definition – Products of Interest
-        CML market includes 5 Rx products and 1 Dx self-injectable procedure which has both J codes as well as NDC (Dx&Rx) –
-        List of Rx products -<br>
+<p class="center tab-title">Bio-Informatics</p>
+<ul class="nav nav-tabs" style="width:100%;">
+    <li class="active"><a href="#nn-" data-toggle="tab">Introduction</a></li>
+    <!--<li><a href="#prob" data-toggle="tab">Probability</a></li>-->
+    <li><a href="#af" data-toggle="tab">GWAS</a></li>
+</ul>
+<div class="tab-content scroll" style="width:100%;height: 65%;">
+    <div class="tab-pane active" id="nn-">
+        <svg id="svg-nn" width="860" height="450"></svg>
+        <script>
+            loadNoteballs("notebook/json/nn.json","#svg-nn");
+        </script>
     </div>
-    <br>
+    <div class="tab-pane" id="af"><br>
+        <p class="center tab-title">Statistical analysis of genome-wide association</p>
+        <b>Goal: </b>to identify genetic risk factors for complex multifactorial diseases<br><br>
+        <p><b>Case-control GWA Studies</b></p>
+        <p>• Obtain DNA from people with disease of interest (cases) and unaffected controls</p>
+        <p>• Run each DNA sample on a SNP chip to measure genotypes at 300,000-1,000,000 SNPs in cases and controls</p>
+        <p>• Identify SNPs where one allele is significantly more common in cases than controls -> This SNP is associated with the disease</p>
+        <p>• Alternative strategy e.g. test for association between SNPs and a quantitative trait that underlies the disease</p>
+        <p>SNP: rs12425791 (Genotype) -> Blood pressure (endophenotype) -> Stroke (phenotype)</p><br>
+        <p><b>Association does not imply causation</b></p>
+        <p>• Suppose that genotypes at a particular SNP are significantly associated with disease</p>
+        <p>• This may be because the SNP is associated with some other factor (a confounder), which is associated with disease but is not in the same causal pathway</p>
+        <p>SNP near lactase gene <- Northern European ancestry -> multiple sclerosis (MS)</p>
+        <p>• Possible confounders of genetic associations:</p>
+        <p>    – Ethnic ancestry</p>
+        <p>    – Genotyping batch, genotyping centre</p>
+        <p>    – DNA quality</p>
+        <p>Environmental exposures in the same causal pathway</p>
+        <br><br>
+    </div>
 </div>
