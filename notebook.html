@@ -17,7 +17,7 @@
             $("#header").load("template/header.html");
             $(".footer-frame").append(foot);
             $("#home").load("notebook/home.html");
-            $("#leuk").load("notebook/leukemia.html");
+            $("#cancer").load("notebook/cancer.html");
             $("#bioinfo").load("notebook/bioinfo.html");
             $("#supervised").load("notebook/sl.html");
             $("#unsupervised").load("notebook/usl.html");
@@ -42,10 +42,7 @@
                         Healthcare<span class="caret-down">▾</span>
                     </a>
                     <ul class="collapse tabs-left" id="health">
-                        <li class="dropdown-item"><a href="#leuk" data-toggle="tab">Leukemia</a></li>
-                        <li class="dropdown-item"><a href="#mm" data-toggle="tab">Multiple Myeloma</a></li>
-                        <li class="dropdown-item"><a href="#nsclc" data-toggle="tab">Non-Small Cell Lung Cancer</a></li>
-                        <li class="dropdown-item"><a href="#prostate" data-toggle="tab">Prostate Cancer</a></li>
+                        <li class="dropdown-item"><a href="#cancer" data-toggle="tab">Oncology</a></li>
                         <li class="dropdown-item"><a href="#bioinfo" data-toggle="tab">Bio-informatics</a></li>
                     </ul>
                 </li>
@@ -123,13 +120,10 @@
         <div id="content" class="col-md-9">
             <div style="height: 25px"><button class="openbtn">☰ Open Sidebar</button></div>
             <div class="tab-content">
-                <div class="tab-pane" id="home"></div>
+                <div class="tab-pane active" id="home"></div>
 
-                <div class="tab-pane" id="leuk"></div>
-                <div class="tab-pane" id="mm"></div>
-                <div class="tab-pane" id="nsclc"></div>
-                <div class="tab-pane" id="prostate"></div>
-                <div class="tab-pane active" id="bioinfo"></div>
+                <div class="tab-pane" id="cancer"></div>
+                <div class="tab-pane" id="bioinfo"></div>
 
                 <div class="tab-pane" id="prob">Probability</div>
                 <div class="tab-pane" id="stat">Statistics.</div>
