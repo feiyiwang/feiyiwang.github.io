@@ -112,3 +112,7 @@
     stroke: white;
     stroke-width: 1px;
 }
+.jupy-frame {
+    height: 100%;
+    width: 100%;
+}
