@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/notebook/leukemia.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/cancer.html" afterPath="$PROJECT_DIR$/notebook/cancer.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/notebook/jupyter/Untitled.ipynb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/gwas.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/gwas.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/leuk.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/leuk.ipynb" />
     </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -990,12 +990,12 @@
       <workItem from="1585845062954" duration="1000" />
       <workItem from="1585876609393" duration="1193000" />
       <workItem from="1586059076963" duration="50061000" />
-      <workItem from="1586716612508" duration="18716000" />
+      <workItem from="1586716612508" duration="18779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333232000" />
+    <option name="totallyTimeSpent" value="333295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="23" width="1217" height="720" extended-state="0" />
