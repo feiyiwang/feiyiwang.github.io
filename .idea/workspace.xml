@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="" />
+    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/leuk-checkpoint.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/leuk-checkpoint.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/healthcare.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/healthcare.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/leuk.ipynb" afterPath="$PROJECT_DIR$/notebook/jupyter/leuk.ipynb" />
+    </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cancer.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cancer.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/notebook/cancer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
+            <state relative-caret-position="300">
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -73,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ml_notes.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ml_notes.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/notebook/ml_notes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+            <state relative-caret-position="135">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -988,12 +993,12 @@
       <workItem from="1585876609393" duration="1193000" />
       <workItem from="1586059076963" duration="50061000" />
       <workItem from="1586716612508" duration="19172000" />
-      <workItem from="1587756102960" duration="4030000" />
+      <workItem from="1587756102960" duration="4086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="337718000" />
+    <option name="totallyTimeSpent" value="337774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="23" width="1217" height="720" extended-state="0" />
@@ -1338,16 +1343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook/cancer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="80" selection-start-line="16" selection-start-column="80" selection-end-line="16" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/clinical2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1400,8 +1395,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/notebook/ml_notes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="68" selection-start-line="7" selection-start-column="68" selection-end-line="7" selection-end-column="68" />
+        <state relative-caret-position="135">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notebook/cancer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
