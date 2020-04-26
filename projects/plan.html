@@ -1,0 +1,176 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fey's Project</title>
+    <script type="text/javascript" src="../static/js/matomo.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/css/project.css">
+    <script src="../static/js/template.js"></script>
+    <script>
+        $(function(){
+            $(".navbar").append(head_in_folder);
+            $(".footer-frame").append(foot);
+        });
+    </script>
+</head>
+<body>
+<div class="navbar"></div>
+<div class="container-fluid">
+    <div class="row">
+        <h3 style="text-align: center; margin: 0;">Clinical Pathway Extraction</h3><br>
+        <div id="sidebar" class="col-md-3">
+            <div class="scroll rtl">
+                <ul class="nav nav-tabs tabs-left ltr" style="height:70%;">
+                    <div style="width: 100%; height: 30px"><button class="closebtn">×</button></div>
+                    <li class="active"><a href="#objectives" data-toggle="tab">1. Objectives</a></li>
+                    <li><a href="#workflow" data-toggle="tab">2. Challenges</a></li>
+                    <li>
+                        <a class="navbar-toggler" data-toggle="collapse" href="#3">
+                            3. Methodology<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="3">
+                            <li><a class="dropdown-item" href="#3-1" data-toggle="tab">Pos Tagging Method</a></li>
+                            <li><a class="dropdown-item" href="#3-2" data-toggle="tab">Pos Tagging Results</a></li>
+                            <li><a class="dropdown-item" href="#3-3" data-toggle="tab">System Design</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbar-toggler" data-toggle="collapse" href="#4">
+                            4. Data Visualization<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="4">
+                            <li><a class="dropdown-item" href="#4-1" data-toggle="tab">Patient Note Timeline</a></li>
+                            <li><a class="dropdown-item" href="#4-2" data-toggle="tab">Keyword Extraction</a></li>
+                            <li><a class="dropdown-item" href="#4-3" data-toggle="tab">Patient Pathway</a></li>
+                            <li><a class="dropdown-item" href="#4-4" data-toggle="tab">Medications on Admission/Discharge</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="navbar-toggler" data-toggle="collapse" href="#5">
+                            5. Deep Learning and Embedding<span class="caret-down">▾</span>
+                        </a>
+                        <ul class="collapse tabs-left" id="5">
+                            <li><a class="dropdown-item" href="#5-1" data-toggle="tab">Word Similarity</a></li>
+                            <li><a class="dropdown-item" href="#5-2" data-toggle="tab">Sentence Similarity</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="nav nav-tabs tabs-left ltr" style="height:5%;">
+                <li class="navbar-fixed-bottom"><a href="../projects.html">GO BACK</a></li>
+            </ul>
+        </div>
+        <div id="content" class="col-md-9">
+            <div style="height: 25px"><button class="openbtn">☰ Open Sidebar</button></div>
+            <div class="tab-content" style="height: 75%">
+                <div class="tab-pane tab-bg active scroll" id="objectives">
+                    <p class="center tab-title">Objectives</p><br>
+                    <div class="col-md-5">
+                        <p><b>Clinical event extractions over patient’s timeline</b></p>
+                        <p>&nbsp;&nbsp;Staging</p>
+                        <p>&nbsp;&nbsp;- Whether or not metastasis</p>
+                        <p>&nbsp;&nbsp;- T1[a,b,c], T2[a,b,c], T3[a,b]</p>
+                        <p>&nbsp;&nbsp;Gleason score</p>
+                        <p>&nbsp;&nbsp;- Addition of 2 grades of cancer cells</p>
+                        <p>&nbsp;&nbsp;- e.g. gleason 3+3=6, gl 3+4=7</p>
+                        <p>&nbsp;&nbsp;PSA level</p>
+                        <p>&nbsp;&nbsp;- Higher is indicative of Prostate Cancer</p>
+                        <p>&nbsp;&nbsp;- e.g. PSA is 14, PSA 3</p>
+                        <p>&nbsp;&nbsp;Medication</p>
+                        <p>&nbsp;&nbsp;- Relevant drugs e.g. Zytiga, Lupron, Xofigo…</p>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="clinical2/1.png" alt="Flow" style="width: 100%">
+                    </div>
+                </div>
+                <div class="tab-pane tab-bg scroll" id="workflow">
+                    <p class="center tab-title">Challenges</p><br>
+                    <div class="col-md-6">
+                        <p><b>Direct keyword extraction is difficult</b></p><br>
+                        <p>Regular expressions fail to capture keywords along with context</p>
+                        <p>- e.g. Rule ‘PSA [digit][digit].[digit]’ can capture `PSA 10.8’ but cannot capture sentences such as ‘PSA on 12/2015 was 9.0’</p>
+                        <br><p>Lack of labelled data for Machine Learning</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="clinical2/2.png" alt="Unstructured Note" style="width: 85%;">
+                    </div>
+                </div>
+                <div class="tab-pane tab-bg scroll" id="3-1" style="padding-left: 5%">
+                    <p class="center tab-title">Pos Tagging Method</p><br>
+                    <p><b>Parts Of Speech Tagging</b></p>
+                    <p>&nbsp;&nbsp;Extension to tag words such as medications, dates, indexes as tags</p>
+                    <p>&nbsp;&nbsp;e.g. replace Lupron’s tag NOUN with MEDICINE, CD with DATE</p>
+                    <p>&nbsp;&nbsp;- Sentence: started Lupron on 7/8/14</p>
+                    <p>&nbsp;&nbsp;- POS Sentence: ('started', 'VBD'), ('lupron', ‘NN'), ('on', 'IN'), ('7/8/14', 'CD')</p>
+                    <p>&nbsp;&nbsp;- Modified POS Sentence: ('started', 'VBD'), ('lupron', <span class="blue">'MEDICINE'</span>), ('on', 'IN'), ('7/8/14', <span class="blue">'DATE'</span>)</p>
+                    <br>
+                    <p><b>POS tag chunking rules for each clinical event</b></p>
+                    <p>&nbsp;&nbsp;ON_DATE: extract events occurring on a given date</p>
+                    <p>&nbsp;&nbsp;- ('started', 'VBD'), ('lupron', <span class="blue">'MEDICINE'</span>), ('on', 'IN'), ('7/8/14', <span class="blue">'DATE'</span>)</p>
+                    <p>&nbsp;&nbsp;- ('PSA', <span class="blue">'PSA'</span>), ('on', 'IN'), ('02/12/2008', <span class="blue">'DATE'</span>), ('was', 'VBD'), ('10', 'CD')</p>
+                    <br>
+                    <p>&nbsp;&nbsp;PRESENT: extract events occurring at present – specific to date of note</p>
+                    <p>&nbsp;&nbsp;- ('continues', 'VBZ'), ('on', 'IN'), ('xofigo', <span class="blue">'MEDICINE'</span>)</p>
+                    <p>&nbsp;&nbsp;- ('PSA', <span class="blue">'PSA'</span>), ('is', 'VBZ'), ('10', 'CD')</p>
+                </div>
+                <div class="tab-pane tab-bg scroll" id="3-2">
+                    <p class="center tab-title">Pos Tagging Results</p><br>
+                    <img src="clinical2/3-1.png" alt="Examples" style="width: 90%;padding-left: 5%">
+                </div>
+                <div class="tab-pane tab-bg scroll" id="3-3">
+                    <p class="center tab-title">System Design</p><br>
+                    <img src="clinical2/3-2.png" alt="System" style="width: 90%;padding-left: 5%">
+                </div>
+                <div class="tab-pane center tab-bg scroll" id="4-1">
+                    <p class="center tab-title">Patient Note Timeline</p>
+                    <img src="clinical2/4-1.png" alt="Dashboard Screenshot" style="width: 80%;">
+                </div>
+                <div class="tab-pane center tab-bg scroll" id="4-2">
+                    <p class="center tab-title">Keyword Extraction</p>
+                    <img src="clinical2/4-2.png" alt="Dashboard Screenshot" style="width: 80%;">
+                </div>
+                <div class="tab-pane center tab-bg scroll" id="4-3">
+                    <p class="center tab-title">Patient Pathway</p>
+                    <img src="clinical2/4-3.png" alt="Dashboard Screenshot" style="width: 80%;">
+                </div>
+                <div class="tab-pane center tab-bg scroll" id="4-4">
+                    <p class="center tab-title">Medications on Admission/Discharge</p><br>
+                    <img src="clinical2/4-4.png" alt="Dashboard Screenshot" style="width: 90%;">
+                </div>
+                <div class="tab-pane tab-bg scroll" id="5-1">
+                    <p class="center tab-title">Word Similarity</p><br>
+                    <div class="col-md-5">
+                        <p><b>Time to Development of Metastatic Disease</b></p><br>
+                        <p>- Important for physicians to understand when metastasis happened</p>
+                        <br>
+                        <p><b>Embedding</b></p>
+                        <p>- Numerical representation for words or sentences</p>
+                        <p>- Allows performing arithmetic operations on words/sentences and similarity calculations</p>
+                        <p>- Similar words/sentences are closer in space</p>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="clinical2/5-1.png" alt="Word Similarity" style="width: 100%;">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="clinical2/5-2.png" alt="Word Similarity" style="width: 85%;">
+                    </div>
+                </div>
+                <div class="tab-pane tab-bg scroll" id="5-2">
+                    <p class="center tab-title">Sentence Similarity</p><br>
+                    <p class="center">Sentences similar to ‘revealed metastatic disease’</p><br>
+                    <img src="clinical2/5-3.png" alt="Word Similarity" style="width: 90%;padding-left: 5%">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="../static/js/project.js"></script>
+<div class="footer-frame bg_white"></div>
+</body>
