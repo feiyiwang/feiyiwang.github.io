@@ -93,14 +93,15 @@
                     <p class="center tab-title">Challenges</p><br>
                     <div class="col-md-6">
                         <p><b>Highly unstructured notes</b></p><br>
-                        <p>Sectionize data using a binary classification method</p>
-                        <p>Has been solved in project "Clinical Analytics Platform Development"</p><br>
+                        <p class="navy">Sectionize data using a binary classification method</p><br>
                         <p><b>Direct keyword extraction is difficult</b></p><br>
                         <p>Regular expressions fail to capture keywords along with context</p>
                         <p>- e.g. Rule ‘PSA [digit][digit].[digit]’ can capture `PSA 10.8’ but cannot capture sentences such as ‘PSA on 12/2015 was 9.0’</p>
+                        <p class="navy">Use part-of-speech tagging to extraxt keywords in different patterns</p>
                         <br>
                         <p><b>Lack of labelled data</b></p><br>
                         <p>Cannot train a classification model</p>
+                        <p class="navy">Group up keywords and key sentences using clustering methods</p>
                     </div>
                     <div class="col-md-6">
                         <img src="clinical2/2.png" alt="Unstructured Note" style="width: 85%;">
