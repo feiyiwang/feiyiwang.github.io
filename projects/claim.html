@@ -21,7 +21,7 @@
 <div class="navbar"></div>
 <div class="container-fluid">
     <div class="row">
-        <h3 style="text-align: center; margin: 0;">Clinical Pathway Extraction and Clustering</h3><br>
+        <h3 style="text-align: center; margin: 0;">Clinical Pathway Extraction</h3><br>
         <div id="sidebar" class="col-md-3">
             <div class="scroll rtl">
                 <ul class="nav nav-tabs tabs-left ltr" style="height:70%;">
@@ -40,22 +40,22 @@
                     </li>
                     <li>
                         <a class="navbar-toggler" data-toggle="collapse" href="#4">
-                            5. Deep Learning and Embedding<span class="caret-down">▾</span>
+                            4. Data Visualization<span class="caret-down">▾</span>
                         </a>
                         <ul class="collapse tabs-left" id="4">
-                            <li><a class="dropdown-item" href="#4-1" data-toggle="tab">Word Similarity</a></li>
-                            <li><a class="dropdown-item" href="#4-2" data-toggle="tab">Sentence Similarity</a></li>
+                            <li><a class="dropdown-item" href="#4-1" data-toggle="tab">Patient Note Timeline</a></li>
+                            <li><a class="dropdown-item" href="#4-2" data-toggle="tab">Keyword Extraction</a></li>
+                            <li><a class="dropdown-item" href="#4-3" data-toggle="tab">Patient Pathway</a></li>
+                            <li><a class="dropdown-item" href="#4-4" data-toggle="tab">Medications on Admission/Discharge</a></li>
                         </ul>
                     </li>
                     <li>
                         <a class="navbar-toggler" data-toggle="collapse" href="#5">
-                            4. Data Visualization<span class="caret-down">▾</span>
+                            5. Deep Learning and Embedding<span class="caret-down">▾</span>
                         </a>
                         <ul class="collapse tabs-left" id="5">
-                            <li><a class="dropdown-item" href="#5-1" data-toggle="tab">Patient Note Timeline</a></li>
-                            <li><a class="dropdown-item" href="#5-2" data-toggle="tab">Keyword Extraction</a></li>
-                            <li><a class="dropdown-item" href="#5-3" data-toggle="tab">Patient Pathway</a></li>
-                            <li><a class="dropdown-item" href="#5-4" data-toggle="tab">Medications on Admission/Discharge</a></li>
+                            <li><a class="dropdown-item" href="#5-1" data-toggle="tab">Word Similarity</a></li>
+                            <li><a class="dropdown-item" href="#5-2" data-toggle="tab">Sentence Similarity</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -70,20 +70,19 @@
             <div class="tab-content" style="height: 75%">
                 <div class="tab-pane tab-bg active scroll" id="objectives">
                     <p class="center tab-title">Objectives</p><br>
-                    <div class="col-md-5 scroll">
+                    <div class="col-md-5">
                         <p><b>Clinical event extractions over patient’s timeline</b></p>
-                        <p>&nbsp;&nbsp;Staging - whether metastasis</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. T1[a,b,c], T3[a,b], metastatic CRPC</p>
-                        <p>&nbsp;&nbsp;Gleason score - cell differentiation</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.g. gleason 3+3=6, gl 3+4=7</p>
+                        <p>&nbsp;&nbsp;Staging</p>
+                        <p>&nbsp;&nbsp;- Whether or not metastasis</p>
+                        <p>&nbsp;&nbsp;- T1[a,b,c], T2[a,b,c], T3[a,b]</p>
+                        <p>&nbsp;&nbsp;Gleason score</p>
+                        <p>&nbsp;&nbsp;- Addition of 2 grades of cancer cells</p>
+                        <p>&nbsp;&nbsp;- e.g. gleason 3+3=6, gl 3+4=7</p>
                         <p>&nbsp;&nbsp;PSA level</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.g. PSA is 14, PSA 3</p>
+                        <p>&nbsp;&nbsp;- Higher is indicative of Prostate Cancer</p>
+                        <p>&nbsp;&nbsp;- e.g. PSA is 14, PSA 3</p>
                         <p>&nbsp;&nbsp;Medication</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.g. Hormone therapy -> Leuprolide, Lupron</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chemotheropy e.g. Docetaxel, Novantrone</p>
-                        <p><b>Pathway clustering for annotation</b></p>
-                        <p>&nbsp;&nbsp;At word level</p>
-                        <p>&nbsp;&nbsp;At sentence level</p>
+                        <p>&nbsp;&nbsp;- Relevant drugs e.g. Zytiga, Lupron, Xofigo…</p>
                     </div>
                     <div class="col-md-7">
                         <img src="clinical2/1.png" alt="Flow" style="width: 100%">
@@ -127,23 +126,23 @@
                     <p class="center tab-title">System Design</p><br>
                     <img src="clinical2/3-2.png" alt="System" style="width: 90%;padding-left: 5%">
                 </div>
-                <div class="tab-pane center tab-bg scroll" id="5-1">
+                <div class="tab-pane center tab-bg scroll" id="4-1">
                     <p class="center tab-title">Patient Note Timeline</p>
                     <img src="clinical2/4-1.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
-                <div class="tab-pane center tab-bg scroll" id="5-2">
+                <div class="tab-pane center tab-bg scroll" id="4-2">
                     <p class="center tab-title">Keyword Extraction</p>
                     <img src="clinical2/4-2.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
-                <div class="tab-pane center tab-bg scroll" id="5-3">
+                <div class="tab-pane center tab-bg scroll" id="4-3">
                     <p class="center tab-title">Patient Pathway</p>
                     <img src="clinical2/4-3.png" alt="Dashboard Screenshot" style="width: 80%;">
                 </div>
-                <div class="tab-pane center tab-bg scroll" id="5-4">
+                <div class="tab-pane center tab-bg scroll" id="4-4">
                     <p class="center tab-title">Medications on Admission/Discharge</p><br>
                     <img src="clinical2/4-4.png" alt="Dashboard Screenshot" style="width: 90%;">
                 </div>
-                <div class="tab-pane tab-bg scroll" id="4-1">
+                <div class="tab-pane tab-bg scroll" id="5-1">
                     <p class="center tab-title">Word Similarity</p><br>
                     <div class="col-md-5">
                         <p><b>Time to Development of Metastatic Disease</b></p><br>
@@ -161,7 +160,7 @@
                         <img src="clinical2/5-2.png" alt="Word Similarity" style="width: 85%;">
                     </div>
                 </div>
-                <div class="tab-pane tab-bg scroll" id="4-2">
+                <div class="tab-pane tab-bg scroll" id="5-2">
                     <p class="center tab-title">Sentence Similarity</p><br>
                     <p class="center">Sentences similar to ‘revealed metastatic disease’</p><br>
                     <img src="clinical2/5-3.png" alt="Word Similarity" style="width: 90%;padding-left: 5%">
