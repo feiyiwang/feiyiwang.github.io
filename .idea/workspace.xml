@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/projects/Untitled.ipynb" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/projects/plan.html" afterPath="$PROJECT_DIR$/projects/claim.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/notebook/jupyter/leuk.html" afterPath="$PROJECT_DIR$/notebook/jupyter/leuk.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects.html" afterPath="$PROJECT_DIR$/projects.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/clinical2.html" afterPath="$PROJECT_DIR$/projects/clinical2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projects/digit_classification.html" afterPath="$PROJECT_DIR$/projects/digit_classification.html" />
     </list>
     <ignored path="feiyiwang-website.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,8 +53,8 @@
       <file leaf-file-name="projects.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
+            <state relative-caret-position="338">
+              <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#!!top" expanded="true" />
@@ -73,8 +67,8 @@
       <file leaf-file-name="clinical2.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/clinical2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="83" column="63" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
+            <state relative-caret-position="240">
+              <caret line="82" column="84" selection-start-line="82" selection-start-column="84" selection-end-line="82" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -172,8 +166,8 @@
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/projects/digit_classification.html" />
         <option value="$PROJECT_DIR$/projects/plan.html" />
-        <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/notebook/jupyter/leuk.html" />
+        <option value="$PROJECT_DIR$/projects.html" />
         <option value="$PROJECT_DIR$/projects/clinical2.html" />
       </list>
     </option>
@@ -1023,12 +1017,12 @@
       <workItem from="1585876609393" duration="1193000" />
       <workItem from="1586059076963" duration="50061000" />
       <workItem from="1586716612508" duration="19172000" />
-      <workItem from="1587756102960" duration="11010000" />
+      <workItem from="1587756102960" duration="12510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="344698000" />
+    <option name="totallyTimeSpent" value="346198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="63" y="23" width="1217" height="720" extended-state="0" />
@@ -1460,18 +1454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="74" column="42" selection-start-line="74" selection-start-column="42" selection-end-line="74" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/notebook/jupyter/leuk.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -1480,10 +1462,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projects.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="79" column="21" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projects/clinical2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="83" column="63" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="63" />
+        <state relative-caret-position="240">
+          <caret line="82" column="84" selection-start-line="82" selection-start-column="84" selection-end-line="82" selection-end-column="84" />
           <folding />
         </state>
       </provider>

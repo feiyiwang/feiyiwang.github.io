@@ -80,8 +80,8 @@
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.g. PSA is 14, PSA 3</p>
                         <p>&nbsp;&nbsp;Medication</p>
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.g. Hormone therapy -> Leuprolide, Lupron</p>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Chemotheropy e.g. Docetaxel, Novantrone</p>
-                        <p><b>Pathway clustering for annotation</b></p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; e.g. Chemotheropy -> Docetaxel, Novantrone</p>
+                        <p><b>Pathway clustering for pattern exploration</b></p>
                         <p>&nbsp;&nbsp;At word level</p>
                         <p>&nbsp;&nbsp;At sentence level</p>
                     </div>
@@ -92,10 +92,15 @@
                 <div class="tab-pane tab-bg scroll" id="workflow">
                     <p class="center tab-title">Challenges</p><br>
                     <div class="col-md-6">
+                        <p><b>Highly unstructured notes</b></p><br>
+                        <p>Sectionize data using a binary classification method</p>
+                        <p>Has been solved in project "Clinical Analytics Platform Development"</p><br>
                         <p><b>Direct keyword extraction is difficult</b></p><br>
                         <p>Regular expressions fail to capture keywords along with context</p>
                         <p>- e.g. Rule ‘PSA [digit][digit].[digit]’ can capture `PSA 10.8’ but cannot capture sentences such as ‘PSA on 12/2015 was 9.0’</p>
-                        <br><p>Lack of labelled data for Machine Learning</p>
+                        <br>
+                        <p><b>Lack of labelled data for classification</b></p><br>
+                        <p>Clustering methods cannot achieve very accurate and reliable results</p>
                     </div>
                     <div class="col-md-6">
                         <img src="clinical2/2.png" alt="Unstructured Note" style="width: 85%;">
