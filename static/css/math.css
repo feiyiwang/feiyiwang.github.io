@@ -2,7 +2,13 @@
     text-align: center;
     border: 2px solid #f0ad4e;
 }
-
+.box {
+    margin: 15px 0;
+    border-radius:5px;
+    border: 2px solid #f0ad4e;
+    text-align: center;
+    background: transparent;
+}
 .math {
     margin-top: 5px;
     height: 42px;   /* originally was 45px */
@@ -22,7 +28,7 @@
     height: 88px;   /* originally was 45*2+5 px */
     width: 42px;    /* originally was 45px */
 }
-.math:hover , .math:focus{
+.math:hover , .math:focus, .box:hover, .box:focus {
     border: 2px solid #5cb85c;
     background-color: rgb(255, 247, 216);
 }
@@ -34,8 +40,6 @@
     padding-top: 20px;
     border-radius: 5px;
 }
-
-
 
 .div_math {
     /*margin: 0 15px;*/
@@ -49,3 +53,8 @@
     margin-bottom: -5px;
     padding: 2px 5px 0 5px;
 }
+
+
+
+
+

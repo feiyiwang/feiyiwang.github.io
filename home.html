@@ -13,13 +13,148 @@
     <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
     <script src="static/js/template.js"></script>
     <script>
+        n =  new Date();
+        y = n.getFullYear();
+        m = n.getMonth() + 1;
+        d = n.getDate();
+
         var queryString = decodeURIComponent(window.location.search); //parsing
         var queries = queryString.substring(1).split("&");
         $(function(){
             $(".footer-frame").append(foot);
             $("#name").text("Hi "+queries[0].split("=")[1]+",");
+            $("#date").text("Today is " + m + "/" + d + "/" + y);
         });
         LatexIT.add('p',true);
+
+        $.getJSON('template/login.json', function(data) {
+            if (Object.keys(data).includes(email)) {
+            }
+        });
+
+        $('#save_event').click(function () {
+            var event = $('#new_event').val();
+            var bala= '<div id="toolbar"><button id="yes" class="btn btn-success" disabled><i class="glyphicon glyphicon-ok"></i> Report Correct Sections</button>'
+            bala +='&nbsp;&nbsp;&nbsp;&nbsp;<button id="no" class="btn btn-danger" disabled><i class="glyphicon glyphicon-remove"></i> Report Wrong Sections</button></div>'
+            bala +='<table id="table" data-toolbar="#toolbar" data-search="true"></table>';
+            bala += '<br><br><a href="#goTop">Go back to the top <i class="glyphicon glyphicons-arrow-up"></i></a>';
+            document.getElementById('event_list').innerHTML = bala;
+
+            if (event == '') {
+                alert('Hey, you need to create an event first! :)');
+            } else {
+                $.ajax({
+                    datatype:'json',
+                    url: '/home?event='+event,
+                    type: 'GET',
+                    success: function (new_event) {
+                        var new_event = new_event['event'];
+                        $.getJSON('template/event.json', function(data) {
+                            
+                        })
+                    }
+                })
+            }
+
+            $.ajax({
+                datatype: 'json',
+                url: '/getNote?note_id=' + note_id + '&patient_id=' + patient_id,
+                type: 'GET',
+                success: function(note) {
+
+
+                    var aNote= note['note'];
+
+                    var sections = Object.keys(aNote);
+                    var contents = Object.values(aNote);
+                    var lines = [];
+                    for(var i = 0; i < sections.length; i++) {
+                        lines[i] = {'section': sections[i], 'content': contents[i]};
+                    }
+
+                    console.log(JSON.stringify(lines));
+
+                    var $table = $('#table'),
+                            $yes = $('#yes'),
+                            $no = $('#no'),
+                            selections = [];
+
+                    $(function () {
+                        $table.bootstrapTable({
+                            data: lines,
+                            columns: [
+                                {
+                                    field: 'state',
+                                    checkbox: true,
+                                    //rowspan: 2,
+                                    align: 'center',
+                                    valign: 'middle'
+                                }, {
+                                    field: 'section',
+                                    title: 'Sections',
+                                    sortable: true,
+                                    editable: true,
+                                    formatter: function (value, row) {
+                                        return row.section;
+                                    },
+                                    align: 'center',
+                                    valign: 'middle'
+                                }, {
+                                    field: 'content',
+                                    title: 'Contents',
+                                    sortable: true,
+                                    editable: true,
+                                    formatter: function (value, row) {
+                                        return row.content;
+                                    },
+                                    align: 'center',
+                                    valign: 'middle'
+                                }, {
+                                    field: 'operate',
+                                    title: 'Note Operate',
+                                    events: operateEvents,
+                                    formatter: operateFormatter,
+                                    align: 'center',
+                                    valign: 'middle'
+                                }
+                            ]
+                        });
+                    });
+
+
+                    function operateFormatter(value, row, index) {
+                        return [
+                            '<a class="yes" href="javascript:void(0)" title="It is correct! :>">',
+                            '<i class="glyphicon glyphicon-ok"></i>',
+                            '</a>&nbsp;&nbsp;&nbsp;',
+                            '<a class="no" href="javascript:void(0)" title="It is wrong. :<">',
+                            '<i class="glyphicon glyphicon-remove"></i>',
+                            '</a>'
+                        ].join('');
+                    }
+
+                    $table.on('check.bs.table uncheck.bs.table ' +
+                            'check-all.bs.table uncheck-all.bs.table', function () {
+                        $yes.prop('disabled', !$table.bootstrapTable('getSelections').length);
+                        $no.prop('disabled', !$table.bootstrapTable('getSelections').length);
+                        selections = getIdSelections();
+                        console.log(JSON.stringify(selections));
+                        // push or splice the selections if you want to save all data selections
+                    });
+
+                    function getIdSelections() {
+                        return $.map($table.bootstrapTable('getSelections'), function (row) {
+                            return row.section
+                        });
+                    }
+
+
+//                    console.log(contents);
+//                    alert(JSON.stringify(typeof contents));
+
+
+                }
+            })
     </script>
 </head>
 <body>
@@ -73,11 +208,25 @@
 <div style="width:90%; margin: 0 auto; padding-top: 5px;">
     <h3 id="name" style="margin: 0"></h3><br>
     <ul class="nav nav-tabs" style="width:100%;">
-        <li class="active"><a href="#editEquation" data-toggle="tab">Equation Editor</a></li>
+        <li class="active"><a href="#reminder" data-toggle="tab">Reminders</a></li>
+        <li><a href="#editEquation" data-toggle="tab">Equation Editor</a></li>
         <li><a href="#editNote" data-toggle="tab">Note Editor</a></li>
     </ul>
     <div class="tab-content" style="width:100%;">
-        <div class="tab-pane active scroll" id="editEquation" style="height: 72%">
+        <div class="tab-pane active scroll" id="reminder" style="height: 72%">
+            <div style="width: 99%; padding: 15px 15px; display: inline-block;">
+                <h3 id="date"></h3><br>
+                <b>To Do List:</b>
+                <div id="event_list"></div><br>
+                <b>New Event Editor: </b><br>
+                <input type="text" id="new_event" value="" style="width: 100%;margin: 15px 0;border-radius:5px;border: 2px solid #f0ad4e; text-align: center; ">
+                <button class="box" id="save_event"><span style="color: #00A000">Submit</span></button>
+                <!--<div class="col-md-6">-->
+                    <!--<h3>Calendar</h3>-->
+                <!--</div>-->
+            </div>
+        </div>
+        <div class="tab-pane scroll" id="editEquation" style="height: 72%">
             <div style="width: 99%; padding: 15px 15px; display: inline-block;">
                 <div class="div_math">
                     <button class="math" value="\times"><img src="static/image/math/x.svg"></button>
