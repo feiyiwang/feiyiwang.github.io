@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/projects/gpt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/ppt/gpt.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
-    </list>
+    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -834,7 +828,7 @@
       <workItem from="1591213206699" duration="7355000" />
       <workItem from="1593106931784" duration="230000" />
       <workItem from="1619549632995" duration="19000" />
-      <workItem from="1619552340418" duration="2935000" />
+      <workItem from="1619552340418" duration="3561000" />
     </task>
     <servers />
   </component>
