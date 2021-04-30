@@ -33,8 +33,8 @@
                                 3. Header Identification<span class="caret-down">▾</span>
                             </a>
                             <ul class="collapse tabs-left" id="headers">
-                                <li><a class="dropdown-item" href="#headers1" data-toggle="tab">Note Classification</a></li>
                                 <li><a class="dropdown-item" href="#headers2" data-toggle="tab">Note Clustering</a></li>
+                                <li><a class="dropdown-item" href="#headers1" data-toggle="tab">Note Classification</a></li>
                                 <!--<li><a class="dropdown-item" href="#headers3" data-toggle="tab">3</a></li>-->
                             </ul>
                         </li>
@@ -100,7 +100,7 @@
                                 <p><b>Project Wrap-up: </b></p>
                             </div>
                             <div class="col-md-7">
-                                <p>Structure-based method vs clustering method</p>
+                                <p>Clustering & structure-based method</p>
                                 <p>Rule-based method & classification</p>
                                 <p>Obtain clinical events from sections</p>
                                 <p>Flask web framework</p>
@@ -109,6 +109,19 @@
                             <img src="clinical1/2.png" alt="Workflow" style="width: 100%;">
                         </div>
                         <div class="col-md-1"></div>
+                    </div>
+                    <div class="tab-pane tab-bg scroll" id="headers2">
+                        <p class="center" style="font-size: 24px">Note Clustering</p><br>
+                        <div class="col-md-6">
+                            <p><b>Utilize the similarity in notes to build up a DBSCAN model</b></p>
+                            <br>
+                            <p><b>Measuring coherence in notes of each cluster</b></p>
+                            <p>- Plotting number of sections in a given class</p>
+                            <p>- Average Overlap Count with sections in class regex</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="clinical1/3-2.png" alt="Plot" style="width: 80%;padding-left: 5%">
+                        </div>
                     </div>
                     <div class="tab-pane tab-bg scroll" id="headers1">
                         <p class="center" style="font-size: 24px">Note Classification</p><br>
@@ -127,19 +140,6 @@
                         </div>
                         <div class="col-md-6">
                             <img src="clinical1/3-1.png" alt="Unstructured Note" style="width: 80%;padding-left: 5%">
-                        </div>
-                    </div>
-                    <div class="tab-pane tab-bg scroll" id="headers2">
-                        <p class="center" style="font-size: 24px">Note Clustering</p><br>
-                        <div class="col-md-6">
-                            <p><b>Utilize the similarity in notes to build up a DBSCAN model</b></p>
-                            <br>
-                            <p><b>Measuring coherence in notes of each cluster</b></p>
-                            <p>- Plotting number of sections in a given class</p>
-                            <p>- Average Overlap Count with sections in class regex</p>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="clinical1/3-2.png" alt="Plot" style="width: 80%;padding-left: 5%">
                         </div>
                     </div>
                     <!--<div class="tab-pane tab-bg" id="headers3">-->
