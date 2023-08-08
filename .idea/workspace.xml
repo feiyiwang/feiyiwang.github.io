@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile/resume/eshg2023.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/clinical1.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/clinical1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/FeiyiWang_CV.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/profile/FeiyiWang_CV.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/profile_resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile/profile_resume.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,6 +286,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -292,6 +299,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/profile/resume" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/static/js" />
     </key>
@@ -833,6 +841,7 @@
       <workItem from="1619549632995" duration="19000" />
       <workItem from="1619552340418" duration="4035000" />
       <workItem from="1619764681110" duration="511000" />
+      <workItem from="1691476090447" duration="2261000" />
     </task>
     <servers />
   </component>
