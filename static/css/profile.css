@@ -3,10 +3,10 @@
 	text-align: center;
 }
 
-.image {
+.image_af1 {
 	width:58%;
 }
-.image:hover {
+.image_af1:hover {
 	transform: scale(1.1);
 }
 
