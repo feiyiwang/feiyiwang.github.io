@@ -4,45 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="update profile">
-      <change afterPath="$PROJECT_DIR$/bio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/email_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/github.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/github_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/google.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/google_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/linkedin_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/logo_title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/orcid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/orcid_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/publications.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/x_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/youtube.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icon/youtube_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/publications.html" afterDir="false" />
+    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="fix minor bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/icon/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon/logo_in_folder.png" beforeDir="false" afterPath="$PROJECT_DIR$/icon/logo_in_folder.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook.html" beforeDir="false" afterPath="$PROJECT_DIR$/notebook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notebook/bioinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/notebook/bioinfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photography.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/profile_resume.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile/profile_resume.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/resume/work1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/resume/work2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/resume/work3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/resume/work4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/profile/resume/work5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/photography.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/photography.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -892,7 +857,7 @@
       <workItem from="1691476090447" duration="3020000" />
       <workItem from="1766154612799" duration="6303000" />
       <workItem from="1766175989290" duration="3899000" />
-      <workItem from="1766180359706" duration="12955000" />
+      <workItem from="1766180359706" duration="19268000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1691480421661</created>
@@ -908,7 +873,28 @@
       <option name="project" value="LOCAL" />
       <updated>1691480723733</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update profile 2025.12">
+      <created>1766200259614</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1766200259614</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update bio 2025.12">
+      <created>1766366463088</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1766366463088</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix minor bug">
+      <created>1766367539407</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1766367539407</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -996,7 +982,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="update profile" />
+    <MESSAGE value="update profile 2025.12" />
+    <MESSAGE value="update bio 2025.12" />
+    <MESSAGE value="fix minor bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix minor bug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/profile.html">
