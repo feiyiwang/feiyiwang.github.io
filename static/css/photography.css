@@ -16,13 +16,31 @@ body {
 
 .vintalight {
     display: flex;
-    /*justify-content: center;*/
     flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     /*width: 95%;*/
     padding: 3%;
+    justify-items: center;
+    width: 900px;              /* ← controls 3-photo layout */
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.vintalight_1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 3%;
+    justify-items: center;
+    width: 1000px;              /* ← controls 3-photo layout */
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .figure_pic {
+    flex: 0 0 calc(33.333% - 2%);
     position: relative;
     width: 95%;
     max-width: 9.25em; /* 10.5 */
@@ -33,90 +51,32 @@ body {
     transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1), box-shadow 0.5s, margin 0.5s;
 }
 
-.figure_pic:nth-child(1) {
-    transform: translate(40px, 30px) rotate(-30deg);
-    z-index: 4;
-}
-.figure_pic:nth-child(1):hover {
-    transform: scale(1.15) translate(40px, 30px) rotate(0deg);   /* the end of the 1th pic */
-}
+/*.figure_pic {*/
+/*    position: relative;*/
+/*    width: 95%;              !* fill grid cell *!*/
+/*    max-width: 9.25em;         !* optional cap *!*/
+/*    aspect-ratio: 5/4;      !* keeps photo shape *!*/
+/*    background-color: #fff;*/
+/*    box-shadow: 0 2px 6px rgba(0,0,0,0.5);*/
+/*    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),*/
+/*                box-shadow 0.5s;*/
+/*}*/
 
-.figure_pic:nth-child(2) {
-    transform: translate(30px, 20px) rotate(7deg);
-    z-index: 5;
-}
-.figure_pic:nth-child(2):hover {
-  transform: scale(1.15) translate(30px, 20px) rotate(0deg);   /* the end of the 2th pic */
-}
-
-.figure_pic:nth-child(3) {
-  transform: translate(-20px, 20px) rotate(20deg);
-  z-index: 4;
-}
-.figure_pic:nth-child(3):hover {
-  transform: scale(1.15) translate(-20px, 20px) rotate(0deg);   /* the end of the 3th pic */
-}
-
-.figure_pic:nth-child(4) {
-  transform: translate(40px, -10px) rotate(10deg);
-  z-index: 3;
-}
-.figure_pic:nth-child(4):hover {
-  transform: scale(1.15) translate(40px, -10px) rotate(0deg);   /* the end of the 4th pic */
-}
-
-.figure_pic:nth-child(5) {
-  transform: translate(20px, -10px) rotate(-20deg);
-  z-index: 2;
-}
-.figure_pic:nth-child(5):hover {
-  transform: scale(1.15) translate(20px, -10px) rotate(0deg);   /* the end of the 5th pic */
-}
-
-.figure_pic:nth-child(6) {
-  transform: translate(30px, 20px) rotate(-10deg);
-  z-index: 1;
-}
-.figure_pic:nth-child(6):hover {
-  transform: scale(1.15) translate(30px, 20px) rotate(0deg);   /* the end of the 6th pic */
-}
-
-.figure_pic:nth-child(7) {
-    transform: translate(10px, -10px) rotate(10deg);
-    z-index: 2;
-}
-.figure_pic:nth-child(7):hover {
-    transform: scale(1.15) translate(10px, -10px) rotate(0deg);   /* the end of the 7th pic */
-}
-
-.figure_pic:nth-child(8) {
-    transform: translate(30px, 20px) rotate(-20deg);
-    z-index: 1;
-}
-.figure_pic:nth-child(8):hover {
-    transform: scale(1.15) translate(30px, 20px) rotate(0deg);   /* the end of the 8th pic */
-}
-
-.figure_pic:nth-child(9) {
-    transform: translate(-30px, 20px) rotate(-15deg);
-    z-index: 2;
-}
-.figure_pic:nth-child(9):hover {
-    transform: scale(1.15) translate(-30px, 20px) rotate(0deg);   /* the end of the 9th pic */
-}
-
-.figure_pic:nth-child(10) {
-    transform: translate(30px, 10px) rotate(9deg);
-    z-index: 5;
-}
-.figure_pic:nth-child(10):hover {
-    transform: scale(1.15) translate(30px, 10px) rotate(0deg);   /* the end of the 10th pic */
-}
+.figure_pic:nth-child(1) { transform: rotate(-30deg); }
+.figure_pic:nth-child(2) { transform: rotate(7deg); }
+.figure_pic:nth-child(3) { transform: rotate(20deg); }
+.figure_pic:nth-child(4) { transform: rotate(10deg); }
+.figure_pic:nth-child(5) { transform: rotate(-20deg); }
+.figure_pic:nth-child(6) { transform: rotate(-10deg); }
+.figure_pic:nth-child(7) { transform: rotate(15deg); }
+.figure_pic:nth-child(8) { transform: rotate(-25deg); }
 
 .figure_pic:hover {
-    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.4);
+    transform: scale(1.15) rotate(0deg);
     z-index: 100;
 }
+
+
 
 .figure_pic:hover .div_pic::before {
     transform: scale(1);

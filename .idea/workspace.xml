@@ -5,9 +5,87 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="fix minor bug">
+      <change afterPath="$PROJECT_DIR$/photography/study.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/eshg2023.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/pic0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/pic1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/pic2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/pic3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/pic4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/poster1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/poster2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/poster3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/poster4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/photography/study/poster5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile/json/graph.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile/json/notebook.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile/json/sl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile/json/usl.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/profile/profile.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bio.html" beforeDir="false" afterPath="$PROJECT_DIR$/bio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/json/graph.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/json/notebook.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/json/sl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/json/usl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/acadia1.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography/acadia1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/acadia1/p10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/acadia1/p4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/acadia1/p4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/acadia1/p7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/acadia1/p8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/acadia1/p9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/europe1.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography/europe1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/europe1/p10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/europe1/p6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/europe1/p8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland1.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography/iceland1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland1/p10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland1/p2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/iceland1/p2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland1/p5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/iceland1/p5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland1/p6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/iceland1/p6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland1/p7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland1/p8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland1/p9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland2.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography/iceland2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland2/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/iceland2/p4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/italy1.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography/italy1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/italy1/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/italy1/p5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/italy1/p7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/italy1/p9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/morocco1.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography/morocco1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/morocco1/p5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/morocco1/p7.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography/zion1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1/p10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1/p3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/zion1/p3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1/p4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/zion1/p4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1/p5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/zion1/p5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1/p6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/zion1/p6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1/p7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1/p8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photography/zion1/p9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/FeiyiWang_CV.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/boston/IMG_5591.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/profile_boston.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/profile_resume.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/profile_shanghai.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/eshg2023.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/pic0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/pic1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/pic2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/pic3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/pic4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/poster1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/poster2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/poster3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/poster4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/poster5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile/resume/profile.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/photography.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/photography.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/template.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -857,7 +935,7 @@
       <workItem from="1691476090447" duration="3020000" />
       <workItem from="1766154612799" duration="6303000" />
       <workItem from="1766175989290" duration="3899000" />
-      <workItem from="1766180359706" duration="19268000" />
+      <workItem from="1766180359706" duration="26242000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1691480421661</created>
@@ -894,7 +972,14 @@
       <option name="project" value="LOCAL" />
       <updated>1766367539407</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix minor bug">
+      <created>1766369062687</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766369062687</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
