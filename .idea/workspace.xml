@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="fix minor bug">
+    <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="update 2025.12">
       <change afterPath="$PROJECT_DIR$/photography/study.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/photography/study/eshg2023.jpeg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/photography/study/pic0.jpg" afterDir="false" />
@@ -25,11 +25,173 @@
       <change afterPath="$PROJECT_DIR$/profile/profile.jpeg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bio.html" beforeDir="false" afterPath="$PROJECT_DIR$/bio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/bioinfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/cancer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/git.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/html.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/image/re.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook/json/graph.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook/json/notebook.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook/json/sl.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notebook/json/usl.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/.ipynb-checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/biology-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/gwas-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/healthcare-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/healthcareAI-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/lc_lr-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/leuk-checkpoint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/leuk-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/nc_nr-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/nn-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/nsclc-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/prob-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/recommendation_system-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/rl-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/stat-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/.ipynb_checkpoints/unSL-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/Untitled.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/Autosomal_dominant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/Coquina_variation.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/Dna-SNP.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/Monoclonals.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/blood_cells.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/chest_xray_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/chest_xray_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/chest_xray_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/chromosome.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/development-of-different-blood-cells-from-haematopoietic-stem-cell-to-mature.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/genotype.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/hcai-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/ig-antibody-structure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/mammo_left.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/mammo_right.pgm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/probabilities.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/bio/stem_cell_differentiation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/biology.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/gwas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/gwas.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/healthcare.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/healthcareAI.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/10.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/10.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.17.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.18.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.19.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.20.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.21.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.22.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.23.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.29.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.30.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/12.9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/14-dbscan.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/14-emgmm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/14-hierarchical.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/14-kmeans1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/14-kmeans2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/14-meanshift1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/14-meanshift2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/14-summary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/3.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/3.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/4.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/4.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/4.3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/9.9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_L12_cov_example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_L12_cov_f*g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_L12_cov_f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_L12_cov_g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_hw4_p2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_hw4_p3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_hw4_p4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lc6_lambda0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lc6_lambda1000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec12_kmeans1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec12_kmeans2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec3_distancelinepoint.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec4_pic3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec8_deepneuralnet.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec8_logicAND.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec8_logicNAND.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec8_logicNOT.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec8_logicOR.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec8_neuralnetunit.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec_1dnotseparable.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec_1dnotseparable_in2d.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/images_lec_elipticalboundary.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/img/var_bias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/lc_lr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/lc_lr.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/leuk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/leuk.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/nc_nr.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/nc_nr.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/nn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/nn.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/nsclc.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/prob.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/recommendation_system.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/rl.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/stat.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/toy_data.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/toy_data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/unSL.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/jupyter/unSL.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/linux.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/ml_notes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/nlp_cheat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/pdf/Activation_function.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/pdf/CS229ML.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/pdf/test.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/sl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/usl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook/vim.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/photography/acadia1.html" beforeDir="false" afterPath="$PROJECT_DIR$/photography/acadia1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/photography/acadia1/p10.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/photography/acadia1/p4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/photography/acadia1/p4.jpg" afterDir="false" />
@@ -86,6 +248,7 @@
       <change beforePath="$PROJECT_DIR$/profile/resume/poster5.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/profile/resume/profile.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/photography.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/photography.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -935,7 +1098,7 @@
       <workItem from="1691476090447" duration="3020000" />
       <workItem from="1766154612799" duration="6303000" />
       <workItem from="1766175989290" duration="3899000" />
-      <workItem from="1766180359706" duration="26242000" />
+      <workItem from="1766180359706" duration="26528000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1691480421661</created>
@@ -979,7 +1142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1766369062687</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update 2025.12">
+      <created>1766418623660</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1766418623660</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -1070,7 +1240,8 @@
     <MESSAGE value="update profile 2025.12" />
     <MESSAGE value="update bio 2025.12" />
     <MESSAGE value="fix minor bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix minor bug" />
+    <MESSAGE value="update 2025.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 2025.12" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/profile.html">
