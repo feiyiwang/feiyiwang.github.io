@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="update 2025.12">
+      <change afterPath="$PROJECT_DIR$/static/font/Caveat/Caveat-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/Caveat/Caveat-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/Caveat/Caveat-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/Caveat/Caveat-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/Caveat/Caveat-VariableFont_wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/font/Caveat/OFL.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/image/home_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/image/home_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/template.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -858,7 +864,7 @@
       <workItem from="1691476090447" duration="3020000" />
       <workItem from="1766154612799" duration="6303000" />
       <workItem from="1766175989290" duration="3899000" />
-      <workItem from="1766180359706" duration="27937000" />
+      <workItem from="1766180359706" duration="32310000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1691480421661</created>
@@ -923,7 +929,21 @@
       <option name="project" value="LOCAL" />
       <updated>1766419911141</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update 2025.12">
+      <created>1766504746201</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1766504746201</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update 2025.12">
+      <created>1766849876531</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1766849876532</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">

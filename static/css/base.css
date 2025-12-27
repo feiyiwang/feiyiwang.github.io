@@ -1,7 +1,14 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../font/Montserrat/Montserrat-ExtraLight.ttf');
-    /*font-weight: 700;*/
+    font-family: 'Caveat';
+    src: url('../font/Caveat/Caveat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('../font/Caveat/Caveat-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -45,8 +52,9 @@ body {
     color: dimgrey;
 }
 
-.mon {
-    font-family: 'Montserrat', sans-serif;
+p.mon {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;   /* IMPORTANT */
 }
 .white {
     color: white;
@@ -58,7 +66,7 @@ body {
     color: #be5bf0;
 }
 .purblu {
-    color: #855bf0;
+    color: #83C06F;
 }
 .blue {
     color: #6178ff;
@@ -119,11 +127,11 @@ body {
   opacity: 0;
 }
 
-.inline-hover-swap:hover img.hover-img {
+.text-link:hover .inline-hover-swap img.hover-img {
   opacity: 1;
 }
 
-.inline-hover-swap:hover img.base-img {
+.text-link:hover .inline-hover-swap img.base-img {
   opacity: 0;
 }
 
@@ -135,6 +143,23 @@ body {
 .icon-link:focus,
 .icon-link:active {
   text-decoration: none;
+}
+
+.text-link {
+    color: #7a7a7a;          /* grey by default */
+    text-decoration: none;  /* remove underline */
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.text-link:hover {
+    color: #000 !important;             /* black on hover */
+    text-decoration: none;   /* still no underline */
+}
+
+.text-link:visited {
+    color: #7a7a7a;           /* avoid purple visited links */
 }
 
 .intro-text {

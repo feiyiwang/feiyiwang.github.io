@@ -8,9 +8,11 @@
     <script src="static/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="static/css/bootstrap.min.css">
     <link rel="stylesheet" href="static/css/base.css">
+    <script src="../static/js/template.js"></script>
     <script>
         $(function(){
             $("#header").load("template/header.html");
+            $(".footer-frame").append(foot);
         });
     </script>
 </head>
@@ -22,4 +24,5 @@
         <p class="mon grey" style="font-size:24px;"><a href="projects.html" class="purple">Data Science</a> and <a href="publications.html" class="purblu">Human Genetics</a>, </p>
         <p class="mon grey" style="font-size:24px;">with love for <a href="photography.html" class="blue">Photography</a>.</p>
     </div>
+    <div class="footer-frame bg_trans"></div>
 </body>
