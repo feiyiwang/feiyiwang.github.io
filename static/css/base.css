@@ -1,10 +1,10 @@
+/*https://fonts.google.com/specimen/Caveat*/
 @font-face {
     font-family: 'Caveat';
     src: url('../font/Caveat/Caveat-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Caveat';
     src: url('../font/Caveat/Caveat-Bold.ttf') format('truetype');
@@ -109,18 +109,20 @@ p.mon {
 
 
 .inline-hover-swap {
-  position: relative;
+  display: inline-block;
   width: 15px;
   height: 15px;
-  display: inline-block;
-  vertical-align: middle;
+  vertical-align: middle;  /* aligns with text baseline */
+  position: relative;
 }
 
 .inline-hover-swap img {
-  position: absolute;
   width: 100%;
   height: 100%;
+  display: block;
   transition: opacity 0.3s ease;
+  position: absolute;      /* only for the hover effect */
+  top: 0; left: 0;
 }
 
 .inline-hover-swap img.hover-img {
