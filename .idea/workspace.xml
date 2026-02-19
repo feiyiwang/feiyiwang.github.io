@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f6f9a3-1f8f-4231-a716-e36daeeed542" name="Default" comment="update 2026.02">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bio.html" beforeDir="false" afterPath="$PROJECT_DIR$/bio.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -860,7 +861,7 @@
       <workItem from="1766154612799" duration="6303000" />
       <workItem from="1766175989290" duration="3899000" />
       <workItem from="1766180359706" duration="41938000" />
-      <workItem from="1771469919938" duration="2516000" />
+      <workItem from="1771469919938" duration="3047000" />
     </task>
     <task id="LOCAL-00001" summary="update profile">
       <created>1691480421661</created>
@@ -974,7 +975,14 @@
       <option name="project" value="LOCAL" />
       <updated>1771528694626</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="update 2026.02">
+      <created>1771528958090</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1771528958091</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
