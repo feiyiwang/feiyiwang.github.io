@@ -68,3 +68,12 @@ var head_in_folder = `
   </div>
 </div>
 `;
+
+var head_in_folder_simple = `
+<div class="topbar">
+  <a href="https://feiyiwang.github.io"
+     class="navbar-brand goBack">
+    Feiyi Wang 王斐艺
+  </a>
+</div>
+`;

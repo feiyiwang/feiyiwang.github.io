@@ -30,7 +30,7 @@ body {
 
 #body {
     /*padding:10px;*/
-    padding-bottom:40px;   /* Height of the footer */
+    padding-bottom:100px;   /* Height of the footer */
 }
 .footer-frame {
     position:fixed;
@@ -41,7 +41,7 @@ body {
     /*background: transparent;*/
 }
 .navbar {
-    min-height: 40px;
+    height: 40px;
 }
 .goBack {
     color:grey;
